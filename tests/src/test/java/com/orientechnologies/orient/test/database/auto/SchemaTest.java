@@ -453,8 +453,8 @@ public class SchemaTest extends DocumentDBBaseTest {
       }
 
       // DELETE ALL THE RECORDS
-      int deleted =
-          database.command(new OCommandSQL("delete from cluster:multipleclusters_2")).execute();
+      long deleted =
+          database.command("delete from cluster:multipleclusters_2").next().getProperty("count");
       Assert.assertEquals(deleted, 2);
 
       // CHANGE CLASS STRATEGY to BALANCED
@@ -463,7 +463,9 @@ public class SchemaTest extends DocumentDBBaseTest {
       database.getMetadata().getSchema().reload();
 
       for (int i = 0; i < 2; ++i) {
-        new ODocument("multipleclusters").field("num", i).save();
+        ODocument doc = new ODocument("multipleclusters");
+        doc.field("num", i);
+        database.save(doc);
       }
 
       Assert.assertEquals(

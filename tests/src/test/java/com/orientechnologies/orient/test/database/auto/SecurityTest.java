@@ -25,7 +25,6 @@ import com.orientechnologies.orient.core.metadata.security.OSecurityRole;
 import com.orientechnologies.orient.core.metadata.security.OSecurityUser;
 import com.orientechnologies.orient.core.metadata.security.OUser;
 import com.orientechnologies.orient.core.record.impl.ODocument;
-import com.orientechnologies.orient.core.sql.OCommandSQL;
 import com.orientechnologies.orient.core.sql.executor.OResult;
 import com.orientechnologies.orient.core.sql.executor.OResultSet;
 import java.io.IOException;
@@ -248,7 +247,7 @@ public class SecurityTest extends DocumentDBBaseTest {
     reopendb("reader", "reader");
 
     try {
-      database.command(new OCommandSQL("select from ouser")).execute();
+      database.command("select from ouser").close();
     } catch (OSecurityException e) {
     }
 
@@ -274,7 +273,7 @@ public class SecurityTest extends DocumentDBBaseTest {
     reopendb("writer", "writer");
 
     try {
-      database.command(new OCommandSQL("alter class Protected superclass OUser")).execute();
+      database.command("alter class Protected superclass OUser").close();
       Assert.fail();
     } catch (OSecurityException e) {
     } finally {

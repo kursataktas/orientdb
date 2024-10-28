@@ -18,7 +18,6 @@ package com.orientechnologies.orient.test.database.auto;
 import com.orientechnologies.orient.core.config.OGlobalConfiguration;
 import com.orientechnologies.orient.core.db.record.OIdentifiable;
 import com.orientechnologies.orient.core.record.impl.ODocument;
-import com.orientechnologies.orient.core.sql.OCommandSQL;
 import com.orientechnologies.orient.core.sql.executor.OResultSet;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -43,10 +42,11 @@ public class FunctionsTest extends DocumentDBBaseTest {
     OIdentifiable result =
         database
             .command(
-                new OCommandSQL(
-                    "create function FunctionsTest \"return a + b\" PARAMETERS [a,b] IDEMPOTENT"
-                        + " true LANGUAGE Javascript"))
-            .execute();
+                "create function FunctionsTest \"return a + b\" PARAMETERS [a,b] IDEMPOTENT"
+                    + " true LANGUAGE Javascript")
+            .next()
+            .getIdentity()
+            .get();
 
     final ODocument record = result.getRecord();
     record.reload();
@@ -69,8 +69,10 @@ public class FunctionsTest extends DocumentDBBaseTest {
   public void testFunctionCacheAndReload() {
     OIdentifiable f =
         database
-            .command(new OCommandSQL("create function testCache \"return 1;\" LANGUAGE Javascript"))
-            .execute();
+            .command("create function testCache \"return 1;\" LANGUAGE Javascript")
+            .next()
+            .getIdentity()
+            .get();
     Assert.assertNotNull(f);
 
     try (OResultSet res1 = database.command("select testCache() as testCache")) {

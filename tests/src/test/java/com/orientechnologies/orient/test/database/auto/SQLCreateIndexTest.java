@@ -1,6 +1,6 @@
 package com.orientechnologies.orient.test.database.auto;
 
-import com.orientechnologies.orient.core.exception.OCommandExecutionException;
+import com.orientechnologies.orient.core.exception.OStorageException;
 import com.orientechnologies.orient.core.index.OCompositeIndexDefinition;
 import com.orientechnologies.orient.core.index.OIndex;
 import com.orientechnologies.orient.core.index.OIndexDefinition;
@@ -13,7 +13,6 @@ import com.orientechnologies.orient.core.metadata.schema.OClass;
 import com.orientechnologies.orient.core.metadata.schema.OSchema;
 import com.orientechnologies.orient.core.metadata.schema.OType;
 import com.orientechnologies.orient.core.record.impl.ODocument;
-import com.orientechnologies.orient.core.sql.OCommandSQL;
 import com.orientechnologies.orient.core.sql.OCommandSQLParsingException;
 import java.util.Arrays;
 import org.testng.Assert;
@@ -477,19 +476,15 @@ public class SQLCreateIndexTest extends DocumentDBBaseTest {
             .toString();
 
     try {
-      database.command(new OCommandSQL(query)).execute();
+      database.command(query).close();
       Assert.fail();
-    } catch (OCommandExecutionException e) {
-      Assert.assertTrue(
-          e.getMessage()
-              .contains(
-                  "Error on execution of command: sql.CREATE INDEX sqlCreateIndexCompositeIndex3"
-                      + " ON"));
+    } catch (OStorageException e) {
 
       Throwable cause = e;
       while (cause.getCause() != null) cause = cause.getCause();
 
       Assert.assertEquals(cause.getClass(), IllegalArgumentException.class);
+    } catch (IllegalArgumentException e) {
     }
     final OIndex index =
         database
