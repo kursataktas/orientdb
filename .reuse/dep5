@@ -176,3 +176,69 @@ License: Apache-2.0
 Files: studio/CHANGELOG.md
 Copyright:  2022 SAP SE or an SAP affiliate company and OrientDB enteprise agent contributors
 License: Apache-2.0
+
+Files: gremlin/driver/src/*
+Copyright:  2022 SAP SE or an SAP affiliate company and OrientDB enteprise agent contributors
+License: Apache-2.0
+
+Files: gremlin/driver/pom.xml
+Copyright:  2022 SAP SE or an SAP affiliate company and OrientDB enteprise agent contributors
+License: Apache-2.0
+
+Files: gremlin/distribution/src/*
+Copyright:  2022 SAP SE or an SAP affiliate company and OrientDB enteprise agent contributors
+License: Apache-2.0
+
+Files: gremlin/distribution/config/*
+Copyright:  2022 SAP SE or an SAP affiliate company and OrientDB enteprise agent contributors
+License: Apache-2.0
+
+Files: gremlin/distribution/docker/*
+Copyright:  2022 SAP SE or an SAP affiliate company and OrientDB enteprise agent contributors
+License: Apache-2.0
+
+Files: gremlin/distribution/pom.xml
+Copyright:  2022 SAP SE or an SAP affiliate company and OrientDB enteprise agent contributors
+License: Apache-2.0
+
+Files: gremlin/server/src/*
+Copyright:  2022 SAP SE or an SAP affiliate company and OrientDB enteprise agent contributors
+License: Apache-2.0
+
+Files: gremlin/server/pom.xml
+Copyright:  2022 SAP SE or an SAP affiliate company and OrientDB enteprise agent contributors
+License: Apache-2.0
+
+Files: gremlin/server/.gitignore
+Copyright:  2022 SAP SE or an SAP affiliate company and OrientDB enteprise agent contributors
+License: Apache-2.0
+
+Files: gremlin/pom.xml
+Copyright:  2022 SAP SE or an SAP affiliate company and OrientDB enteprise agent contributors
+License: Apache-2.0
+
+Files: gremlin/README.md
+Copyright:  2022 SAP SE or an SAP affiliate company and OrientDB enteprise agent contributors
+License: Apache-2.0
+
+Files: gremlin/.gitignore
+Copyright:  2022 SAP SE or an SAP affiliate company and OrientDB enteprise agent contributors
+License: Apache-2.0
+
+Files: gremlin/tests-scala/src/*
+Copyright:  2022 SAP SE or an SAP affiliate company and OrientDB enteprise agent contributors
+License: Apache-2.0
+
+Files: gremlin/tests-scala/config/*
+Copyright:  2022 SAP SE or an SAP affiliate company and OrientDB enteprise agent contributors
+License: Apache-2.0
+
+Files: gremlin/tests-scala/project/*
+Copyright:  2022 SAP SE or an SAP affiliate company and OrientDB enteprise agent contributors
+License: Apache-2.0
+
+Files: gremlin/tests-scala/build.sbt
+Copyright:  2022 SAP SE or an SAP affiliate company and OrientDB enteprise agent contributors
+License: Apache-2.0
+
+
