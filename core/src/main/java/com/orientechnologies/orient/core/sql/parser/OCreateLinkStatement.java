@@ -65,9 +65,6 @@ public class OCreateLinkStatement extends OSimpleExecStatement {
 
   /** Execute the CREATE LINK. */
   private Object execute(OCommandContext ctx) {
-    if (destField == null)
-      throw new OCommandExecutionException(
-          "Cannot execute the command because it has not been parsed yet");
 
     final ODatabaseDocumentInternal database = getDatabase();
     if (!(database.getDatabaseOwner() instanceof ODatabaseDocument))
