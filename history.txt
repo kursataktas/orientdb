@@ -28,8 +28,24 @@ This document contains the last changes of OrientDB Community Edition.
 
 
 -----------------------------------------------------------------------------------------------------------------------------------
+VERSION 3.2.35 - (October, 29 2024)
+- Release Notes: https://github.com/orientechnologies/orientdb/wiki/OrientDB-3.2-Release-Notes#3235---29-October-2024
+
+
+# Core
+
+- Corrected regression of support of fetch plans in the function toJson in query engine 
+- Make sure to allow dot notation and square brackets for aggregation functions in query engine 
+- Minor fix on index creation query to allow not case sensitive collate names
+- Avoid to use index with partial range for indexes not supporting null values
+- Add support of comparison operators other than equal in chained indexes 
+- Block insert of edges with insert operations
+- Auto convert properties with map value to documents when specified in the schema
+- Corrected create link statement to support link to class
+
+-----------------------------------------------------------------------------------------------------------------------------------
 VERSION 3.2.34 - (October, 1 2024)
-- Release Notes: https://github.com/orientechnologies/orientdb/wiki/OrientDB-3.2-Release-Notes#3233---01-October-2024
+- Release Notes: https://github.com/orientechnologies/orientdb/wiki/OrientDB-3.2-Release-Notes#3234---01-October-2024
 
 # Core
 
