@@ -122,7 +122,9 @@ public class OProjection extends SimpleNode {
     }
 
     if (items.size() == 0
-        || (items.size() == 1 && items.get(0).isAll()) && items.get(0).nestedProjection == null) {
+        || (items.size() == 1
+            && (items.get(0).isAll() || items.get(0).isSelf())
+            && items.get(0).nestedProjection == null)) {
       return iRecord;
     }
 

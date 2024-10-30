@@ -343,6 +343,10 @@ public class OLevelZeroIdentifier extends SimpleNode {
     }
   }
 
+  public boolean isSelf() {
+    return Boolean.TRUE.equals(self);
+  }
+
   public boolean isCacheable() {
     if (functionCall != null) {
       return functionCall.isCacheable();

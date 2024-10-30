@@ -2,6 +2,7 @@ package com.orientechnologies.orient.core.sql.executor;
 
 import com.orientechnologies.common.concur.OTimeoutException;
 import com.orientechnologies.orient.core.command.OCommandContext;
+import com.orientechnologies.orient.core.id.ORID;
 import com.orientechnologies.orient.core.record.ORecord;
 import com.orientechnologies.orient.core.record.impl.ODocument;
 import com.orientechnologies.orient.core.sql.executor.resultset.OFilterResultSet;
@@ -46,8 +47,16 @@ public class ConvertToUpdatableResultStep extends AbstractExecutionStep {
           return new OUpdatableResult((ODocument) element);
         }
         return result;
+      } else {
+        Object id = result.getProperty("@rid");
+        if (id instanceof ORID) {
+          ORecord element = ctx.getDatabase().load((ORID) id);
+          if (element != null && element instanceof ODocument) {
+            return new OUpdatableResult((ODocument) element);
+          }
+        }
+        return null;
       }
-      return null;
     } finally {
       cost = (System.nanoTime() - begin);
     }

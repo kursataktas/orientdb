@@ -705,5 +705,13 @@ public class OExpression extends SimpleNode {
   public void setNull(boolean isNull) {
     this.isNull = isNull;
   }
+
+  public boolean isSelf() {
+    if (mathExpression != null) {
+      return mathExpression.isSelf();
+    } else {
+      return false;
+    }
+  }
 }
 /* JavaCC - OriginalChecksum=9c860224b121acdc89522ae97010be01 (do not edit this line) */

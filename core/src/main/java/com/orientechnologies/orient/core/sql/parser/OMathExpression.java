@@ -1276,5 +1276,9 @@ public class OMathExpression extends SimpleNode {
   private Operator deserializeOperator(String x) {
     return Operator.valueOf(x);
   }
+
+  public boolean isSelf() {
+    return false;
+  }
 }
 /* JavaCC - OriginalChecksum=c255bea24e12493e1005ba2a4d1dbb9d (do not edit this line) */
