@@ -101,6 +101,14 @@ public class OProjectionItem extends SimpleNode {
     }
   }
 
+  public boolean isSelf() {
+    if (expression != null) {
+      return expression.isSelf();
+    } else {
+      return false;
+    }
+  }
+
   public void toGenericStatement(StringBuilder builder) {
     if (all) {
       builder.append("*");
