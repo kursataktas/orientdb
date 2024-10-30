@@ -315,35 +315,35 @@ public class SQLUpdateTest extends DocumentDBBaseTest {
     doc.save();
     // check AFTER
     String sqlString = "UPDATE " + doc.getIdentity().toString() + " SET gender='male' RETURN AFTER";
-    List<ODocument> result1 = database.command(new OCommandSQL(sqlString)).execute();
+    List<OResult> result1 = database.command(sqlString).stream().toList();
     Assert.assertEquals(result1.size(), 1);
-    Assert.assertEquals(result1.get(0).getIdentity(), doc.getIdentity());
-    Assert.assertEquals((String) result1.get(0).field("gender"), "male");
-    final ODocument lastOne = result1.get(0).copy();
+    Assert.assertEquals(result1.get(0).getIdentity().get(), doc.getIdentity());
+    Assert.assertEquals((String) result1.get(0).getProperty("gender"), "male");
+    final ODocument lastOne = result1.get(0).toElement().copy();
     // check record attributes and BEFORE
     sqlString = "UPDATE " + doc.getIdentity().toString() + " SET Age=1 RETURN BEFORE @this";
-    result1 = database.command(new OCommandSQL(sqlString)).execute();
+    result1 = database.command(sqlString).stream().toList();
     Assert.assertEquals(result1.size(), 1);
-    Assert.assertEquals(lastOne.getVersion(), result1.get(0).getVersion());
-    Assert.assertFalse(result1.get(0).containsField("Age"));
+    Assert.assertEquals(lastOne.getVersion(), (int) result1.get(0).getProperty("@version"));
+    Assert.assertFalse(result1.get(0).hasProperty("Age"));
     // check INCREMENT, AFTER + $current + field
     sqlString =
-        "UPDATE " + doc.getIdentity().toString() + " INCREMENT Age = 100 RETURN AFTER $current.Age";
-    result1 = database.command(new OCommandSQL(sqlString)).execute();
+        "UPDATE " + doc.getIdentity().toString() + " set Age += 100 RETURN AFTER $current.Age";
+    result1 = database.command(sqlString).stream().toList();
     Assert.assertEquals(result1.size(), 1);
-    Assert.assertTrue(result1.get(0).containsField("value"));
-    Assert.assertEquals(result1.get(0).<Object>field("value"), 101);
+    Assert.assertTrue(result1.get(0).hasProperty("$current.Age"));
+    Assert.assertEquals(result1.get(0).<Object>getProperty("$current.Age"), 101);
     // check exclude + WHERE + LIMIT
     sqlString =
         "UPDATE "
             + doc.getIdentity().toString()
-            + " INCREMENT Age = 100 RETURN AFTER $current.Exclude('really_big_field') WHERE Age=101"
+            + " set Age += 100 RETURN AFTER *, !really_big_field WHERE Age=101"
             + " LIMIT 1";
-    result1 = database.command(new OCommandSQL(sqlString)).execute();
+    result1 = database.command(sqlString).stream().toList();
     Assert.assertEquals(result1.size(), 1);
-    Assert.assertTrue(result1.get(0).containsField("Age"));
-    Assert.assertEquals(result1.get(0).<Object>field("Age"), 201);
-    Assert.assertFalse(result1.get(0).containsField("really_big_field"));
+    Assert.assertTrue(result1.get(0).hasProperty("Age"));
+    Assert.assertEquals(result1.get(0).<Object>getProperty("Age"), 201);
+    Assert.assertFalse(result1.get(0).hasProperty("really_big_field"));
   }
 
   @Test

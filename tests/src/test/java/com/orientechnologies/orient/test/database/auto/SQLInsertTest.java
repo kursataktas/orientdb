@@ -15,7 +15,6 @@
  */
 package com.orientechnologies.orient.test.database.auto;
 
-import com.orientechnologies.orient.core.command.script.OCommandScript;
 import com.orientechnologies.orient.core.db.record.OIdentifiable;
 import com.orientechnologies.orient.core.exception.OValidationException;
 import com.orientechnologies.orient.core.id.ORID;
@@ -410,18 +409,22 @@ public class SQLInsertTest extends DocumentDBBaseTest {
     }
 
     // RETURN with $current.
-    ODocument doc =
-        database
-            .command(new OCommandSQL("INSERT INTO Actor2 SET FirstName=\"FFFF\" RETURN $current"))
-            .execute();
+    OIdentifiable doc =
+        (OIdentifiable)
+            database
+                .command("INSERT INTO Actor2 SET FirstName=\"FFFF\" RETURN $current")
+                .next()
+                .getProperty("$current");
     Assert.assertTrue(doc != null);
-    Assert.assertEquals(doc.getClassName(), "Actor2");
+    Assert.assertEquals(
+        ((OElement) database.load(doc.getIdentity())).getSchemaType().get().getName(), "Actor2");
 
     // RETURN with @rid
     Object res1 =
         database
-            .command(new OCommandSQL("INSERT INTO Actor2 SET FirstName=\"Butch 1\" RETURN @rid"))
-            .execute();
+            .command("INSERT INTO Actor2 SET FirstName=\"Butch 1\" RETURN @rid")
+            .next()
+            .getProperty("@rid");
     Assert.assertTrue(res1 instanceof ORecordId);
     Assert.assertTrue(((OIdentifiable) res1).getIdentity().isValid());
 
@@ -429,12 +432,11 @@ public class SQLInsertTest extends DocumentDBBaseTest {
     Object res2 =
         database
             .command(
-                new OCommandSQL(
-                    "INSERT INTO Actor2(FirstName,LastName) VALUES"
-                        + " ('Jay','Miner'),('Frank','Hermier'),('Emily','Saut')  RETURN @rid"))
-            .execute();
-    Assert.assertTrue(res2 instanceof List<?>);
-    Assert.assertTrue(((List) res2).get(0) instanceof ORecordId);
+                "INSERT INTO Actor2(FirstName,LastName) VALUES"
+                    + " ('Jay','Miner'),('Frank','Hermier'),('Emily','Saut')  RETURN @rid")
+            .next()
+            .getProperty("@rid");
+    Assert.assertTrue(res2 instanceof ORecordId);
 
     // Create many records by INSERT INTO ...FROM and return wrapped field
     ORID another = ((OIdentifiable) res1).getIdentity();
@@ -444,39 +446,36 @@ public class SQLInsertTest extends DocumentDBBaseTest {
             + ","
             + another.toString()
             + "]";
-    List res3 = database.command(new OCommandSQL(sql)).execute();
+    List res3 = database.command(sql).stream().toList();
     Assert.assertEquals(res3.size(), 2);
-    Assert.assertTrue(((List) res3).get(0) instanceof ODocument);
-    final ODocument res3doc = (ODocument) res3.get(0);
-    Assert.assertTrue(res3doc.containsField("result"));
+    Assert.assertTrue(((List) res3).get(0) instanceof OResult);
+    final OResult res3doc = (OResult) res3.get(0);
+    Assert.assertTrue(res3doc.hasProperty("$current.FirstName"));
     Assert.assertTrue(
-        "FFFF".equalsIgnoreCase((String) res3doc.field("result"))
-            || "Butch 1".equalsIgnoreCase((String) res3doc.field("result")));
-    Assert.assertTrue(res3doc.containsField("rid"));
-    Assert.assertTrue(res3doc.containsField("version"));
+        "FFFF".equalsIgnoreCase((String) res3doc.getProperty("$current.FirstName"))
+            || "Butch 1".equalsIgnoreCase((String) res3doc.getProperty("$current.FirstName")));
 
     // create record using content keyword and update it in sql batch passing recordID between
     // commands
     final String sql2 =
-        "let var1=INSERT INTO Actor2 CONTENT {Name:\"content\"} RETURN $current.@rid\n"
-            + "let var2=UPDATE $var1 SET Bingo=1 RETURN AFTER @rid\n"
-            + "return $var2";
-    List<?> res_sql2 = database.command(new OCommandScript("sql", sql2)).execute();
+        "let var1=INSERT INTO Actor2 CONTENT {Name:\"content\"} RETURN $current.@rid as `@rid`;"
+            + "let var2=UPDATE $var1 SET Bingo=1 RETURN AFTER @rid;"
+            + "return $var2;";
+    List<OResult> res_sql2 = database.execute("sql", sql2).stream().toList();
     Assert.assertEquals(res_sql2.size(), 1);
-    Assert.assertTrue(((List) res_sql2).get(0) instanceof ORecordId);
+    Assert.assertTrue(res_sql2.get(0).getProperty("@rid") instanceof ORecordId);
 
     // create record using content keyword and update it in sql batch passing recordID between
     // commands
     final String sql3 =
-        "let var1=INSERT INTO Actor2 CONTENT {Name:\"Bingo owner\"} RETURN @this\n"
-            + "let var2=UPDATE $var1 SET Bingo=1 RETURN AFTER\n"
-            + "return $var2";
-    List<?> res_sql3 = database.command(new OCommandScript("sql", sql3)).execute();
+        "let var1=INSERT INTO Actor2 CONTENT {Name:\"Bingo owner\"} RETURN @this;"
+            + "let var2=UPDATE $var1 SET Bingo=1 RETURN AFTER;"
+            + "return $var2;";
+    List<OResult> res_sql3 = database.execute("sql", sql3).stream().toList();
     Assert.assertEquals(res_sql3.size(), 1);
-    Assert.assertTrue(((List) res_sql3).get(0) instanceof ODocument);
-    final ODocument sql3doc = (ODocument) (((List) res_sql3).get(0));
-    Assert.assertEquals(sql3doc.<Object>field("Bingo"), 1);
-    Assert.assertEquals(sql3doc.field("Name"), "Bingo owner");
+    final OResult sql3doc = res_sql3.get(0);
+    Assert.assertEquals(sql3doc.<Object>getProperty("Bingo"), 1);
+    Assert.assertEquals(sql3doc.getProperty("Name"), "Bingo owner");
   }
 
   @Test
