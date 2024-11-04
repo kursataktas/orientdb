@@ -22,6 +22,9 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
 
   private int jjMoveStringLiteralDfa0_0() {
     switch (curChar) {
+      case 8:
+        jjmatchedKind = 6;
+        return jjMoveNfa_0(3, 0);
       case 9:
         jjmatchedKind = 2;
         return jjMoveNfa_0(3, 0);
@@ -38,196 +41,196 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
         jjmatchedKind = 1;
         return jjMoveNfa_0(3, 0);
       case 33:
-        jjmatchedKind = 208;
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x400000L, 0x0L);
+        jjmatchedKind = 209;
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x800000L, 0x0L);
       case 34:
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x10000000000L, 0x0L, 0x0L);
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x20000000000L, 0x0L, 0x0L);
       case 35:
-        jjmatchedKind = 271;
+        jjmatchedKind = 272;
         return jjMoveNfa_0(3, 0);
       case 36:
-        jjmatchedKind = 202;
-        return jjMoveNfa_0(3, 0);
-      case 37:
-        jjmatchedKind = 228;
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x200000000000L, 0x0L);
-      case 38:
-        jjmatchedKind = 224;
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x40002000000L, 0x0L);
-      case 40:
-        jjmatchedKind = 192;
-        return jjMoveNfa_0(3, 0);
-      case 41:
-        jjmatchedKind = 193;
-        return jjMoveNfa_0(3, 0);
-      case 42:
-        jjmatchedKind = 222;
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x10000000000L, 0x0L);
-      case 43:
-        jjmatchedKind = 220;
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x4004000000L, 0x0L);
-      case 44:
-        jjmatchedKind = 199;
-        return jjMoveNfa_0(3, 0);
-      case 45:
-        jjmatchedKind = 221;
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x8008000000L, 0x1ffc0000L);
-      case 46:
-        jjmatchedKind = 200;
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x18000000000000L, 0x0L);
-      case 47:
-        jjmatchedKind = 223;
-        return jjMoveStringLiteralDfa1_0(0x80L, 0x0L, 0x0L, 0x20000000000L, 0x0L);
-      case 58:
-        jjmatchedKind = 211;
-        return jjMoveNfa_0(3, 0);
-      case 59:
-        jjmatchedKind = 198;
-        return jjMoveNfa_0(3, 0);
-      case 60:
-        jjmatchedKind = 206;
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x402000900000L, 0x0L);
-      case 61:
-        jjmatchedKind = 204;
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x2000L, 0x0L);
-      case 62:
-        jjmatchedKind = 207;
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x7800000200000L, 0x0L);
-      case 63:
-        jjmatchedKind = 210;
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x200000000L, 0x0L);
-      case 64:
-        jjmatchedKind = 201;
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0xa000000000L, 0x0L, 0x0L);
-      case 65:
-        return jjMoveStringLiteralDfa1_0(0x21800820000000L, 0x800000430000000L, 0x0L, 0x0L, 0x0L);
-      case 66:
-        return jjMoveStringLiteralDfa1_0(
-            0x10120000000000L, 0x10L, 0x802L, 0x200000000000000L, 0x0L);
-      case 67:
-        return jjMoveStringLiteralDfa1_0(
-            0x1800000100008000L, 0x203008002800L, 0x20444L, 0xfc00000000000000L, 0x8L);
-      case 68:
-        return jjMoveStringLiteralDfa1_0(
-            0x2004000010000L, 0x2014000000008L, 0x804042000L, 0x0L, 0x0L);
-      case 69:
-        return jjMoveStringLiteralDfa1_0(0x40000L, 0x440408004020000L, 0x800020L, 0x0L, 0x0L);
-      case 70:
-        return jjMoveStringLiteralDfa1_0(
-            0x4000000200000L, 0x2000040001000000L, 0x4000001000080L, 0x0L, 0x0L);
-      case 71:
-        return jjMoveStringLiteralDfa1_0(0x10000000000L, 0x80000000000000L, 0x0L, 0x0L, 0x0L);
-      case 72:
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x80000L, 0x0L, 0x0L);
-      case 73:
-        return jjMoveStringLiteralDfa1_0(
-            0x402004000L, 0x8021100000000000L, 0x10000110L, 0x140000000000000L, 0x4L);
-      case 75:
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x0L, 0x2L);
-      case 76:
-        return jjMoveStringLiteralDfa1_0(
-            0x440040000000000L, 0x8000000000020L, 0x1L, 0x80000000000000L, 0x0L);
-      case 77:
-        return jjMoveStringLiteralDfa1_0(0x80002000L, 0x80000000600L, 0x2000000L, 0x0L, 0x1L);
-      case 78:
-        return jjMoveStringLiteralDfa1_0(
-            0xe000002000000000L, 0x1000000040000040L, 0x0L, 0x20000000000000L, 0x0L);
-      case 79:
-        return jjMoveStringLiteralDfa1_0(0x209000000000L, 0x4000100300000L, 0x10000L, 0x0L, 0x0L);
-      case 80:
-        return jjMoveStringLiteralDfa1_0(
-            0x40000000L, 0x4000020000840002L, 0x408000000L, 0x0L, 0x0L);
-      case 82:
-        return jjMoveStringLiteralDfa1_0(
-            0x288000200000000L, 0x300800802000000L, 0x120000008L, 0x0L, 0x0L);
-      case 83:
-        return jjMoveStringLiteralDfa1_0(0x80010000800L, 0x280085004L, 0x120070d200L, 0x0L, 0x0L);
-      case 84:
-        return jjMoveStringLiteralDfa1_0(
-            0x400000401000L, 0x10000000400000L, 0x2000000000000L, 0x0L, 0x0L);
-      case 85:
-        return jjMoveStringLiteralDfa1_0(0x180000L, 0x10101L, 0xc0000000L, 0x0L, 0x0L);
-      case 86:
-        return jjMoveStringLiteralDfa1_0(0xc020000L, 0x8000L, 0x0L, 0x0L, 0x0L);
-      case 87:
-        return jjMoveStringLiteralDfa1_0(0x100000001800000L, 0x80L, 0x0L, 0x0L, 0x0L);
-      case 91:
-        jjmatchedKind = 196;
-        return jjMoveNfa_0(3, 0);
-      case 93:
-        jjmatchedKind = 197;
-        return jjMoveNfa_0(3, 0);
-      case 94:
-        jjmatchedKind = 227;
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x100000000000L, 0x0L);
-      case 95:
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x0L, 0x10000L);
-      case 96:
         jjmatchedKind = 203;
         return jjMoveNfa_0(3, 0);
-      case 97:
-        return jjMoveStringLiteralDfa1_0(0x21800820000000L, 0x800000430000000L, 0x0L, 0x0L, 0x0L);
-      case 98:
-        return jjMoveStringLiteralDfa1_0(
-            0x10120000000000L, 0x10L, 0x802L, 0x200000000000000L, 0x0L);
-      case 99:
-        return jjMoveStringLiteralDfa1_0(
-            0x1800000100008000L, 0x203008002800L, 0x20444L, 0xfc00000000000000L, 0x8L);
-      case 100:
-        return jjMoveStringLiteralDfa1_0(
-            0x2004000010000L, 0x2014000000008L, 0x804042000L, 0x0L, 0x0L);
-      case 101:
-        return jjMoveStringLiteralDfa1_0(0x40000L, 0x440408004020000L, 0x800020L, 0x0L, 0x0L);
-      case 102:
-        return jjMoveStringLiteralDfa1_0(
-            0x4000000200000L, 0x2000040001000000L, 0x4000001000080L, 0x0L, 0x0L);
-      case 103:
-        return jjMoveStringLiteralDfa1_0(0x10000000000L, 0x80000000000000L, 0x0L, 0x0L, 0x0L);
-      case 104:
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x80000L, 0x0L, 0x0L);
-      case 105:
-        return jjMoveStringLiteralDfa1_0(
-            0x402004000L, 0x8021100000000000L, 0x10000110L, 0x140000000000000L, 0x4L);
-      case 107:
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x0L, 0x2L);
-      case 108:
-        return jjMoveStringLiteralDfa1_0(
-            0x440040000000000L, 0x8000000000020L, 0x1L, 0x80000000000000L, 0x0L);
-      case 109:
-        return jjMoveStringLiteralDfa1_0(0x80002000L, 0x80000000600L, 0x2000000L, 0x0L, 0x1L);
-      case 110:
-        return jjMoveStringLiteralDfa1_0(
-            0xe000002000000000L, 0x1000000040000040L, 0x0L, 0x20000000000000L, 0x0L);
-      case 111:
-        return jjMoveStringLiteralDfa1_0(0x209000000000L, 0x4000100300000L, 0x10000L, 0x0L, 0x0L);
-      case 112:
-        return jjMoveStringLiteralDfa1_0(
-            0x40000000L, 0x4000020000840002L, 0x408000000L, 0x0L, 0x0L);
-      case 114:
-        return jjMoveStringLiteralDfa1_0(
-            0x288000200000000L, 0x300800802000000L, 0x120000008L, 0x0L, 0x20000L);
-      case 115:
-        return jjMoveStringLiteralDfa1_0(0x80010000800L, 0x280085004L, 0x120070d200L, 0x0L, 0x0L);
-      case 116:
-        return jjMoveStringLiteralDfa1_0(
-            0x400000401000L, 0x10000000400000L, 0x2000000000000L, 0x0L, 0x0L);
-      case 117:
-        return jjMoveStringLiteralDfa1_0(0x180000L, 0x10101L, 0xc0000000L, 0x0L, 0x0L);
-      case 118:
-        return jjMoveStringLiteralDfa1_0(0xc020000L, 0x8000L, 0x0L, 0x0L, 0x0L);
-      case 119:
-        return jjMoveStringLiteralDfa1_0(0x100000001800000L, 0x80L, 0x0L, 0x0L, 0x0L);
-      case 123:
+      case 37:
+        jjmatchedKind = 229;
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x400000000000L, 0x0L);
+      case 38:
+        jjmatchedKind = 225;
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x80004000000L, 0x0L);
+      case 40:
+        jjmatchedKind = 193;
+        return jjMoveNfa_0(3, 0);
+      case 41:
         jjmatchedKind = 194;
         return jjMoveNfa_0(3, 0);
-      case 124:
-        jjmatchedKind = 226;
-        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x80001000000L, 0x0L);
-      case 125:
+      case 42:
+        jjmatchedKind = 223;
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x20000000000L, 0x0L);
+      case 43:
+        jjmatchedKind = 221;
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x8008000000L, 0x0L);
+      case 44:
+        jjmatchedKind = 200;
+        return jjMoveNfa_0(3, 0);
+      case 45:
+        jjmatchedKind = 222;
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x10010000000L, 0x3ff80000L);
+      case 46:
+        jjmatchedKind = 201;
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x30000000000000L, 0x0L);
+      case 47:
+        jjmatchedKind = 224;
+        return jjMoveStringLiteralDfa1_0(0x100L, 0x0L, 0x0L, 0x40000000000L, 0x0L);
+      case 58:
+        jjmatchedKind = 212;
+        return jjMoveNfa_0(3, 0);
+      case 59:
+        jjmatchedKind = 199;
+        return jjMoveNfa_0(3, 0);
+      case 60:
+        jjmatchedKind = 207;
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x804001200000L, 0x0L);
+      case 61:
+        jjmatchedKind = 205;
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x4000L, 0x0L);
+      case 62:
+        jjmatchedKind = 208;
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0xf000000400000L, 0x0L);
+      case 63:
+        jjmatchedKind = 211;
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x400000000L, 0x0L);
+      case 64:
+        jjmatchedKind = 202;
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x14000000000L, 0x0L, 0x0L);
+      case 65:
+        return jjMoveStringLiteralDfa1_0(0x43001040000000L, 0x1000000860000000L, 0x0L, 0x0L, 0x0L);
+      case 66:
+        return jjMoveStringLiteralDfa1_0(
+            0x20240000000000L, 0x20L, 0x1004L, 0x400000000000000L, 0x0L);
+      case 67:
+        return jjMoveStringLiteralDfa1_0(
+            0x3000000200010000L, 0x406010005000L, 0x40888L, 0xf800000000000000L, 0x11L);
+      case 68:
+        return jjMoveStringLiteralDfa1_0(
+            0x4008000020000L, 0x4028000000010L, 0x1008084000L, 0x0L, 0x0L);
+      case 69:
+        return jjMoveStringLiteralDfa1_0(0x80000L, 0x880810008040000L, 0x1000040L, 0x0L, 0x0L);
+      case 70:
+        return jjMoveStringLiteralDfa1_0(
+            0x8000000400000L, 0x4000080002000000L, 0x8000002000100L, 0x0L, 0x0L);
+      case 71:
+        return jjMoveStringLiteralDfa1_0(0x20000000000L, 0x100000000000000L, 0x0L, 0x0L, 0x0L);
+      case 72:
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x100000L, 0x0L, 0x0L);
+      case 73:
+        return jjMoveStringLiteralDfa1_0(
+            0x804008000L, 0x42200000000000L, 0x20000221L, 0x280000000000000L, 0x8L);
+      case 75:
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x0L, 0x4L);
+      case 76:
+        return jjMoveStringLiteralDfa1_0(
+            0x880080000000000L, 0x10000000000040L, 0x2L, 0x100000000000000L, 0x0L);
+      case 77:
+        return jjMoveStringLiteralDfa1_0(0x100004000L, 0x100000000c00L, 0x4000000L, 0x0L, 0x2L);
+      case 78:
+        return jjMoveStringLiteralDfa1_0(
+            0xc000004000000000L, 0x2000000080000081L, 0x0L, 0x40000000000000L, 0x0L);
+      case 79:
+        return jjMoveStringLiteralDfa1_0(0x412000000000L, 0x8000200600000L, 0x20000L, 0x0L, 0x0L);
+      case 80:
+        return jjMoveStringLiteralDfa1_0(
+            0x80000000L, 0x8000040001080004L, 0x810000000L, 0x0L, 0x0L);
+      case 82:
+        return jjMoveStringLiteralDfa1_0(
+            0x510000400000000L, 0x601001004000000L, 0x240000010L, 0x0L, 0x0L);
+      case 83:
+        return jjMoveStringLiteralDfa1_0(0x100020001000L, 0x50010a008L, 0x2400e1a400L, 0x0L, 0x0L);
+      case 84:
+        return jjMoveStringLiteralDfa1_0(
+            0x800000802000L, 0x20000000800000L, 0x4000000000000L, 0x0L, 0x0L);
+      case 85:
+        return jjMoveStringLiteralDfa1_0(0x300000L, 0x20202L, 0x180000000L, 0x0L, 0x0L);
+      case 86:
+        return jjMoveStringLiteralDfa1_0(0x18040000L, 0x10000L, 0x0L, 0x0L, 0x0L);
+      case 87:
+        return jjMoveStringLiteralDfa1_0(0x200000003000000L, 0x100L, 0x0L, 0x0L, 0x0L);
+      case 91:
+        jjmatchedKind = 197;
+        return jjMoveNfa_0(3, 0);
+      case 93:
+        jjmatchedKind = 198;
+        return jjMoveNfa_0(3, 0);
+      case 94:
+        jjmatchedKind = 228;
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x200000000000L, 0x0L);
+      case 95:
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x0L, 0x20000L);
+      case 96:
+        jjmatchedKind = 204;
+        return jjMoveNfa_0(3, 0);
+      case 97:
+        return jjMoveStringLiteralDfa1_0(0x43001040000000L, 0x1000000860000000L, 0x0L, 0x0L, 0x0L);
+      case 98:
+        return jjMoveStringLiteralDfa1_0(
+            0x20240000000000L, 0x20L, 0x1004L, 0x400000000000000L, 0x0L);
+      case 99:
+        return jjMoveStringLiteralDfa1_0(
+            0x3000000200010000L, 0x406010005000L, 0x40888L, 0xf800000000000000L, 0x11L);
+      case 100:
+        return jjMoveStringLiteralDfa1_0(
+            0x4008000020000L, 0x4028000000010L, 0x1008084000L, 0x0L, 0x0L);
+      case 101:
+        return jjMoveStringLiteralDfa1_0(0x80000L, 0x880810008040000L, 0x1000040L, 0x0L, 0x0L);
+      case 102:
+        return jjMoveStringLiteralDfa1_0(
+            0x8000000400000L, 0x4000080002000000L, 0x8000002000100L, 0x0L, 0x0L);
+      case 103:
+        return jjMoveStringLiteralDfa1_0(0x20000000000L, 0x100000000000000L, 0x0L, 0x0L, 0x0L);
+      case 104:
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x100000L, 0x0L, 0x0L);
+      case 105:
+        return jjMoveStringLiteralDfa1_0(
+            0x804008000L, 0x42200000000000L, 0x20000221L, 0x280000000000000L, 0x8L);
+      case 107:
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x0L, 0x4L);
+      case 108:
+        return jjMoveStringLiteralDfa1_0(
+            0x880080000000000L, 0x10000000000040L, 0x2L, 0x100000000000000L, 0x0L);
+      case 109:
+        return jjMoveStringLiteralDfa1_0(0x100004000L, 0x100000000c00L, 0x4000000L, 0x0L, 0x2L);
+      case 110:
+        return jjMoveStringLiteralDfa1_0(
+            0xc000004000000000L, 0x2000000080000081L, 0x0L, 0x40000000000000L, 0x0L);
+      case 111:
+        return jjMoveStringLiteralDfa1_0(0x412000000000L, 0x8000200600000L, 0x20000L, 0x0L, 0x0L);
+      case 112:
+        return jjMoveStringLiteralDfa1_0(
+            0x80000000L, 0x8000040001080004L, 0x810000000L, 0x0L, 0x0L);
+      case 114:
+        return jjMoveStringLiteralDfa1_0(
+            0x510000400000000L, 0x601001004000000L, 0x240000010L, 0x0L, 0x40000L);
+      case 115:
+        return jjMoveStringLiteralDfa1_0(0x100020001000L, 0x50010a008L, 0x2400e1a400L, 0x0L, 0x0L);
+      case 116:
+        return jjMoveStringLiteralDfa1_0(
+            0x800000802000L, 0x20000000800000L, 0x4000000000000L, 0x0L, 0x0L);
+      case 117:
+        return jjMoveStringLiteralDfa1_0(0x300000L, 0x20202L, 0x180000000L, 0x0L, 0x0L);
+      case 118:
+        return jjMoveStringLiteralDfa1_0(0x18040000L, 0x10000L, 0x0L, 0x0L, 0x0L);
+      case 119:
+        return jjMoveStringLiteralDfa1_0(0x200000003000000L, 0x100L, 0x0L, 0x0L, 0x0L);
+      case 123:
         jjmatchedKind = 195;
         return jjMoveNfa_0(3, 0);
+      case 124:
+        jjmatchedKind = 227;
+        return jjMoveStringLiteralDfa1_0(0x0L, 0x0L, 0x0L, 0x100002000000L, 0x0L);
+      case 125:
+        jjmatchedKind = 196;
+        return jjMoveNfa_0(3, 0);
       case 126:
-        jjmatchedKind = 209;
+        jjmatchedKind = 210;
         return jjMoveNfa_0(3, 0);
       default:
         return jjMoveNfa_0(3, 0);
@@ -243,49 +246,46 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
     }
     switch (curChar) {
       case 38:
-        if ((active3 & 0x2000000L) != 0L) {
-          jjmatchedKind = 217;
-          jjmatchedPos = 1;
-        }
-        break;
-      case 42:
-        if ((active0 & 0x80L) != 0L) {
-          jjmatchedKind = 7;
-          jjmatchedPos = 1;
-        }
-        break;
-      case 43:
         if ((active3 & 0x4000000L) != 0L) {
           jjmatchedKind = 218;
           jjmatchedPos = 1;
         }
         break;
-      case 45:
+      case 42:
+        if ((active0 & 0x100L) != 0L) {
+          jjmatchedKind = 8;
+          jjmatchedPos = 1;
+        }
+        break;
+      case 43:
         if ((active3 & 0x8000000L) != 0L) {
           jjmatchedKind = 219;
           jjmatchedPos = 1;
         }
         break;
+      case 45:
+        if ((active3 & 0x10000000L) != 0L) {
+          jjmatchedKind = 220;
+          jjmatchedPos = 1;
+        }
+        break;
       case 46:
-        if ((active3 & 0x10000000000000L) != 0L) {
-          jjmatchedKind = 244;
+        if ((active3 & 0x20000000000000L) != 0L) {
+          jjmatchedKind = 245;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0x8000000000000L, active4, 0L);
+            active0, 0L, active1, 0L, active2, 0L, active3, 0x10000000000000L, active4, 0L);
       case 60:
-        if ((active3 & 0x2000000000L) != 0L) {
-          jjmatchedKind = 229;
+        if ((active3 & 0x4000000000L) != 0L) {
+          jjmatchedKind = 230;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0x400000000000L, active4, 0L);
+            active0, 0L, active1, 0L, active2, 0L, active3, 0x800000000000L, active4, 0L);
       case 61:
-        if ((active3 & 0x2000L) != 0L) {
-          jjmatchedKind = 205;
-          jjmatchedPos = 1;
-        } else if ((active3 & 0x100000L) != 0L) {
-          jjmatchedKind = 212;
+        if ((active3 & 0x4000L) != 0L) {
+          jjmatchedKind = 206;
           jjmatchedPos = 1;
         } else if ((active3 & 0x200000L) != 0L) {
           jjmatchedKind = 213;
@@ -293,8 +293,8 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
         } else if ((active3 & 0x400000L) != 0L) {
           jjmatchedKind = 214;
           jjmatchedPos = 1;
-        } else if ((active3 & 0x4000000000L) != 0L) {
-          jjmatchedKind = 230;
+        } else if ((active3 & 0x800000L) != 0L) {
+          jjmatchedKind = 215;
           jjmatchedPos = 1;
         } else if ((active3 & 0x8000000000L) != 0L) {
           jjmatchedKind = 231;
@@ -317,58 +317,61 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
         } else if ((active3 & 0x200000000000L) != 0L) {
           jjmatchedKind = 237;
           jjmatchedPos = 1;
+        } else if ((active3 & 0x400000000000L) != 0L) {
+          jjmatchedKind = 238;
+          jjmatchedPos = 1;
         }
         break;
       case 62:
-        if ((active3 & 0x800000L) != 0L) {
-          jjmatchedKind = 215;
+        if ((active3 & 0x1000000L) != 0L) {
+          jjmatchedKind = 216;
           jjmatchedPos = 1;
-        } else if ((active3 & 0x2000000000000L) != 0L) {
-          jjmatchedKind = 241;
+        } else if ((active3 & 0x4000000000000L) != 0L) {
+          jjmatchedKind = 242;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0x5800000000000L, active4, 0L);
+            active0, 0L, active1, 0L, active2, 0L, active3, 0xb000000000000L, active4, 0L);
       case 63:
-        if ((active3 & 0x200000000L) != 0L) {
-          jjmatchedKind = 225;
+        if ((active3 & 0x400000000L) != 0L) {
+          jjmatchedKind = 226;
           jjmatchedPos = 1;
         }
         break;
       case 64:
         return jjMoveStringLiteralDfa2_0(
-            active0, 0L, active1, 0L, active2, 0x10000000000L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0L, active2, 0x20000000000L, active3, 0L, active4, 0L);
       case 65:
-        if ((active2 & 0x80000L) != 0L) {
-          jjmatchedKind = 147;
+        if ((active2 & 0x100000L) != 0L) {
+          jjmatchedKind = 148;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0x90010000c002000L,
+            0x1200200018004000L,
             active1,
-            0x4002000040000202L,
+            0x8004000080000404L,
             active2,
-            0x4000008000081L,
+            0x8000010000102L,
             active3,
             0L,
             active4,
-            0x1L);
+            0x2L);
       case 66:
         return jjMoveStringLiteralDfa2_0(
-            active0, 0L, active1, 0x10000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x20000000L, active2, 0L, active3, 0L, active4, 0L);
       case 68:
-        if ((active1 & 0x1000000000000L) != 0L) {
-          jjmatchedKind = 112;
+        if ((active1 & 0x2000000000000L) != 0L) {
+          jjmatchedKind = 113;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0x20040000L,
+            0x40080000L,
             active1,
-            0x8000000400000000L,
+            0x800000000L,
             active2,
-            0x10000000L,
+            0x20000001L,
             active3,
             0L,
             active4,
@@ -376,125 +379,143 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
       case 69:
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0x69e004290030800L,
+            0xd3c008520061000L,
             active1,
-            0x300884802000048L,
+            0x601109004000090L,
             active2,
-            0xa04206002L,
+            0x140840c004L,
             active3,
-            0x200000000000000L,
+            0x400000000000000L,
             active4,
-            0x2L);
+            0x4L);
       case 70:
-        if ((active2 & 0x10L) != 0L) {
-          jjmatchedKind = 132;
+        if ((active2 & 0x20L) != 0L) {
+          jjmatchedKind = 133;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
-            active0, 0x20200000000000L, active1, 0x200000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0x40400000000000L, active1, 0x400000L, active2, 0L, active3, 0L, active4, 0L);
       case 72:
         return jjMoveStringLiteralDfa2_0(
-            active0, 0x1800000L, active1, 0x80000000L, active2, 0x1000L, active3, 0L, active4, 0L);
+            active0, 0x3000000L, active1, 0x100000000L, active2, 0x2000L, active3, 0L, active4, 0L);
       case 73:
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0x440000000000L,
+            0x880000000000L,
             active1,
-            0x8000001008480L,
+            0x10000002010900L,
             active2,
-            0x100040000L,
+            0x200080000L,
             active3,
-            0x80000000000000L,
+            0x100000000000000L,
             active4,
             0L);
       case 75:
         return jjMoveStringLiteralDfa2_0(
-            active0, 0x80000000000L, active1, 0L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0x100000000000L, active1, 0L, active2, 0L, active3, 0L, active4, 0L);
       case 76:
         return jjMoveStringLiteralDfa2_0(
-            active0, 0L, active1, 0x800002028002800L, active2, 0xa20L, active3, 0L, active4, 0x8L);
+            active0,
+            0L,
+            active1,
+            0x1000004050005000L,
+            active2,
+            0x1440L,
+            active3,
+            0L,
+            active4,
+            0x10L);
       case 78:
-        if ((active1 & 0x100000L) != 0L) {
-          jjmatchedKind = 84;
+        if ((active1 & 0x200000L) != 0L) {
+          jjmatchedKind = 85;
           jjmatchedPos = 1;
-        } else if ((active3 & 0x40000000000000L) != 0L) {
-          jjmatchedKind = 246;
+        } else if ((active3 & 0x80000000000000L) != 0L) {
+          jjmatchedKind = 247;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0xc02004000L,
+            0x1804008000L,
             active1,
-            0x20508000000101L,
+            0x40a10000000202L,
             active2,
             0L,
             active3,
             0L,
             active4,
-            0x4L);
+            0x8L);
       case 79:
-        if ((active0 & 0x400000L) != 0L) {
-          jjmatchedKind = 22;
+        if ((active0 & 0x800000L) != 0L) {
+          jjmatchedKind = 23;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0xe040000100000000L,
+            0xc080000200000000L,
             active1,
-            0x1000240000800000L,
+            0x2000480001000001L,
             active2,
-            0x42302044cL,
+            0x846040898L,
             active3,
-            0xfc20000000000000L,
+            0xf840000000000000L,
             active4,
-            0L);
+            0x1L);
       case 80:
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0x180000L,
+            0x300000L,
             active1,
-            0x4000000010000L,
+            0x8000000020000L,
             active2,
-            0x10000L,
+            0x20000L,
             active3,
             0L,
             active4,
             0L);
       case 82:
-        if ((active0 & 0x1000000000L) != 0L) {
-          jjmatchedKind = 36;
+        if ((active0 & 0x2000000000L) != 0L) {
+          jjmatchedKind = 37;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0x18000209000L,
+            0x30000412000L,
             active1,
-            0x80030000440010L,
+            0x100060000880020L,
             active2,
-            0x2008000000000L,
+            0x4010000000000L,
             active3,
             0L,
             active4,
             0L);
       case 83:
-        if ((active0 & 0x1000000000000L) != 0L) {
-          jjmatchedKind = 48;
+        if ((active0 & 0x2000000000000L) != 0L) {
+          jjmatchedKind = 49;
           jjmatchedPos = 1;
-        } else if ((active3 & 0x100000000000000L) != 0L) {
-          jjmatchedKind = 248;
+        } else if ((active3 & 0x200000000000000L) != 0L) {
+          jjmatchedKind = 249;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
-            active0, 0x800000000000L, active1, 0L, active2, 0xc0000100L, active3, 0L, active4, 0L);
+            active0,
+            0x1000000000000L,
+            active1,
+            0L,
+            active2,
+            0x180000200L,
+            active3,
+            0L,
+            active4,
+            0L);
       case 84:
         return jjMoveStringLiteralDfa2_0(
-            active0, 0L, active1, 0x200080004L, active2, 0x2000108000L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x400100008L, active2, 0x4000210000L, active3, 0L, active4, 0L);
       case 85:
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0x2040000000L,
+            0x4080000000L,
             active1,
-            0x2000001000005020L,
+            0x400000200000a040L,
             active2,
             0L,
             active3,
@@ -503,216 +524,225 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             0L);
       case 86:
         return jjMoveStringLiteralDfa2_0(
-            active0, 0L, active1, 0x100000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x200000000L, active2, 0L, active3, 0L, active4, 0L);
       case 88:
         return jjMoveStringLiteralDfa2_0(
-            active0, 0L, active1, 0x440000004020000L, active2, 0x800000L, active3, 0L, active4, 0L);
+            active0,
+            0L,
+            active1,
+            0x880000008040000L,
+            active2,
+            0x1000000L,
+            active3,
+            0L,
+            active4,
+            0L);
       case 89:
-        if ((active0 & 0x20000000000L) != 0L) {
-          jjmatchedKind = 41;
+        if ((active0 & 0x40000000000L) != 0L) {
+          jjmatchedKind = 42;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0x1000000000000000L,
+            0x2000000000000000L,
             active1,
-            0x10000000000000L,
+            0x20000000000000L,
             active2,
-            0x1000400000L,
+            0x2000800000L,
             active3,
             0L,
             active4,
             0L);
       case 95:
         return jjMoveStringLiteralDfa2_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x10000L);
+            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x20000L);
       case 97:
-        if ((active2 & 0x80000L) != 0L) {
-          jjmatchedKind = 147;
+        if ((active2 & 0x100000L) != 0L) {
+          jjmatchedKind = 148;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0x90010000c002000L,
+            0x1200200018004000L,
             active1,
-            0x4002000040000202L,
+            0x8004000080000404L,
             active2,
-            0x4000008000081L,
+            0x8000010000102L,
             active3,
             0L,
             active4,
-            0x800001L);
+            0x1000002L);
       case 98:
         return jjMoveStringLiteralDfa2_0(
-            active0, 0L, active1, 0x10000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x20000000L, active2, 0L, active3, 0L, active4, 0L);
       case 100:
-        if ((active1 & 0x1000000000000L) != 0L) {
-          jjmatchedKind = 112;
+        if ((active1 & 0x2000000000000L) != 0L) {
+          jjmatchedKind = 113;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0x20040000L,
+            0x40080000L,
             active1,
-            0x8000000400000000L,
+            0x800000000L,
             active2,
-            0x10000000L,
+            0x20000001L,
             active3,
             0L,
             active4,
-            0x80000L);
+            0x100000L);
       case 101:
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0x69e004290030800L,
+            0xd3c008520061000L,
             active1,
-            0x300884802000048L,
+            0x601109004000090L,
             active2,
-            0xa04206002L,
+            0x140840c004L,
             active3,
-            0x200000000000000L,
+            0x400000000000000L,
             active4,
-            0x2L);
+            0x4L);
       case 102:
-        if ((active2 & 0x10L) != 0L) {
-          jjmatchedKind = 132;
+        if ((active2 & 0x20L) != 0L) {
+          jjmatchedKind = 133;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0x20200000000000L,
+            0x40400000000000L,
             active1,
-            0x200000L,
+            0x400000L,
             active2,
             0L,
             active3,
             0L,
             active4,
-            0xe000000L);
+            0x1c000000L);
       case 104:
         return jjMoveStringLiteralDfa2_0(
-            active0, 0x1800000L, active1, 0x80000000L, active2, 0x1000L, active3, 0L, active4, 0L);
+            active0, 0x3000000L, active1, 0x100000000L, active2, 0x2000L, active3, 0L, active4, 0L);
       case 105:
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0x440000000000L,
+            0x880000000000L,
             active1,
-            0x8000001008480L,
+            0x10000002010900L,
             active2,
-            0x100040000L,
+            0x200080000L,
             active3,
-            0x80000000000000L,
+            0x100000000000000L,
             active4,
             0L);
       case 107:
         return jjMoveStringLiteralDfa2_0(
-            active0, 0x80000000000L, active1, 0L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0x100000000000L, active1, 0L, active2, 0L, active3, 0L, active4, 0L);
       case 108:
         return jjMoveStringLiteralDfa2_0(
             active0,
             0L,
             active1,
-            0x800002028002800L,
+            0x1000004050005000L,
             active2,
-            0xa20L,
+            0x1440L,
             active3,
             0L,
             active4,
-            0x500008L);
+            0xa00010L);
       case 109:
         return jjMoveStringLiteralDfa2_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x10200000L);
+            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x20400000L);
       case 110:
-        if ((active1 & 0x100000L) != 0L) {
-          jjmatchedKind = 84;
+        if ((active1 & 0x200000L) != 0L) {
+          jjmatchedKind = 85;
           jjmatchedPos = 1;
-        } else if ((active3 & 0x40000000000000L) != 0L) {
-          jjmatchedKind = 246;
+        } else if ((active3 & 0x80000000000000L) != 0L) {
+          jjmatchedKind = 247;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0xc02004000L,
+            0x1804008000L,
             active1,
-            0x20508000000101L,
+            0x40a10000000202L,
             active2,
             0L,
             active3,
             0L,
             active4,
-            0x4L);
+            0x8L);
       case 111:
-        if ((active0 & 0x400000L) != 0L) {
-          jjmatchedKind = 22;
+        if ((active0 & 0x800000L) != 0L) {
+          jjmatchedKind = 23;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0xe040000100000000L,
+            0xc080000200000000L,
             active1,
-            0x1000240000800000L,
+            0x2000480001000001L,
             active2,
-            0x42302044cL,
+            0x846040898L,
             active3,
-            0xfc20000000000000L,
+            0xf840000000000000L,
             active4,
-            0x1020000L);
+            0x2040001L);
       case 112:
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0x180000L,
+            0x300000L,
             active1,
-            0x4000000010000L,
+            0x8000000020000L,
             active2,
-            0x10000L,
+            0x20000L,
             active3,
             0L,
             active4,
             0L);
       case 114:
-        if ((active0 & 0x1000000000L) != 0L) {
-          jjmatchedKind = 36;
+        if ((active0 & 0x2000000000L) != 0L) {
+          jjmatchedKind = 37;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0x18000209000L,
+            0x30000412000L,
             active1,
-            0x80030000440010L,
+            0x100060000880020L,
             active2,
-            0x2008000000000L,
+            0x4010000000000L,
             active3,
             0L,
             active4,
             0L);
       case 115:
-        if ((active0 & 0x1000000000000L) != 0L) {
-          jjmatchedKind = 48;
+        if ((active0 & 0x2000000000000L) != 0L) {
+          jjmatchedKind = 49;
           jjmatchedPos = 1;
-        } else if ((active3 & 0x100000000000000L) != 0L) {
-          jjmatchedKind = 248;
+        } else if ((active3 & 0x200000000000000L) != 0L) {
+          jjmatchedKind = 249;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0x800000000000L,
+            0x1000000000000L,
             active1,
             0L,
             active2,
-            0xc0000100L,
+            0x180000200L,
             active3,
             0L,
             active4,
-            0x40000L);
+            0x80000L);
       case 116:
         return jjMoveStringLiteralDfa2_0(
-            active0, 0L, active1, 0x200080004L, active2, 0x2000108000L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x400100008L, active2, 0x4000210000L, active3, 0L, active4, 0L);
       case 117:
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0x2040000000L,
+            0x4080000000L,
             active1,
-            0x2000001000005020L,
+            0x400000200000a040L,
             active2,
             0L,
             active3,
@@ -721,29 +751,38 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             0L);
       case 118:
         return jjMoveStringLiteralDfa2_0(
-            active0, 0L, active1, 0x100000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x200000000L, active2, 0L, active3, 0L, active4, 0L);
       case 120:
         return jjMoveStringLiteralDfa2_0(
-            active0, 0L, active1, 0x440000004020000L, active2, 0x800000L, active3, 0L, active4, 0L);
+            active0,
+            0L,
+            active1,
+            0x880000008040000L,
+            active2,
+            0x1000000L,
+            active3,
+            0L,
+            active4,
+            0L);
       case 121:
-        if ((active0 & 0x20000000000L) != 0L) {
-          jjmatchedKind = 41;
+        if ((active0 & 0x40000000000L) != 0L) {
+          jjmatchedKind = 42;
           jjmatchedPos = 1;
         }
         return jjMoveStringLiteralDfa2_0(
             active0,
-            0x1000000000000000L,
+            0x2000000000000000L,
             active1,
-            0x10000000000000L,
+            0x20000000000000L,
             active2,
-            0x1000400000L,
+            0x2000800000L,
             active3,
             0L,
             active4,
             0L);
       case 124:
-        if ((active3 & 0x1000000L) != 0L) {
-          jjmatchedKind = 216;
+        if ((active3 & 0x2000000L) != 0L) {
+          jjmatchedKind = 217;
           jjmatchedPos = 1;
         }
         break;
@@ -777,77 +816,77 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
     }
     switch (curChar) {
       case 46:
-        if ((active3 & 0x8000000000000L) != 0L) {
-          jjmatchedKind = 243;
+        if ((active3 & 0x10000000000000L) != 0L) {
+          jjmatchedKind = 244;
           jjmatchedPos = 2;
         }
         break;
       case 61:
-        if ((active3 & 0x400000000000L) != 0L) {
-          jjmatchedKind = 238;
-          jjmatchedPos = 2;
-        } else if ((active3 & 0x800000000000L) != 0L) {
+        if ((active3 & 0x800000000000L) != 0L) {
           jjmatchedKind = 239;
+          jjmatchedPos = 2;
+        } else if ((active3 & 0x1000000000000L) != 0L) {
+          jjmatchedKind = 240;
           jjmatchedPos = 2;
         }
         break;
       case 62:
-        if ((active3 & 0x4000000000000L) != 0L) {
-          jjmatchedKind = 242;
+        if ((active3 & 0x8000000000000L) != 0L) {
+          jjmatchedKind = 243;
           jjmatchedPos = 2;
         }
         return jjMoveStringLiteralDfa3_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0x1000000000000L, active4, 0L);
+            active0, 0L, active1, 0L, active2, 0L, active3, 0x2000000000000L, active4, 0L);
       case 64:
         return jjMoveStringLiteralDfa3_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x10000L);
+            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x20000L);
       case 65:
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x1000L,
+            0x2000L,
             active1,
-            0x280000000002840L,
+            0x500000000005080L,
             active2,
-            0x109000L,
+            0x212000L,
             active3,
             0L,
             active4,
             0L);
       case 66:
         return jjMoveStringLiteralDfa3_0(
-            active0, 0L, active1, 0x800000000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x1000000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 67:
-        if ((active0 & 0x800000000000L) != 0L) {
-          jjmatchedKind = 47;
+        if ((active0 & 0x1000000000000L) != 0L) {
+          jjmatchedKind = 48;
           jjmatchedPos = 2;
         }
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0xb8c0000400000000L,
+            0x7180000800000000L,
             active1,
-            0x8000020020L,
+            0x10000040041L,
             active2,
-            0x200000000L,
+            0x400000000L,
             active3,
             0L,
             active4,
             0L);
       case 68:
-        if ((active0 & 0x20000000L) != 0L) {
-          jjmatchedKind = 29;
+        if ((active0 & 0x40000000L) != 0L) {
+          jjmatchedKind = 30;
           jjmatchedPos = 2;
-        } else if ((active0 & 0x800000000L) != 0L) {
-          jjmatchedKind = 35;
+        } else if ((active0 & 0x1000000000L) != 0L) {
+          jjmatchedKind = 36;
           jjmatchedPos = 2;
-        } else if ((active2 & 0x100000000L) != 0L) {
-          jjmatchedKind = 160;
+        } else if ((active2 & 0x200000000L) != 0L) {
+          jjmatchedKind = 161;
           jjmatchedPos = 2;
         }
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x8000080000L,
+            0x10000100000L,
             active1,
-            0x100400010000L,
+            0x200800020000L,
             active2,
             0L,
             active3,
@@ -857,64 +896,64 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
       case 69:
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x808000L,
+            0x1010000L,
             active1,
-            0x8400000100008010L,
+            0x800000200010020L,
             active2,
-            0xd0000200L,
+            0x1a0000401L,
             active3,
             0L,
             active4,
             0L);
       case 70:
-        if ((active1 & 0x200000L) != 0L) {
-          jjmatchedKind = 85;
+        if ((active1 & 0x400000L) != 0L) {
+          jjmatchedKind = 86;
           jjmatchedPos = 2;
         }
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x10204000000000L,
+            0x20408000000000L,
             active1,
-            0x2000000L,
+            0x4000000L,
             active2,
-            0x800002000L,
+            0x1000004000L,
             active3,
             0L,
             active4,
             0L);
       case 71:
         return jjMoveStringLiteralDfa3_0(
-            active0, 0x40000L, active1, 0x400000000000L, active2, 0x2L, active3, 0L, active4, 0L);
+            active0, 0x80000L, active1, 0x800000000000L, active2, 0x4L, active3, 0L, active4, 0L);
       case 72:
         return jjMoveStringLiteralDfa3_0(
-            active0, 0L, active1, 0L, active2, 0x2000000000L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0L, active2, 0x4000000000L, active3, 0L, active4, 0L);
       case 73:
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x100080001000000L,
+            0x200100002000000L,
             active1,
             0L,
             active2,
-            0x8000800080L,
+            0x10001000100L,
             active3,
             0L,
             active4,
             0L);
       case 75:
         return jjMoveStringLiteralDfa3_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0x80000000000000L, active4, 0L);
+            active0, 0L, active1, 0L, active2, 0L, active3, 0x100000000000000L, active4, 0L);
       case 76:
-        if ((active1 & 0x800000000000000L) != 0L) {
-          jjmatchedKind = 123;
+        if ((active1 & 0x1000000000000000L) != 0L) {
+          jjmatchedKind = 124;
           jjmatchedPos = 2;
         }
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x400000200c010800L,
+            0x8000004018021000L,
             active1,
-            0x200000800000L,
+            0x400001000000L,
             active2,
-            0x4000420000008L,
+            0x8000840000010L,
             active3,
             0L,
             active4,
@@ -922,11 +961,11 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
       case 77:
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x440200000000L,
+            0x880400000000L,
             active1,
-            0x840000000L,
+            0x1080000000L,
             active2,
-            0x4L,
+            0x8L,
             active3,
             0L,
             active4,
@@ -934,41 +973,41 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
       case 78:
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x100000000L,
+            0x200000000L,
             active1,
-            0x3008000001000400L,
+            0x6010000002000800L,
             active2,
-            0x400441L,
+            0x800882L,
             active3,
-            0xfc00000000000000L,
+            0xf800000000000000L,
             active4,
-            0L);
+            0x1L);
       case 79:
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x10000200000L,
+            0x20000400000L,
             active1,
-            0x300800c0000L,
+            0x60100180000L,
             active2,
-            0x900L,
+            0x1200L,
             active3,
             0L,
             active4,
             0L);
       case 80:
         return jjMoveStringLiteralDfa3_0(
-            active0, 0L, active1, 0x50000000005008L, active2, 0x4000000L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0xa000000000a010L, active2, 0x8000000L, active3, 0L, active4, 0L);
       case 81:
         return jjMoveStringLiteralDfa3_0(
-            active0, 0L, active1, 0L, active2, 0x4000L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0L, active2, 0x8000L, active3, 0L, active4, 0L);
       case 82:
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x80020000L,
+            0x100040000L,
             active1,
-            0x4000040200000006L,
+            0x800008040000000cL,
             active2,
-            0x10001200000L,
+            0x20002400000L,
             active3,
             0L,
             active4,
@@ -976,127 +1015,127 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
       case 83:
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x2000000104000L,
+            0x4000000208000L,
             active1,
-            0x5010000001L,
+            0xa020000002L,
             active2,
-            0x1000040020L,
+            0x2000080040L,
             active3,
             0L,
             active4,
-            0x4L);
+            0x8L);
       case 84:
-        if ((active0 & 0x10000000L) != 0L) {
-          jjmatchedKind = 28;
+        if ((active0 & 0x20000000L) != 0L) {
+          jjmatchedKind = 29;
           jjmatchedPos = 2;
-        } else if ((active0 & 0x40000000L) != 0L) {
-          jjmatchedKind = 30;
+        } else if ((active0 & 0x80000000L) != 0L) {
+          jjmatchedKind = 31;
           jjmatchedPos = 2;
-        } else if ((active0 & 0x400000000000000L) != 0L) {
-          jjmatchedKind = 58;
+        } else if ((active0 & 0x800000000000000L) != 0L) {
+          jjmatchedKind = 59;
           jjmatchedPos = 2;
-        } else if ((active3 & 0x20000000000000L) != 0L) {
-          jjmatchedKind = 245;
+        } else if ((active3 & 0x40000000000000L) != 0L) {
+          jjmatchedKind = 246;
           jjmatchedPos = 2;
         }
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x22c100002002000L,
+            0x458200004004000L,
             active1,
-            0x6080024000080L,
+            0xc100048000100L,
             active2,
-            0x8010000L,
+            0x10020000L,
             active3,
-            0x200000000000000L,
+            0x400000000000000L,
             active4,
-            0x1L);
+            0x2L);
       case 85:
         return jjMoveStringLiteralDfa3_0(
             active0,
             0L,
             active1,
-            0x2008400000L,
+            0x4010800000L,
             active2,
-            0x2000000020000L,
+            0x4000000040000L,
             active3,
             0L,
             active4,
-            0x8L);
+            0x10L);
       case 86:
         return jjMoveStringLiteralDfa3_0(
             active0,
             0L,
             active1,
-            0x120000000000000L,
+            0x240000000000000L,
             active2,
-            0x2000000L,
+            0x4000000L,
             active3,
             0L,
             active4,
             0L);
       case 87:
         return jjMoveStringLiteralDfa3_0(
-            active0, 0L, active1, 0x100L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x200L, active2, 0L, active3, 0L, active4, 0L);
       case 88:
         return jjMoveStringLiteralDfa3_0(
-            active0, 0L, active1, 0x200L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x400L, active2, 0L, active3, 0L, active4, 0L);
       case 89:
-        if ((active4 & 0x2L) != 0L) {
-          jjmatchedKind = 257;
+        if ((active4 & 0x4L) != 0L) {
+          jjmatchedKind = 258;
           jjmatchedPos = 2;
         }
         break;
       case 97:
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x1000L,
+            0x2000L,
             active1,
-            0x280000000002840L,
+            0x500000000005080L,
             active2,
-            0x109000L,
+            0x212000L,
             active3,
             0L,
             active4,
-            0x100000L);
+            0x200000L);
       case 98:
-        if ((active4 & 0x80000L) != 0L) {
-          jjmatchedKind = 275;
+        if ((active4 & 0x100000L) != 0L) {
+          jjmatchedKind = 276;
           jjmatchedPos = 2;
         }
         return jjMoveStringLiteralDfa3_0(
-            active0, 0L, active1, 0x800000000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x1000000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 99:
-        if ((active0 & 0x800000000000L) != 0L) {
-          jjmatchedKind = 47;
+        if ((active0 & 0x1000000000000L) != 0L) {
+          jjmatchedKind = 48;
           jjmatchedPos = 2;
         }
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0xb8c0000400000000L,
+            0x7180000800000000L,
             active1,
-            0x8000020020L,
+            0x10000040041L,
             active2,
-            0x200000000L,
+            0x400000000L,
             active3,
             0L,
             active4,
             0L);
       case 100:
-        if ((active0 & 0x20000000L) != 0L) {
-          jjmatchedKind = 29;
+        if ((active0 & 0x40000000L) != 0L) {
+          jjmatchedKind = 30;
           jjmatchedPos = 2;
-        } else if ((active0 & 0x800000000L) != 0L) {
-          jjmatchedKind = 35;
+        } else if ((active0 & 0x1000000000L) != 0L) {
+          jjmatchedKind = 36;
           jjmatchedPos = 2;
-        } else if ((active2 & 0x100000000L) != 0L) {
-          jjmatchedKind = 160;
+        } else if ((active2 & 0x200000000L) != 0L) {
+          jjmatchedKind = 161;
           jjmatchedPos = 2;
         }
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x8000080000L,
+            0x10000100000L,
             active1,
-            0x100400010000L,
+            0x200800020000L,
             active2,
             0L,
             active3,
@@ -1106,76 +1145,76 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
       case 101:
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x808000L,
+            0x1010000L,
             active1,
-            0x8400000100008010L,
+            0x800000200010020L,
             active2,
-            0xd0000200L,
+            0x1a0000401L,
             active3,
             0L,
             active4,
-            0x10240000L);
+            0x20480000L);
       case 102:
-        if ((active1 & 0x200000L) != 0L) {
-          jjmatchedKind = 85;
+        if ((active1 & 0x400000L) != 0L) {
+          jjmatchedKind = 86;
           jjmatchedPos = 2;
         }
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x10204000000000L,
+            0x20408000000000L,
             active1,
-            0x2000000L,
+            0x4000000L,
             active2,
-            0x800002000L,
+            0x1000004000L,
             active3,
             0L,
             active4,
             0L);
       case 103:
         return jjMoveStringLiteralDfa3_0(
-            active0, 0x40000L, active1, 0x400000000000L, active2, 0x2L, active3, 0L, active4, 0L);
+            active0, 0x80000L, active1, 0x800000000000L, active2, 0x4L, active3, 0L, active4, 0L);
       case 104:
         return jjMoveStringLiteralDfa3_0(
-            active0, 0L, active1, 0L, active2, 0x2000000000L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0L, active2, 0x4000000000L, active3, 0L, active4, 0L);
       case 105:
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x100080001000000L,
+            0x200100002000000L,
             active1,
             0L,
             active2,
-            0x8000800080L,
+            0x10001000100L,
             active3,
             0L,
             active4,
             0L);
       case 107:
         return jjMoveStringLiteralDfa3_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0x80000000000000L, active4, 0L);
+            active0, 0L, active1, 0L, active2, 0L, active3, 0x100000000000000L, active4, 0L);
       case 108:
-        if ((active1 & 0x800000000000000L) != 0L) {
-          jjmatchedKind = 123;
+        if ((active1 & 0x1000000000000000L) != 0L) {
+          jjmatchedKind = 124;
           jjmatchedPos = 2;
         }
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x400000200c010800L,
+            0x8000004018021000L,
             active1,
-            0x200000800000L,
+            0x400001000000L,
             active2,
-            0x4000420000008L,
+            0x8000840000010L,
             active3,
             0L,
             active4,
-            0x800000L);
+            0x1000000L);
       case 109:
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x440200000000L,
+            0x880400000000L,
             active1,
-            0x840000000L,
+            0x1080000000L,
             active2,
-            0x4L,
+            0x8L,
             active3,
             0L,
             active4,
@@ -1183,41 +1222,41 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
       case 110:
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x100000000L,
+            0x200000000L,
             active1,
-            0x3008000001000400L,
+            0x6010000002000800L,
             active2,
-            0x400441L,
+            0x800882L,
             active3,
-            0xfc00000000000000L,
+            0xf800000000000000L,
             active4,
-            0L);
+            0x1L);
       case 111:
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x10000200000L,
+            0x20000400000L,
             active1,
-            0x300800c0000L,
+            0x60100180000L,
             active2,
-            0x900L,
+            0x1200L,
             active3,
             0L,
             active4,
-            0x2400000L);
+            0x4800000L);
       case 112:
         return jjMoveStringLiteralDfa3_0(
-            active0, 0L, active1, 0x50000000005008L, active2, 0x4000000L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0xa000000000a010L, active2, 0x8000000L, active3, 0L, active4, 0L);
       case 113:
         return jjMoveStringLiteralDfa3_0(
-            active0, 0L, active1, 0L, active2, 0x4000L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0L, active2, 0x8000L, active3, 0L, active4, 0L);
       case 114:
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x80020000L,
+            0x100040000L,
             active1,
-            0x4000040200000006L,
+            0x800008040000000cL,
             active2,
-            0x10001200000L,
+            0x20002400000L,
             active3,
             0L,
             active4,
@@ -1225,73 +1264,73 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
       case 115:
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x2000000104000L,
+            0x4000000208000L,
             active1,
-            0x5010000001L,
+            0xa020000002L,
             active2,
-            0x1000040020L,
+            0x2000080040L,
             active3,
             0L,
             active4,
-            0x4L);
+            0x8L);
       case 116:
-        if ((active0 & 0x10000000L) != 0L) {
-          jjmatchedKind = 28;
+        if ((active0 & 0x20000000L) != 0L) {
+          jjmatchedKind = 29;
           jjmatchedPos = 2;
-        } else if ((active0 & 0x40000000L) != 0L) {
-          jjmatchedKind = 30;
+        } else if ((active0 & 0x80000000L) != 0L) {
+          jjmatchedKind = 31;
           jjmatchedPos = 2;
-        } else if ((active0 & 0x400000000000000L) != 0L) {
-          jjmatchedKind = 58;
+        } else if ((active0 & 0x800000000000000L) != 0L) {
+          jjmatchedKind = 59;
           jjmatchedPos = 2;
-        } else if ((active3 & 0x20000000000000L) != 0L) {
-          jjmatchedKind = 245;
+        } else if ((active3 & 0x40000000000000L) != 0L) {
+          jjmatchedKind = 246;
           jjmatchedPos = 2;
         }
         return jjMoveStringLiteralDfa3_0(
             active0,
-            0x22c100002002000L,
+            0x458200004004000L,
             active1,
-            0x6080024000080L,
+            0xc100048000100L,
             active2,
-            0x8010000L,
+            0x10020000L,
             active3,
-            0x200000000000000L,
+            0x400000000000000L,
             active4,
-            0x1L);
+            0x2L);
       case 117:
         return jjMoveStringLiteralDfa3_0(
             active0,
             0L,
             active1,
-            0x2008400000L,
+            0x4010800000L,
             active2,
-            0x2000000020000L,
+            0x4000000040000L,
             active3,
             0L,
             active4,
-            0xd020008L);
+            0x1a040010L);
       case 118:
         return jjMoveStringLiteralDfa3_0(
             active0,
             0L,
             active1,
-            0x120000000000000L,
+            0x240000000000000L,
             active2,
-            0x2000000L,
+            0x4000000L,
             active3,
             0L,
             active4,
             0L);
       case 119:
         return jjMoveStringLiteralDfa3_0(
-            active0, 0L, active1, 0x100L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x200L, active2, 0L, active3, 0L, active4, 0L);
       case 120:
         return jjMoveStringLiteralDfa3_0(
-            active0, 0L, active1, 0x200L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x400L, active2, 0L, active3, 0L, active4, 0L);
       case 121:
-        if ((active4 & 0x2L) != 0L) {
-          jjmatchedKind = 257;
+        if ((active4 & 0x4L) != 0L) {
+          jjmatchedKind = 258;
           jjmatchedPos = 2;
         }
         break;
@@ -1325,115 +1364,115 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
     }
     switch (curChar) {
       case 61:
-        if ((active3 & 0x1000000000000L) != 0L) {
-          jjmatchedKind = 240;
+        if ((active3 & 0x2000000000000L) != 0L) {
+          jjmatchedKind = 241;
           jjmatchedPos = 3;
         }
         break;
       case 65:
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x2000000000088000L,
+            0x4000000000110000L,
             active1,
-            0x4002080000010017L,
+            0x800410000002002eL,
             active2,
-            0x800002000L,
+            0x1000004000L,
             active3,
             0L,
             active4,
             0L);
       case 66:
-        if ((active2 & 0x800L) != 0L) {
-          jjmatchedKind = 139;
+        if ((active2 & 0x1000L) != 0L) {
+          jjmatchedKind = 140;
           jjmatchedPos = 3;
         }
         break;
       case 67:
-        if ((active0 & 0x2000000000000L) != 0L) {
-          jjmatchedKind = 49;
+        if ((active0 & 0x4000000000000L) != 0L) {
+          jjmatchedKind = 50;
           jjmatchedPos = 3;
-        } else if ((active2 & 0x400000L) != 0L) {
-          jjmatchedKind = 150;
+        } else if ((active2 & 0x800000L) != 0L) {
+          jjmatchedKind = 151;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x4100000002000L,
+            0x8200000004000L,
             active1,
-            0x2400044400000000L,
+            0x4800088800000000L,
             active2,
             0L,
             active3,
             0L,
             active4,
-            0x1L);
+            0x2L);
       case 68:
-        if ((active1 & 0x1000000L) != 0L) {
-          jjmatchedKind = 88;
+        if ((active1 & 0x2000000L) != 0L) {
+          jjmatchedKind = 89;
           jjmatchedPos = 3;
-        } else if ((active1 & 0x200000000000000L) != 0L) {
-          jjmatchedKind = 121;
+        } else if ((active1 & 0x400000000000000L) != 0L) {
+          jjmatchedKind = 122;
           jjmatchedPos = 3;
-        } else if ((active2 & 0x8000000000L) != 0L) {
-          jjmatchedKind = 167;
+        } else if ((active2 & 0x10000000000L) != 0L) {
+          jjmatchedKind = 168;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
-            active0, 0L, active1, 0x600L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0xc00L, active2, 0L, active3, 0L, active4, 0L);
       case 69:
-        if ((active0 & 0x40000L) != 0L) {
-          jjmatchedKind = 18;
+        if ((active0 & 0x80000L) != 0L) {
+          jjmatchedKind = 19;
           jjmatchedPos = 3;
-        } else if ((active1 & 0x40000000L) != 0L) {
-          jjmatchedKind = 94;
+        } else if ((active1 & 0x80000000L) != 0L) {
+          jjmatchedKind = 95;
           jjmatchedPos = 3;
-        } else if ((active1 & 0x10000000000000L) != 0L) {
-          jjmatchedKind = 116;
+        } else if ((active1 & 0x20000000000000L) != 0L) {
+          jjmatchedKind = 117;
           jjmatchedPos = 3;
-        } else if ((active1 & 0x1000000000000000L) != 0L) {
-          jjmatchedKind = 124;
+        } else if ((active1 & 0x2000000000000000L) != 0L) {
+          jjmatchedKind = 125;
           jjmatchedPos = 3;
-        } else if ((active2 & 0x20L) != 0L) {
-          jjmatchedKind = 133;
+        } else if ((active2 & 0x40L) != 0L) {
+          jjmatchedKind = 134;
           jjmatchedPos = 3;
-        } else if ((active2 & 0x2000000L) != 0L) {
-          jjmatchedKind = 153;
+        } else if ((active2 & 0x4000000L) != 0L) {
+          jjmatchedKind = 154;
           jjmatchedPos = 3;
-        } else if ((active2 & 0x20000000L) != 0L) {
-          jjmatchedKind = 157;
+        } else if ((active2 & 0x40000000L) != 0L) {
+          jjmatchedKind = 158;
           jjmatchedPos = 3;
-        } else if ((active2 & 0x2000000000000L) != 0L) {
-          jjmatchedKind = 177;
+        } else if ((active2 & 0x4000000000000L) != 0L) {
+          jjmatchedKind = 178;
           jjmatchedPos = 3;
-        } else if ((active3 & 0x80000000000000L) != 0L) {
-          jjmatchedKind = 247;
+        } else if ((active3 & 0x100000000000000L) != 0L) {
+          jjmatchedKind = 248;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x20408000114800L,
+            0x40810000229000L,
             active1,
-            0x20100026025020L,
+            0x4020004c04a040L,
             active2,
-            0x1000200L,
+            0x2000400L,
             active3,
             0L,
             active4,
             0L);
       case 70:
         return jjMoveStringLiteralDfa4_0(
-            active0, 0L, active1, 0x40000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x80000L, active2, 0L, active3, 0L, active4, 0L);
       case 71:
         return jjMoveStringLiteralDfa4_0(
-            active0, 0x80000000L, active1, 0L, active2, 0x1L, active3, 0L, active4, 0L);
+            active0, 0x100000000L, active1, 0L, active2, 0x2L, active3, 0L, active4, 0L);
       case 72:
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x800000000000000L,
+            0x1000000000000000L,
             active1,
-            0x80L,
+            0x100L,
             active2,
-            0x8000000L,
+            0x10000000L,
             active3,
             0L,
             active4,
@@ -1441,72 +1480,72 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
       case 73:
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x4000044000000000L,
+            0x8000088000000000L,
             active1,
-            0x4400200000100L,
+            0x8800400000200L,
             active2,
-            0x12400010002L,
+            0x24800020004L,
             active3,
             0L,
             active4,
             0L);
       case 75:
-        if ((active0 & 0x40000000000000L) != 0L) {
-          jjmatchedKind = 54;
+        if ((active0 & 0x80000000000000L) != 0L) {
+          jjmatchedKind = 55;
           jjmatchedPos = 3;
-        } else if ((active1 & 0x8000000000000L) != 0L) {
-          jjmatchedKind = 115;
+        } else if ((active1 & 0x10000000000000L) != 0L) {
+          jjmatchedKind = 116;
           jjmatchedPos = 3;
         }
         break;
       case 76:
-        if ((active0 & 0x2000000000L) != 0L) {
-          jjmatchedKind = 37;
+        if ((active0 & 0x4000000000L) != 0L) {
+          jjmatchedKind = 38;
           jjmatchedPos = 3;
-        } else if ((active2 & 0x80L) != 0L) {
-          jjmatchedKind = 135;
+        } else if ((active2 & 0x100L) != 0L) {
+          jjmatchedKind = 136;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x1000000001000000L,
+            0x2000000002000000L,
             active1,
-            0x40200000000000L,
+            0x80400000000000L,
             active2,
-            0x108L,
+            0x210L,
             active3,
             0L,
             active4,
             0L);
       case 77:
-        if ((active0 & 0x200000L) != 0L) {
-          jjmatchedKind = 21;
+        if ((active0 & 0x400000L) != 0L) {
+          jjmatchedKind = 22;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
-            active0, 0L, active1, 0x8000000000000000L, active2, 0x4L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0L, active2, 0x9L, active3, 0L, active4, 0L);
       case 78:
         return jjMoveStringLiteralDfa4_0(
             active0,
             0L,
             active1,
-            0x80000000400000L,
+            0x100000000800000L,
             active2,
-            0x10020000L,
+            0x20040000L,
             active3,
             0L,
             active4,
             0L);
       case 79:
-        if ((active0 & 0x2000000L) != 0L) {
-          jjmatchedKind = 25;
+        if ((active0 & 0x4000000L) != 0L) {
+          jjmatchedKind = 26;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x90000200000000L,
+            0x120000400000000L,
             active1,
-            0x100000800000000L,
+            0x200001000000000L,
             active2,
             0L,
             active3,
@@ -1514,30 +1553,30 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             active4,
             0L);
       case 80:
-        if ((active0 & 0x80000000000L) != 0L) {
-          jjmatchedKind = 43;
+        if ((active0 & 0x100000000000L) != 0L) {
+          jjmatchedKind = 44;
           jjmatchedPos = 3;
-        } else if ((active1 & 0x10000000000L) != 0L) {
-          jjmatchedKind = 104;
+        } else if ((active1 & 0x20000000000L) != 0L) {
+          jjmatchedKind = 105;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
-            active0, 0L, active1, 0x20000000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x40000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 82:
-        if ((active1 & 0x40L) != 0L) {
-          jjmatchedKind = 70;
+        if ((active1 & 0x80L) != 0L) {
+          jjmatchedKind = 71;
           jjmatchedPos = 3;
-        } else if ((active2 & 0x40000000L) != 0L) {
-          jjmatchedKind = 158;
+        } else if ((active2 & 0x80000000L) != 0L) {
+          jjmatchedKind = 159;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x200000400800000L,
+            0x400000801000000L,
             active1,
-            0x8180080000L,
+            0x10300100000L,
             active2,
-            0x80009000L,
+            0x100012000L,
             active3,
             0L,
             active4,
@@ -1545,169 +1584,160 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
       case 83:
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x200000000000L,
+            0x400000000000L,
             active1,
-            0x2008002800L,
+            0x4010005000L,
             active2,
-            0x4000000800400L,
+            0x8000001000800L,
             active3,
             0L,
             active4,
-            0x8L);
+            0x10L);
       case 84:
-        if ((active0 & 0x100000000000000L) != 0L) {
-          jjmatchedKind = 56;
+        if ((active0 & 0x200000000000000L) != 0L) {
+          jjmatchedKind = 57;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x100020000L,
+            0x200040000L,
             active1,
-            0x1010000008L,
+            0x2020000010L,
             active2,
-            0x1004140040L,
+            0x2008280080L,
             active3,
-            0xfc00000000000000L,
+            0xf800000000000000L,
             active4,
-            0x4L);
+            0x9L);
       case 85:
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x801000c000000L,
+            0x10020018000000L,
             active1,
-            0x800000000000L,
+            0x1000000000000L,
             active2,
-            0x200004000L,
+            0x400008000L,
             active3,
             0L,
             active4,
             0L);
       case 86:
         return jjMoveStringLiteralDfa4_0(
-            active0, 0x1000L, active1, 0L, active2, 0x200000L, active3, 0L, active4, 0L);
+            active0, 0x2000L, active1, 0L, active2, 0x400000L, active3, 0L, active4, 0L);
       case 87:
-        if ((active1 & 0x8000L) != 0L) {
-          jjmatchedKind = 79;
+        if ((active1 & 0x10000L) != 0L) {
+          jjmatchedKind = 80;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0x200000000000000L, active4, 0L);
+            active0, 0L, active1, 0L, active2, 0L, active3, 0x400000000000000L, active4, 0L);
       case 89:
         return jjMoveStringLiteralDfa4_0(
-            active0,
-            0x8000000000000000L,
-            active1,
-            0x800000L,
-            active2,
-            0L,
-            active3,
-            0L,
-            active4,
-            0L);
+            active0, 0L, active1, 0x1000001L, active2, 0L, active3, 0L, active4, 0L);
       case 97:
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x2000000000088000L,
+            0x4000000000110000L,
             active1,
-            0x4002080000010017L,
+            0x800410000002002eL,
             active2,
-            0x800002000L,
+            0x1000004000L,
             active3,
             0L,
             active4,
             0L);
       case 98:
-        if ((active2 & 0x800L) != 0L) {
-          jjmatchedKind = 139;
+        if ((active2 & 0x1000L) != 0L) {
+          jjmatchedKind = 140;
           jjmatchedPos = 3;
         }
         break;
       case 99:
-        if ((active0 & 0x2000000000000L) != 0L) {
-          jjmatchedKind = 49;
+        if ((active0 & 0x4000000000000L) != 0L) {
+          jjmatchedKind = 50;
           jjmatchedPos = 3;
-        } else if ((active2 & 0x400000L) != 0L) {
-          jjmatchedKind = 150;
+        } else if ((active2 & 0x800000L) != 0L) {
+          jjmatchedKind = 151;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x4100000002000L,
+            0x8200000004000L,
             active1,
-            0x2400044400000000L,
+            0x4800088800000000L,
             active2,
             0L,
             active3,
             0L,
             active4,
-            0x400001L);
+            0x800002L);
       case 100:
-        if ((active1 & 0x1000000L) != 0L) {
-          jjmatchedKind = 88;
+        if ((active1 & 0x2000000L) != 0L) {
+          jjmatchedKind = 89;
           jjmatchedPos = 3;
-        } else if ((active1 & 0x200000000000000L) != 0L) {
-          jjmatchedKind = 121;
+        } else if ((active1 & 0x400000000000000L) != 0L) {
+          jjmatchedKind = 122;
           jjmatchedPos = 3;
-        } else if ((active2 & 0x8000000000L) != 0L) {
-          jjmatchedKind = 167;
+        } else if ((active2 & 0x10000000000L) != 0L) {
+          jjmatchedKind = 168;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
-            active0, 0L, active1, 0x600L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0xc00L, active2, 0L, active3, 0L, active4, 0L);
       case 101:
-        if ((active0 & 0x40000L) != 0L) {
-          jjmatchedKind = 18;
+        if ((active0 & 0x80000L) != 0L) {
+          jjmatchedKind = 19;
           jjmatchedPos = 3;
-        } else if ((active1 & 0x40000000L) != 0L) {
-          jjmatchedKind = 94;
+        } else if ((active1 & 0x80000000L) != 0L) {
+          jjmatchedKind = 95;
           jjmatchedPos = 3;
-        } else if ((active1 & 0x10000000000000L) != 0L) {
-          jjmatchedKind = 116;
+        } else if ((active1 & 0x20000000000000L) != 0L) {
+          jjmatchedKind = 117;
           jjmatchedPos = 3;
-        } else if ((active1 & 0x1000000000000000L) != 0L) {
-          jjmatchedKind = 124;
+        } else if ((active1 & 0x2000000000000000L) != 0L) {
+          jjmatchedKind = 125;
           jjmatchedPos = 3;
-        } else if ((active2 & 0x20L) != 0L) {
-          jjmatchedKind = 133;
+        } else if ((active2 & 0x40L) != 0L) {
+          jjmatchedKind = 134;
           jjmatchedPos = 3;
-        } else if ((active2 & 0x2000000L) != 0L) {
-          jjmatchedKind = 153;
+        } else if ((active2 & 0x4000000L) != 0L) {
+          jjmatchedKind = 154;
           jjmatchedPos = 3;
-        } else if ((active2 & 0x20000000L) != 0L) {
-          jjmatchedKind = 157;
+        } else if ((active2 & 0x40000000L) != 0L) {
+          jjmatchedKind = 158;
           jjmatchedPos = 3;
-        } else if ((active2 & 0x2000000000000L) != 0L) {
-          jjmatchedKind = 177;
+        } else if ((active2 & 0x4000000000000L) != 0L) {
+          jjmatchedKind = 178;
           jjmatchedPos = 3;
-        } else if ((active3 & 0x80000000000000L) != 0L) {
-          jjmatchedKind = 247;
+        } else if ((active3 & 0x100000000000000L) != 0L) {
+          jjmatchedKind = 248;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x20408000114800L,
+            0x40810000229000L,
             active1,
-            0x20100026025020L,
+            0x4020004c04a040L,
             active2,
-            0x1000200L,
+            0x2000400L,
             active3,
             0L,
             active4,
             0L);
       case 102:
         return jjMoveStringLiteralDfa4_0(
-            active0, 0L, active1, 0x40000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x80000L, active2, 0L, active3, 0L, active4, 0L);
       case 103:
         return jjMoveStringLiteralDfa4_0(
-            active0, 0x80000000L, active1, 0L, active2, 0x1L, active3, 0L, active4, 0L);
+            active0, 0x100000000L, active1, 0L, active2, 0x2L, active3, 0L, active4, 0L);
       case 104:
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x800000000000000L,
+            0x1000000000000000L,
             active1,
-            0x80L,
+            0x100L,
             active2,
-            0x8000000L,
+            0x10000000L,
             active3,
             0L,
             active4,
@@ -1715,75 +1745,75 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
       case 105:
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x4000044000000000L,
+            0x8000088000000000L,
             active1,
-            0x4400200000100L,
+            0x8800400000200L,
             active2,
-            0x12400010002L,
+            0x24800020004L,
             active3,
             0L,
             active4,
             0L);
       case 107:
-        if ((active0 & 0x40000000000000L) != 0L) {
-          jjmatchedKind = 54;
+        if ((active0 & 0x80000000000000L) != 0L) {
+          jjmatchedKind = 55;
           jjmatchedPos = 3;
-        } else if ((active1 & 0x8000000000000L) != 0L) {
-          jjmatchedKind = 115;
+        } else if ((active1 & 0x10000000000000L) != 0L) {
+          jjmatchedKind = 116;
           jjmatchedPos = 3;
         }
         break;
       case 108:
-        if ((active0 & 0x2000000000L) != 0L) {
-          jjmatchedKind = 37;
+        if ((active0 & 0x4000000000L) != 0L) {
+          jjmatchedKind = 38;
           jjmatchedPos = 3;
-        } else if ((active2 & 0x80L) != 0L) {
-          jjmatchedKind = 135;
+        } else if ((active2 & 0x100L) != 0L) {
+          jjmatchedKind = 136;
           jjmatchedPos = 3;
-        } else if ((active4 & 0x800000L) != 0L) {
-          jjmatchedKind = 279;
+        } else if ((active4 & 0x1000000L) != 0L) {
+          jjmatchedKind = 280;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x1000000001000000L,
+            0x2000000002000000L,
             active1,
-            0x40200000000000L,
+            0x80400000000000L,
             active2,
-            0x108L,
+            0x210L,
             active3,
             0L,
             active4,
-            0xc000000L);
+            0x18000000L);
       case 109:
-        if ((active0 & 0x200000L) != 0L) {
-          jjmatchedKind = 21;
+        if ((active0 & 0x400000L) != 0L) {
+          jjmatchedKind = 22;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
-            active0, 0L, active1, 0x8000000000000000L, active2, 0x4L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0L, active2, 0x9L, active3, 0L, active4, 0L);
       case 110:
         return jjMoveStringLiteralDfa4_0(
             active0,
             0L,
             active1,
-            0x80000000400000L,
+            0x100000000800000L,
             active2,
-            0x10020000L,
+            0x20040000L,
             active3,
             0L,
             active4,
-            0x20000L);
+            0x40000L);
       case 111:
-        if ((active0 & 0x2000000L) != 0L) {
-          jjmatchedKind = 25;
+        if ((active0 & 0x4000000L) != 0L) {
+          jjmatchedKind = 26;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x90000200000000L,
+            0x120000400000000L,
             active1,
-            0x100000800000000L,
+            0x200001000000000L,
             active2,
             0L,
             active3,
@@ -1791,96 +1821,87 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             active4,
             0L);
       case 112:
-        if ((active0 & 0x80000000000L) != 0L) {
-          jjmatchedKind = 43;
+        if ((active0 & 0x100000000000L) != 0L) {
+          jjmatchedKind = 44;
           jjmatchedPos = 3;
-        } else if ((active1 & 0x10000000000L) != 0L) {
-          jjmatchedKind = 104;
+        } else if ((active1 & 0x20000000000L) != 0L) {
+          jjmatchedKind = 105;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
-            active0, 0L, active1, 0x20000000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x40000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 114:
-        if ((active1 & 0x40L) != 0L) {
-          jjmatchedKind = 70;
+        if ((active1 & 0x80L) != 0L) {
+          jjmatchedKind = 71;
           jjmatchedPos = 3;
-        } else if ((active2 & 0x40000000L) != 0L) {
-          jjmatchedKind = 158;
+        } else if ((active2 & 0x80000000L) != 0L) {
+          jjmatchedKind = 159;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x200000400800000L,
+            0x400000801000000L,
             active1,
-            0x8180080000L,
+            0x10300100000L,
             active2,
-            0x80009000L,
+            0x100012000L,
             active3,
             0L,
             active4,
-            0x12050000L);
+            0x240a0000L);
       case 115:
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x200000000000L,
+            0x400000000000L,
             active1,
-            0x2008002800L,
+            0x4010005000L,
             active2,
-            0x4000000800400L,
+            0x8000001000800L,
             active3,
             0L,
             active4,
-            0x200008L);
+            0x400010L);
       case 116:
-        if ((active0 & 0x100000000000000L) != 0L) {
-          jjmatchedKind = 56;
+        if ((active0 & 0x200000000000000L) != 0L) {
+          jjmatchedKind = 57;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x100020000L,
+            0x200040000L,
             active1,
-            0x1010000008L,
+            0x2020000010L,
             active2,
-            0x1004140040L,
+            0x2008280080L,
             active3,
-            0xfc00000000000000L,
+            0xf800000000000000L,
             active4,
-            0x1100004L);
+            0x2200009L);
       case 117:
         return jjMoveStringLiteralDfa4_0(
             active0,
-            0x801000c000000L,
+            0x10020018000000L,
             active1,
-            0x800000000000L,
+            0x1000000000000L,
             active2,
-            0x200004000L,
+            0x400008000L,
             active3,
             0L,
             active4,
             0L);
       case 118:
         return jjMoveStringLiteralDfa4_0(
-            active0, 0x1000L, active1, 0L, active2, 0x200000L, active3, 0L, active4, 0L);
+            active0, 0x2000L, active1, 0L, active2, 0x400000L, active3, 0L, active4, 0L);
       case 119:
-        if ((active1 & 0x8000L) != 0L) {
-          jjmatchedKind = 79;
+        if ((active1 & 0x10000L) != 0L) {
+          jjmatchedKind = 80;
           jjmatchedPos = 3;
         }
         return jjMoveStringLiteralDfa4_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0x200000000000000L, active4, 0L);
+            active0, 0L, active1, 0L, active2, 0L, active3, 0x400000000000000L, active4, 0L);
       case 121:
         return jjMoveStringLiteralDfa4_0(
-            active0,
-            0x8000000000000000L,
-            active1,
-            0x800000L,
-            active2,
-            0L,
-            active3,
-            0L,
-            active4,
-            0L);
+            active0, 0L, active1, 0x1000001L, active2, 0L, active3, 0L, active4, 0L);
       default:
         break;
     }
@@ -1915,24 +1936,24 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             active0,
             0L,
             active1,
-            0x40200000080000L,
+            0x80400000100000L,
             active2,
-            0x9000100L,
+            0x12000200L,
             active3,
-            0xfc00000000000000L,
+            0xf800000000000000L,
             active4,
-            0x4L);
+            0x9L);
       case 66:
         return jjMoveStringLiteralDfa5_0(
-            active0, 0L, active1, 0x2000000000000L, active2, 0x8L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x4000000000000L, active2, 0x10L, active3, 0L, active4, 0L);
       case 67:
         return jjMoveStringLiteralDfa5_0(
             active0,
-            0xa000000000000800L,
+            0x4000000000001000L,
             active1,
-            0x200400000L,
+            0x400800001L,
             active2,
-            0x400000000L,
+            0x800000000L,
             active3,
             0L,
             active4,
@@ -1942,87 +1963,87 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             active0,
             0L,
             active1,
-            0x80000000010L,
+            0x100000000020L,
             active2,
-            0x10000000000L,
+            0x20000000000L,
             active3,
             0L,
             active4,
             0L);
       case 69:
-        if ((active0 & 0x800000L) != 0L) {
-          jjmatchedKind = 23;
-          jjmatchedPos = 4;
-        } else if ((active0 & 0x1000000L) != 0L) {
+        if ((active0 & 0x1000000L) != 0L) {
           jjmatchedKind = 24;
           jjmatchedPos = 4;
-        } else if ((active0 & 0x4000000L) != 0L) {
-          jjmatchedKind = 26;
+        } else if ((active0 & 0x2000000L) != 0L) {
+          jjmatchedKind = 25;
           jjmatchedPos = 4;
-        } else if ((active0 & 0x80000000L) != 0L) {
-          jjmatchedKind = 31;
+        } else if ((active0 & 0x8000000L) != 0L) {
+          jjmatchedKind = 27;
           jjmatchedPos = 4;
-        } else if ((active0 & 0x800000000000000L) != 0L) {
-          jjmatchedKind = 59;
+        } else if ((active0 & 0x100000000L) != 0L) {
+          jjmatchedKind = 32;
           jjmatchedPos = 4;
         } else if ((active0 & 0x1000000000000000L) != 0L) {
           jjmatchedKind = 60;
           jjmatchedPos = 4;
-        } else if ((active1 & 0x40000000000L) != 0L) {
-          jjmatchedKind = 106;
+        } else if ((active0 & 0x2000000000000000L) != 0L) {
+          jjmatchedKind = 61;
           jjmatchedPos = 4;
-        } else if ((active2 & 0x4000000000000L) != 0L) {
-          jjmatchedKind = 178;
+        } else if ((active1 & 0x80000000000L) != 0L) {
+          jjmatchedKind = 107;
+          jjmatchedPos = 4;
+        } else if ((active2 & 0x8000000000000L) != 0L) {
+          jjmatchedKind = 179;
           jjmatchedPos = 4;
         }
         return jjMoveStringLiteralDfa5_0(
             active0,
-            0x200508021000L,
+            0x400a10042000L,
             active1,
-            0x20000000600L,
+            0x40000000c00L,
             active2,
-            0x1000205000L,
+            0x200040a000L,
             active3,
-            0x200000000000000L,
+            0x400000000000000L,
             active4,
             0L);
       case 70:
         return jjMoveStringLiteralDfa5_0(
-            active0, 0L, active1, 0x1L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x2L, active2, 0L, active3, 0L, active4, 0L);
       case 72:
-        if ((active0 & 0x2000L) != 0L) {
-          jjmatchedKind = 13;
+        if ((active0 & 0x4000L) != 0L) {
+          jjmatchedKind = 14;
           jjmatchedPos = 4;
-        } else if ((active0 & 0x100000000000L) != 0L) {
-          jjmatchedKind = 44;
+        } else if ((active0 & 0x200000000000L) != 0L) {
+          jjmatchedKind = 45;
           jjmatchedPos = 4;
         }
         return jjMoveStringLiteralDfa5_0(
             active0,
-            0x4000000000000L,
+            0x8000000000000L,
             active1,
-            0x8L,
+            0x10L,
             active2,
-            0x4000000L,
+            0x8000000L,
             active3,
             0L,
             active4,
-            0x1L);
+            0x2L);
       case 73:
         return jjMoveStringLiteralDfa5_0(
-            active0, 0L, active1, 0x800000040080L, active2, 0x40044L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x1000000080100L, active2, 0x80088L, active3, 0L, active4, 0L);
       case 75:
         return jjMoveStringLiteralDfa5_0(
-            active0, 0L, active1, 0x100000000000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x200000000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 76:
         return jjMoveStringLiteralDfa5_0(
-            active0, 0L, active1, 0x400000002L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x800000004L, active2, 0L, active3, 0L, active4, 0L);
       case 77:
         return jjMoveStringLiteralDfa5_0(
             active0,
-            0x4000000000000000L,
+            0x8000000000000000L,
             active1,
-            0x4004000000800000L,
+            0x8008000001000000L,
             active2,
             0L,
             active3,
@@ -2030,15 +2051,15 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             active4,
             0L);
       case 78:
-        if ((active2 & 0x2L) != 0L) {
-          jjmatchedKind = 129;
+        if ((active2 & 0x4L) != 0L) {
+          jjmatchedKind = 130;
           jjmatchedPos = 4;
         }
         return jjMoveStringLiteralDfa5_0(
             active0,
-            0x4000000000L,
+            0x8000000000L,
             active1,
-            0x400004000120L,
+            0x800008000240L,
             active2,
             0L,
             active3,
@@ -2048,233 +2069,233 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
       case 79:
         return jjMoveStringLiteralDfa5_0(
             active0,
-            0x400000000000L,
+            0x800000000000L,
             active1,
-            0x1000000000L,
+            0x2000000000L,
             active2,
-            0x10400L,
+            0x20800L,
             active3,
             0L,
             active4,
             0L);
       case 80:
-        if ((active0 & 0x10000000000L) != 0L) {
-          jjmatchedKind = 40;
+        if ((active0 & 0x20000000000L) != 0L) {
+          jjmatchedKind = 41;
           jjmatchedPos = 4;
-        } else if ((active2 & 0x200L) != 0L) {
-          jjmatchedKind = 137;
+        } else if ((active2 & 0x400L) != 0L) {
+          jjmatchedKind = 138;
           jjmatchedPos = 4;
         }
         return jjMoveStringLiteralDfa5_0(
-            active0, 0L, active1, 0x8000000000020000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x40000L, active2, 0x1L, active3, 0L, active4, 0L);
       case 82:
-        if ((active0 & 0x8000000000L) != 0L) {
-          jjmatchedKind = 39;
+        if ((active0 & 0x10000000000L) != 0L) {
+          jjmatchedKind = 40;
           jjmatchedPos = 4;
-        } else if ((active0 & 0x20000000000000L) != 0L) {
-          jjmatchedKind = 53;
+        } else if ((active0 & 0x40000000000000L) != 0L) {
+          jjmatchedKind = 54;
           jjmatchedPos = 4;
-        } else if ((active1 & 0x20000000L) != 0L) {
-          jjmatchedKind = 93;
+        } else if ((active1 & 0x40000000L) != 0L) {
+          jjmatchedKind = 94;
           jjmatchedPos = 4;
         }
         return jjMoveStringLiteralDfa5_0(
             active0,
-            0x98000000104000L,
+            0x130000000208000L,
             active1,
-            0x20004012005000L,
+            0x4000802400a000L,
             active2,
-            0x200000000L,
+            0x400000000L,
             active3,
             0L,
             active4,
             0L);
       case 83:
-        if ((active1 & 0x800L) != 0L) {
-          jjmatchedKind = 75;
+        if ((active1 & 0x1000L) != 0L) {
+          jjmatchedKind = 76;
           jjmatchedPos = 4;
-        } else if ((active2 & 0x80000000L) != 0L) {
-          jjmatchedKind = 159;
+        } else if ((active2 & 0x100000000L) != 0L) {
+          jjmatchedKind = 160;
           jjmatchedPos = 4;
-        } else if ((active2 & 0x2000000000L) != 0L) {
-          jjmatchedKind = 165;
+        } else if ((active2 & 0x4000000000L) != 0L) {
+          jjmatchedKind = 166;
           jjmatchedPos = 4;
         }
         return jjMoveStringLiteralDfa5_0(
-            active0, 0L, active1, 0x100002000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x200004000L, active2, 0L, active3, 0L, active4, 0L);
       case 84:
-        if ((active0 & 0x40000000000L) != 0L) {
-          jjmatchedKind = 42;
+        if ((active0 & 0x80000000000L) != 0L) {
+          jjmatchedKind = 43;
           jjmatchedPos = 4;
-        } else if ((active1 & 0x80000000000000L) != 0L) {
-          jjmatchedKind = 119;
+        } else if ((active1 & 0x100000000000000L) != 0L) {
+          jjmatchedKind = 120;
           jjmatchedPos = 4;
-        } else if ((active2 & 0x8000L) != 0L) {
-          jjmatchedKind = 143;
+        } else if ((active2 & 0x10000L) != 0L) {
+          jjmatchedKind = 144;
           jjmatchedPos = 4;
-        } else if ((active2 & 0x20000L) != 0L) {
-          jjmatchedKind = 145;
+        } else if ((active2 & 0x40000L) != 0L) {
+          jjmatchedKind = 146;
           jjmatchedPos = 4;
         }
         return jjMoveStringLiteralDfa5_0(
             active0,
-            0x98000L,
+            0x130000L,
             active1,
-            0x2000002088010004L,
+            0x4000004110020008L,
             active2,
-            0x10800000L,
+            0x21000000L,
             active3,
             0L,
             active4,
-            0x8L);
+            0x10L);
       case 85:
         return jjMoveStringLiteralDfa5_0(
             active0,
             0L,
             active1,
-            0x400000000000000L,
+            0x800000000000000L,
             active2,
-            0x800102001L,
+            0x1000204002L,
             active3,
             0L,
             active4,
             0L);
       case 86:
         return jjMoveStringLiteralDfa5_0(
-            active0, 0x200000000L, active1, 0x800000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0x400000000L, active1, 0x1000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 88:
-        if ((active1 & 0x100000000000L) != 0L) {
-          jjmatchedKind = 108;
+        if ((active1 & 0x200000000000L) != 0L) {
+          jjmatchedKind = 109;
           jjmatchedPos = 4;
         }
         break;
       case 89:
-        if ((active0 & 0x200000000000000L) != 0L) {
-          jjmatchedKind = 57;
+        if ((active0 & 0x400000000000000L) != 0L) {
+          jjmatchedKind = 58;
           jjmatchedPos = 4;
         }
         return jjMoveStringLiteralDfa5_0(
-            active0, 0L, active1, 0x8000000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x10000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 97:
         return jjMoveStringLiteralDfa5_0(
             active0,
             0L,
             active1,
-            0x40200000080000L,
+            0x80400000100000L,
             active2,
-            0x9000100L,
+            0x12000200L,
             active3,
-            0xfc00000000000000L,
+            0xf800000000000000L,
             active4,
-            0x4L);
+            0x9L);
       case 98:
         return jjMoveStringLiteralDfa5_0(
-            active0, 0L, active1, 0x2000000000000L, active2, 0x8L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x4000000000000L, active2, 0x10L, active3, 0L, active4, 0L);
       case 99:
         return jjMoveStringLiteralDfa5_0(
             active0,
-            0xa000000000000800L,
+            0x4000000000001000L,
             active1,
-            0x200400000L,
+            0x400800001L,
             active2,
-            0x400000000L,
+            0x800000000L,
             active3,
             0L,
             active4,
-            0x2000000L);
+            0x4000000L);
       case 100:
         return jjMoveStringLiteralDfa5_0(
             active0,
             0L,
             active1,
-            0x80000000010L,
+            0x100000000020L,
             active2,
-            0x10000000000L,
+            0x20000000000L,
             active3,
             0L,
             active4,
-            0x20000L);
+            0x40000L);
       case 101:
-        if ((active0 & 0x800000L) != 0L) {
-          jjmatchedKind = 23;
-          jjmatchedPos = 4;
-        } else if ((active0 & 0x1000000L) != 0L) {
+        if ((active0 & 0x1000000L) != 0L) {
           jjmatchedKind = 24;
           jjmatchedPos = 4;
-        } else if ((active0 & 0x4000000L) != 0L) {
-          jjmatchedKind = 26;
+        } else if ((active0 & 0x2000000L) != 0L) {
+          jjmatchedKind = 25;
           jjmatchedPos = 4;
-        } else if ((active0 & 0x80000000L) != 0L) {
-          jjmatchedKind = 31;
+        } else if ((active0 & 0x8000000L) != 0L) {
+          jjmatchedKind = 27;
           jjmatchedPos = 4;
-        } else if ((active0 & 0x800000000000000L) != 0L) {
-          jjmatchedKind = 59;
+        } else if ((active0 & 0x100000000L) != 0L) {
+          jjmatchedKind = 32;
           jjmatchedPos = 4;
         } else if ((active0 & 0x1000000000000000L) != 0L) {
           jjmatchedKind = 60;
           jjmatchedPos = 4;
-        } else if ((active1 & 0x40000000000L) != 0L) {
-          jjmatchedKind = 106;
+        } else if ((active0 & 0x2000000000000000L) != 0L) {
+          jjmatchedKind = 61;
           jjmatchedPos = 4;
-        } else if ((active2 & 0x4000000000000L) != 0L) {
-          jjmatchedKind = 178;
+        } else if ((active1 & 0x80000000000L) != 0L) {
+          jjmatchedKind = 107;
+          jjmatchedPos = 4;
+        } else if ((active2 & 0x8000000000000L) != 0L) {
+          jjmatchedKind = 179;
           jjmatchedPos = 4;
         }
         return jjMoveStringLiteralDfa5_0(
             active0,
-            0x200508021000L,
+            0x400a10042000L,
             active1,
-            0x20000000600L,
+            0x40000000c00L,
             active2,
-            0x1000205000L,
+            0x200040a000L,
             active3,
-            0x200000000000000L,
+            0x400000000000000L,
             active4,
-            0x110000L);
+            0x220000L);
       case 102:
         return jjMoveStringLiteralDfa5_0(
-            active0, 0L, active1, 0x1L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x2L, active2, 0L, active3, 0L, active4, 0L);
       case 103:
         return jjMoveStringLiteralDfa5_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x10000000L);
+            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x20000000L);
       case 104:
-        if ((active0 & 0x2000L) != 0L) {
-          jjmatchedKind = 13;
+        if ((active0 & 0x4000L) != 0L) {
+          jjmatchedKind = 14;
           jjmatchedPos = 4;
-        } else if ((active0 & 0x100000000000L) != 0L) {
-          jjmatchedKind = 44;
+        } else if ((active0 & 0x200000000000L) != 0L) {
+          jjmatchedKind = 45;
           jjmatchedPos = 4;
         }
         return jjMoveStringLiteralDfa5_0(
             active0,
-            0x4000000000000L,
+            0x8000000000000L,
             active1,
-            0x8L,
+            0x10L,
             active2,
-            0x4000000L,
+            0x8000000L,
             active3,
             0L,
             active4,
-            0x1L);
+            0x2L);
       case 105:
         return jjMoveStringLiteralDfa5_0(
-            active0, 0L, active1, 0x800000040080L, active2, 0x40044L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x1000000080100L, active2, 0x80088L, active3, 0L, active4, 0L);
       case 107:
         return jjMoveStringLiteralDfa5_0(
-            active0, 0L, active1, 0x100000000000000L, active2, 0L, active3, 0L, active4, 0x400000L);
+            active0, 0L, active1, 0x200000000000000L, active2, 0L, active3, 0L, active4, 0x800000L);
       case 108:
-        if ((active4 & 0x4000000L) != 0L) {
-          jjmatchedKind = 282;
+        if ((active4 & 0x8000000L) != 0L) {
+          jjmatchedKind = 283;
           jjmatchedPos = 4;
         }
         return jjMoveStringLiteralDfa5_0(
-            active0, 0L, active1, 0x400000002L, active2, 0L, active3, 0L, active4, 0x8000000L);
+            active0, 0L, active1, 0x800000004L, active2, 0L, active3, 0L, active4, 0x10000000L);
       case 109:
         return jjMoveStringLiteralDfa5_0(
             active0,
-            0x4000000000000000L,
+            0x8000000000000000L,
             active1,
-            0x4004000000800000L,
+            0x8008000001000000L,
             active2,
             0L,
             active3,
@@ -2282,15 +2303,15 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             active4,
             0L);
       case 110:
-        if ((active2 & 0x2L) != 0L) {
-          jjmatchedKind = 129;
+        if ((active2 & 0x4L) != 0L) {
+          jjmatchedKind = 130;
           jjmatchedPos = 4;
         }
         return jjMoveStringLiteralDfa5_0(
             active0,
-            0x4000000000L,
+            0x8000000000L,
             active1,
-            0x400004000120L,
+            0x800008000240L,
             active2,
             0L,
             active3,
@@ -2300,102 +2321,93 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
       case 111:
         return jjMoveStringLiteralDfa5_0(
             active0,
-            0x400000000000L,
+            0x800000000000L,
             active1,
-            0x1000000000L,
+            0x2000000000L,
             active2,
-            0x10400L,
+            0x20800L,
             active3,
             0L,
             active4,
             0L);
       case 112:
+        if ((active0 & 0x20000000000L) != 0L) {
+          jjmatchedKind = 41;
+          jjmatchedPos = 4;
+        } else if ((active2 & 0x400L) != 0L) {
+          jjmatchedKind = 138;
+          jjmatchedPos = 4;
+        }
+        return jjMoveStringLiteralDfa5_0(
+            active0, 0L, active1, 0x40000L, active2, 0x1L, active3, 0L, active4, 0x2000000L);
+      case 114:
         if ((active0 & 0x10000000000L) != 0L) {
           jjmatchedKind = 40;
           jjmatchedPos = 4;
-        } else if ((active2 & 0x200L) != 0L) {
-          jjmatchedKind = 137;
+        } else if ((active0 & 0x40000000000000L) != 0L) {
+          jjmatchedKind = 54;
+          jjmatchedPos = 4;
+        } else if ((active1 & 0x40000000L) != 0L) {
+          jjmatchedKind = 94;
           jjmatchedPos = 4;
         }
         return jjMoveStringLiteralDfa5_0(
             active0,
-            0L,
+            0x130000000208000L,
             active1,
-            0x8000000000020000L,
+            0x4000802400a000L,
             active2,
-            0L,
-            active3,
-            0L,
-            active4,
-            0x1000000L);
-      case 114:
-        if ((active0 & 0x8000000000L) != 0L) {
-          jjmatchedKind = 39;
-          jjmatchedPos = 4;
-        } else if ((active0 & 0x20000000000000L) != 0L) {
-          jjmatchedKind = 53;
-          jjmatchedPos = 4;
-        } else if ((active1 & 0x20000000L) != 0L) {
-          jjmatchedKind = 93;
-          jjmatchedPos = 4;
-        }
-        return jjMoveStringLiteralDfa5_0(
-            active0,
-            0x98000000104000L,
-            active1,
-            0x20004012005000L,
-            active2,
-            0x200000000L,
+            0x400000000L,
             active3,
             0L,
             active4,
             0L);
       case 115:
-        if ((active1 & 0x800L) != 0L) {
-          jjmatchedKind = 75;
+        if ((active1 & 0x1000L) != 0L) {
+          jjmatchedKind = 76;
           jjmatchedPos = 4;
-        } else if ((active2 & 0x80000000L) != 0L) {
-          jjmatchedKind = 159;
+        } else if ((active2 & 0x100000000L) != 0L) {
+          jjmatchedKind = 160;
           jjmatchedPos = 4;
-        } else if ((active2 & 0x2000000000L) != 0L) {
-          jjmatchedKind = 165;
+        } else if ((active2 & 0x4000000000L) != 0L) {
+          jjmatchedKind = 166;
           jjmatchedPos = 4;
         }
         return jjMoveStringLiteralDfa5_0(
-            active0, 0L, active1, 0x100002000L, active2, 0L, active3, 0L, active4, 0x200000L);
+            active0, 0L, active1, 0x200004000L, active2, 0L, active3, 0L, active4, 0x400000L);
       case 116:
-        if ((active0 & 0x40000000000L) != 0L) {
-          jjmatchedKind = 42;
+        if ((active0 & 0x80000000000L) != 0L) {
+          jjmatchedKind = 43;
           jjmatchedPos = 4;
-        } else if ((active1 & 0x80000000000000L) != 0L) {
-          jjmatchedKind = 119;
+        } else if ((active1 & 0x100000000000000L) != 0L) {
+          jjmatchedKind = 120;
           jjmatchedPos = 4;
-        } else if ((active2 & 0x8000L) != 0L) {
-          jjmatchedKind = 143;
+        } else if ((active2 & 0x10000L) != 0L) {
+          jjmatchedKind = 144;
           jjmatchedPos = 4;
-        } else if ((active2 & 0x20000L) != 0L) {
-          jjmatchedKind = 145;
+        } else if ((active2 & 0x40000L) != 0L) {
+          jjmatchedKind = 146;
           jjmatchedPos = 4;
         }
         return jjMoveStringLiteralDfa5_0(
             active0,
-            0x98000L,
+            0x130000L,
             active1,
-            0x2000002088010004L,
+            0x4000004110020008L,
             active2,
-            0x10800000L,
+            0x21000000L,
             active3,
             0L,
             active4,
-            0x8L);
+            0x10L);
       case 117:
         return jjMoveStringLiteralDfa5_0(
             active0,
             0L,
             active1,
-            0x400000000000000L,
+            0x800000000000000L,
             active2,
-            0x800102001L,
+            0x1000204002L,
             active3,
             0L,
             active4,
@@ -2403,28 +2415,28 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
       case 118:
         return jjMoveStringLiteralDfa5_0(
             active0,
-            0x200000000L,
+            0x400000000L,
             active1,
-            0x800000000L,
+            0x1000000000L,
             active2,
             0L,
             active3,
             0L,
             active4,
-            0x40000L);
+            0x80000L);
       case 120:
-        if ((active1 & 0x100000000000L) != 0L) {
-          jjmatchedKind = 108;
+        if ((active1 & 0x200000000000L) != 0L) {
+          jjmatchedKind = 109;
           jjmatchedPos = 4;
         }
         break;
       case 121:
-        if ((active0 & 0x200000000000000L) != 0L) {
-          jjmatchedKind = 57;
+        if ((active0 & 0x400000000000000L) != 0L) {
+          jjmatchedKind = 58;
           jjmatchedPos = 4;
         }
         return jjMoveStringLiteralDfa5_0(
-            active0, 0L, active1, 0x8000000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x10000000000L, active2, 0L, active3, 0L, active4, 0L);
       default:
         break;
     }
@@ -2455,141 +2467,141 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
     }
     switch (curChar) {
       case 34:
-        if ((active2 & 0x10000000000L) != 0L) {
-          jjmatchedKind = 168;
+        if ((active2 & 0x20000000000L) != 0L) {
+          jjmatchedKind = 169;
           jjmatchedPos = 5;
         }
         break;
       case 45:
         return jjMoveStringLiteralDfa6_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x20000L);
+            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x40000L);
       case 65:
         return jjMoveStringLiteralDfa6_0(
-            active0, 0L, active1, 0x2080010410000L, active2, 0x4000009L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x4100020820000L, active2, 0x8000012L, active3, 0L, active4, 0L);
       case 67:
         return jjMoveStringLiteralDfa6_0(
-            active0, 0L, active1, 0x5000L, active2, 0x1000000L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0xa000L, active2, 0x2000000L, active3, 0L, active4, 0L);
       case 68:
-        if ((active0 & 0x80000000000000L) != 0L) {
-          jjmatchedKind = 55;
+        if ((active0 & 0x100000000000000L) != 0L) {
+          jjmatchedKind = 56;
           jjmatchedPos = 5;
-        } else if ((active1 & 0x100L) != 0L) {
-          jjmatchedKind = 72;
+        } else if ((active1 & 0x200L) != 0L) {
+          jjmatchedKind = 73;
           jjmatchedPos = 5;
-        } else if ((active2 & 0x1000L) != 0L) {
-          jjmatchedKind = 140;
+        } else if ((active2 & 0x2000L) != 0L) {
+          jjmatchedKind = 141;
           jjmatchedPos = 5;
         }
         return jjMoveStringLiteralDfa6_0(
-            active0, 0L, active1, 0x4000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x8000000L, active2, 0L, active3, 0L, active4, 0L);
       case 69:
-        if ((active0 & 0x8000L) != 0L) {
-          jjmatchedKind = 15;
-          jjmatchedPos = 5;
-        } else if ((active0 & 0x10000L) != 0L) {
+        if ((active0 & 0x10000L) != 0L) {
           jjmatchedKind = 16;
           jjmatchedPos = 5;
-        } else if ((active0 & 0x80000L) != 0L) {
-          jjmatchedKind = 19;
+        } else if ((active0 & 0x20000L) != 0L) {
+          jjmatchedKind = 17;
           jjmatchedPos = 5;
-        } else if ((active0 & 0x200000000L) != 0L) {
-          jjmatchedKind = 33;
+        } else if ((active0 & 0x100000L) != 0L) {
+          jjmatchedKind = 20;
           jjmatchedPos = 5;
-        } else if ((active0 & 0x10000000000000L) != 0L) {
-          jjmatchedKind = 52;
+        } else if ((active0 & 0x400000000L) != 0L) {
+          jjmatchedKind = 34;
           jjmatchedPos = 5;
-        } else if ((active1 & 0x1L) != 0L) {
-          jjmatchedKind = 64;
+        } else if ((active0 & 0x20000000000000L) != 0L) {
+          jjmatchedKind = 53;
           jjmatchedPos = 5;
-        } else if ((active1 & 0x20L) != 0L) {
-          jjmatchedKind = 69;
+        } else if ((active1 & 0x2L) != 0L) {
+          jjmatchedKind = 65;
           jjmatchedPos = 5;
-        } else if ((active1 & 0x400000000000L) != 0L) {
-          jjmatchedKind = 110;
+        } else if ((active1 & 0x40L) != 0L) {
+          jjmatchedKind = 70;
           jjmatchedPos = 5;
-        } else if ((active1 & 0x100000000000000L) != 0L) {
-          jjmatchedKind = 120;
+        } else if ((active1 & 0x800000000000L) != 0L) {
+          jjmatchedKind = 111;
+          jjmatchedPos = 5;
+        } else if ((active1 & 0x200000000000000L) != 0L) {
+          jjmatchedKind = 121;
           jjmatchedPos = 5;
         }
         return jjMoveStringLiteralDfa6_0(
             active0,
-            0x4000000000L,
+            0x8000000000L,
             active1,
-            0x400000280a002004L,
+            0x8000005014004008L,
             active2,
             0L,
             active3,
-            0x200000000000000L,
+            0x400000000000000L,
             active4,
-            0x9L);
+            0x12L);
       case 71:
         return jjMoveStringLiteralDfa6_0(
-            active0, 0L, active1, 0x80000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x100000L, active2, 0L, active3, 0L, active4, 0L);
       case 72:
         return jjMoveStringLiteralDfa6_0(
-            active0, 0x2000000000000000L, active1, 0L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0x4000000000000000L, active1, 0L, active2, 0L, active3, 0L, active4, 0L);
       case 73:
-        return jjMoveStringLiteralDfa6_0(
-            active0,
-            0x4000000000000000L,
-            active1,
-            0x2044004100000000L,
-            active2,
-            0x210000000L,
-            active3,
-            0xfc00000000000000L,
-            active4,
-            0L);
-      case 76:
         return jjMoveStringLiteralDfa6_0(
             active0,
             0x8000000000000000L,
             active1,
-            0x800000040002L,
+            0x4088008200000000L,
             active2,
-            0x808002400L,
+            0x420000000L,
+            active3,
+            0xf800000000000000L,
+            active4,
+            0x1L);
+      case 76:
+        return jjMoveStringLiteralDfa6_0(
+            active0,
+            0L,
+            active1,
+            0x1000000080005L,
+            active2,
+            0x1010004800L,
             active3,
             0L,
             active4,
             0L);
       case 77:
-        if ((active1 & 0x1000000000L) != 0L) {
-          jjmatchedKind = 100;
+        if ((active1 & 0x2000000000L) != 0L) {
+          jjmatchedKind = 101;
           jjmatchedPos = 5;
-        } else if ((active2 & 0x1000000000L) != 0L) {
-          jjmatchedKind = 164;
+        } else if ((active2 & 0x2000000000L) != 0L) {
+          jjmatchedKind = 165;
           jjmatchedPos = 5;
         }
         return jjMoveStringLiteralDfa6_0(
-            active0, 0x400000000L, active1, 0L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0x800000000L, active1, 0L, active2, 0L, active3, 0L, active4, 0L);
       case 78:
-        if ((active0 & 0x8000000000000L) != 0L) {
-          jjmatchedKind = 51;
+        if ((active0 & 0x10000000000000L) != 0L) {
+          jjmatchedKind = 52;
           jjmatchedPos = 5;
-        } else if ((active1 & 0x80L) != 0L) {
-          jjmatchedKind = 71;
+        } else if ((active1 & 0x100L) != 0L) {
+          jjmatchedKind = 72;
           jjmatchedPos = 5;
         }
         return jjMoveStringLiteralDfa6_0(
             active0,
-            0x100000000L,
+            0x200000000L,
             active1,
-            0x80000000L,
+            0x100000000L,
             active2,
-            0x54040L,
+            0xa8080L,
             active3,
             0L,
             active4,
-            0x4L);
+            0x8L);
       case 79:
         return jjMoveStringLiteralDfa6_0(
-            active0, 0L, active1, 0x8000000000800000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x1000000L, active2, 0x1L, active3, 0L, active4, 0L);
       case 80:
         return jjMoveStringLiteralDfa6_0(
             active0,
-            0x4000000000000L,
+            0x8000000000000L,
             active1,
-            0x8000000600L,
+            0x10000000c00L,
             active2,
             0L,
             active3,
@@ -2597,204 +2609,204 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             active4,
             0L);
       case 82:
-        if ((active2 & 0x200000L) != 0L) {
+        if ((active2 & 0x400000L) != 0L) {
+          jjmatchedKind = 150;
+          jjmatchedPos = 5;
+        }
+        return jjMoveStringLiteralDfa6_0(
+            active0, 0x2000L, active1, 0x40000000000L, active2, 0L, active3, 0L, active4, 0L);
+      case 83:
+        if ((active0 & 0x10000000L) != 0L) {
+          jjmatchedKind = 28;
+          jjmatchedPos = 5;
+        } else if ((active2 & 0x200000L) != 0L) {
           jjmatchedKind = 149;
           jjmatchedPos = 5;
-        }
-        return jjMoveStringLiteralDfa6_0(
-            active0, 0x1000L, active1, 0x20000000000L, active2, 0L, active3, 0L, active4, 0L);
-      case 83:
-        if ((active0 & 0x8000000L) != 0L) {
-          jjmatchedKind = 27;
-          jjmatchedPos = 5;
-        } else if ((active2 & 0x100000L) != 0L) {
-          jjmatchedKind = 148;
-          jjmatchedPos = 5;
-        } else if ((active2 & 0x800000L) != 0L) {
-          jjmatchedKind = 151;
+        } else if ((active2 & 0x1000000L) != 0L) {
+          jjmatchedKind = 152;
           jjmatchedPos = 5;
         }
         return jjMoveStringLiteralDfa6_0(
-            active0, 0L, active1, 0x20000000000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x40000000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 84:
-        if ((active0 & 0x800L) != 0L) {
-          jjmatchedKind = 11;
+        if ((active0 & 0x1000L) != 0L) {
+          jjmatchedKind = 12;
           jjmatchedPos = 5;
-        } else if ((active0 & 0x4000L) != 0L) {
-          jjmatchedKind = 14;
+        } else if ((active0 & 0x8000L) != 0L) {
+          jjmatchedKind = 15;
           jjmatchedPos = 5;
-        } else if ((active0 & 0x100000L) != 0L) {
-          jjmatchedKind = 20;
+        } else if ((active0 & 0x200000L) != 0L) {
+          jjmatchedKind = 21;
           jjmatchedPos = 5;
-        } else if ((active0 & 0x200000000000L) != 0L) {
-          jjmatchedKind = 45;
+        } else if ((active0 & 0x400000000000L) != 0L) {
+          jjmatchedKind = 46;
           jjmatchedPos = 5;
-        } else if ((active2 & 0x4L) != 0L) {
-          jjmatchedKind = 130;
+        } else if ((active2 & 0x8L) != 0L) {
+          jjmatchedKind = 131;
           jjmatchedPos = 5;
         }
         return jjMoveStringLiteralDfa6_0(
-            active0, 0L, active1, 0x400200200020010L, active2, 0x100L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x800400400040020L, active2, 0x200L, active3, 0L, active4, 0L);
       case 85:
         return jjMoveStringLiteralDfa6_0(
-            active0, 0x400000000000L, active1, 0x400000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0x800000000000L, active1, 0x800000000L, active2, 0L, active3, 0L, active4, 0L);
       case 88:
-        if ((active0 & 0x20000L) != 0L) {
-          jjmatchedKind = 17;
+        if ((active0 & 0x40000L) != 0L) {
+          jjmatchedKind = 18;
           jjmatchedPos = 5;
         }
         break;
       case 89:
-        if ((active2 & 0x400000000L) != 0L) {
-          jjmatchedKind = 162;
+        if ((active2 & 0x800000000L) != 0L) {
+          jjmatchedKind = 163;
           jjmatchedPos = 5;
         }
         break;
       case 95:
         return jjMoveStringLiteralDfa6_0(
-            active0, 0L, active1, 0x8L, active2, 0L, active3, 0L, active4, 0x8000000L);
+            active0, 0L, active1, 0x10L, active2, 0L, active3, 0L, active4, 0x10000000L);
       case 97:
         return jjMoveStringLiteralDfa6_0(
             active0,
             0L,
             active1,
-            0x2080010410000L,
+            0x4100020820000L,
             active2,
-            0x4000009L,
+            0x8000012L,
             active3,
             0L,
             active4,
-            0x200000L);
+            0x400000L);
       case 99:
         return jjMoveStringLiteralDfa6_0(
-            active0, 0L, active1, 0x5000L, active2, 0x1000000L, active3, 0L, active4, 0x10000L);
+            active0, 0L, active1, 0xa000L, active2, 0x2000000L, active3, 0L, active4, 0x20000L);
       case 100:
-        if ((active0 & 0x80000000000000L) != 0L) {
-          jjmatchedKind = 55;
+        if ((active0 & 0x100000000000000L) != 0L) {
+          jjmatchedKind = 56;
           jjmatchedPos = 5;
-        } else if ((active1 & 0x100L) != 0L) {
-          jjmatchedKind = 72;
+        } else if ((active1 & 0x200L) != 0L) {
+          jjmatchedKind = 73;
           jjmatchedPos = 5;
-        } else if ((active2 & 0x1000L) != 0L) {
-          jjmatchedKind = 140;
+        } else if ((active2 & 0x2000L) != 0L) {
+          jjmatchedKind = 141;
           jjmatchedPos = 5;
         }
         return jjMoveStringLiteralDfa6_0(
-            active0, 0L, active1, 0x4000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x8000000L, active2, 0L, active3, 0L, active4, 0L);
       case 101:
-        if ((active0 & 0x8000L) != 0L) {
-          jjmatchedKind = 15;
-          jjmatchedPos = 5;
-        } else if ((active0 & 0x10000L) != 0L) {
+        if ((active0 & 0x10000L) != 0L) {
           jjmatchedKind = 16;
           jjmatchedPos = 5;
-        } else if ((active0 & 0x80000L) != 0L) {
-          jjmatchedKind = 19;
+        } else if ((active0 & 0x20000L) != 0L) {
+          jjmatchedKind = 17;
           jjmatchedPos = 5;
-        } else if ((active0 & 0x200000000L) != 0L) {
-          jjmatchedKind = 33;
+        } else if ((active0 & 0x100000L) != 0L) {
+          jjmatchedKind = 20;
           jjmatchedPos = 5;
-        } else if ((active0 & 0x10000000000000L) != 0L) {
-          jjmatchedKind = 52;
+        } else if ((active0 & 0x400000000L) != 0L) {
+          jjmatchedKind = 34;
           jjmatchedPos = 5;
-        } else if ((active1 & 0x1L) != 0L) {
-          jjmatchedKind = 64;
+        } else if ((active0 & 0x20000000000000L) != 0L) {
+          jjmatchedKind = 53;
           jjmatchedPos = 5;
-        } else if ((active1 & 0x20L) != 0L) {
-          jjmatchedKind = 69;
+        } else if ((active1 & 0x2L) != 0L) {
+          jjmatchedKind = 65;
           jjmatchedPos = 5;
-        } else if ((active1 & 0x400000000000L) != 0L) {
-          jjmatchedKind = 110;
+        } else if ((active1 & 0x40L) != 0L) {
+          jjmatchedKind = 70;
           jjmatchedPos = 5;
-        } else if ((active1 & 0x100000000000000L) != 0L) {
-          jjmatchedKind = 120;
+        } else if ((active1 & 0x800000000000L) != 0L) {
+          jjmatchedKind = 111;
           jjmatchedPos = 5;
-        } else if ((active4 & 0x2000000L) != 0L) {
-          jjmatchedKind = 281;
+        } else if ((active1 & 0x200000000000000L) != 0L) {
+          jjmatchedKind = 121;
           jjmatchedPos = 5;
-        } else if ((active4 & 0x10000000L) != 0L) {
-          jjmatchedKind = 284;
+        } else if ((active4 & 0x4000000L) != 0L) {
+          jjmatchedKind = 282;
+          jjmatchedPos = 5;
+        } else if ((active4 & 0x20000000L) != 0L) {
+          jjmatchedKind = 285;
           jjmatchedPos = 5;
         }
         return jjMoveStringLiteralDfa6_0(
             active0,
-            0x4000000000L,
+            0x8000000000L,
             active1,
-            0x400000280a002004L,
+            0x8000005014004008L,
             active2,
             0L,
             active3,
-            0x200000000000000L,
+            0x400000000000000L,
             active4,
-            0x40009L);
+            0x80012L);
       case 103:
         return jjMoveStringLiteralDfa6_0(
-            active0, 0L, active1, 0x80000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x100000L, active2, 0L, active3, 0L, active4, 0L);
       case 104:
         return jjMoveStringLiteralDfa6_0(
-            active0, 0x2000000000000000L, active1, 0L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0x4000000000000000L, active1, 0L, active2, 0L, active3, 0L, active4, 0L);
       case 105:
-        return jjMoveStringLiteralDfa6_0(
-            active0,
-            0x4000000000000000L,
-            active1,
-            0x2044004100000000L,
-            active2,
-            0x210000000L,
-            active3,
-            0xfc00000000000000L,
-            active4,
-            0L);
-      case 108:
         return jjMoveStringLiteralDfa6_0(
             active0,
             0x8000000000000000L,
             active1,
-            0x800000040002L,
+            0x4088008200000000L,
             active2,
-            0x808002400L,
+            0x420000000L,
+            active3,
+            0xf800000000000000L,
+            active4,
+            0x1L);
+      case 108:
+        return jjMoveStringLiteralDfa6_0(
+            active0,
+            0L,
+            active1,
+            0x1000000080005L,
+            active2,
+            0x1010004800L,
             active3,
             0L,
             active4,
             0L);
       case 109:
-        if ((active1 & 0x1000000000L) != 0L) {
-          jjmatchedKind = 100;
+        if ((active1 & 0x2000000000L) != 0L) {
+          jjmatchedKind = 101;
           jjmatchedPos = 5;
-        } else if ((active2 & 0x1000000000L) != 0L) {
-          jjmatchedKind = 164;
+        } else if ((active2 & 0x2000000000L) != 0L) {
+          jjmatchedKind = 165;
           jjmatchedPos = 5;
         }
         return jjMoveStringLiteralDfa6_0(
-            active0, 0x400000000L, active1, 0L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0x800000000L, active1, 0L, active2, 0L, active3, 0L, active4, 0L);
       case 110:
-        if ((active0 & 0x8000000000000L) != 0L) {
-          jjmatchedKind = 51;
+        if ((active0 & 0x10000000000000L) != 0L) {
+          jjmatchedKind = 52;
           jjmatchedPos = 5;
-        } else if ((active1 & 0x80L) != 0L) {
-          jjmatchedKind = 71;
+        } else if ((active1 & 0x100L) != 0L) {
+          jjmatchedKind = 72;
           jjmatchedPos = 5;
         }
         return jjMoveStringLiteralDfa6_0(
             active0,
-            0x100000000L,
+            0x200000000L,
             active1,
-            0x80000000L,
+            0x100000000L,
             active2,
-            0x54040L,
+            0xa8080L,
             active3,
             0L,
             active4,
-            0x100004L);
+            0x200008L);
       case 111:
         return jjMoveStringLiteralDfa6_0(
-            active0, 0L, active1, 0x8000000000800000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x1000000L, active2, 0x1L, active3, 0L, active4, 0L);
       case 112:
         return jjMoveStringLiteralDfa6_0(
             active0,
-            0x4000000000000L,
+            0x8000000000000L,
             active1,
-            0x8000000600L,
+            0x10000000c00L,
             active2,
             0L,
             active3,
@@ -2802,68 +2814,68 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             active4,
             0L);
       case 114:
-        if ((active2 & 0x200000L) != 0L) {
+        if ((active2 & 0x400000L) != 0L) {
+          jjmatchedKind = 150;
+          jjmatchedPos = 5;
+        }
+        return jjMoveStringLiteralDfa6_0(
+            active0, 0x2000L, active1, 0x40000000000L, active2, 0L, active3, 0L, active4, 0L);
+      case 115:
+        if ((active0 & 0x10000000L) != 0L) {
+          jjmatchedKind = 28;
+          jjmatchedPos = 5;
+        } else if ((active2 & 0x200000L) != 0L) {
           jjmatchedKind = 149;
           jjmatchedPos = 5;
-        }
-        return jjMoveStringLiteralDfa6_0(
-            active0, 0x1000L, active1, 0x20000000000L, active2, 0L, active3, 0L, active4, 0L);
-      case 115:
-        if ((active0 & 0x8000000L) != 0L) {
-          jjmatchedKind = 27;
+        } else if ((active2 & 0x1000000L) != 0L) {
+          jjmatchedKind = 152;
           jjmatchedPos = 5;
-        } else if ((active2 & 0x100000L) != 0L) {
-          jjmatchedKind = 148;
-          jjmatchedPos = 5;
-        } else if ((active2 & 0x800000L) != 0L) {
-          jjmatchedKind = 151;
-          jjmatchedPos = 5;
-        } else if ((active4 & 0x400000L) != 0L) {
-          jjmatchedKind = 278;
+        } else if ((active4 & 0x800000L) != 0L) {
+          jjmatchedKind = 279;
           jjmatchedPos = 5;
         }
         return jjMoveStringLiteralDfa6_0(
-            active0, 0L, active1, 0x20000000000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x40000000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 116:
-        if ((active0 & 0x800L) != 0L) {
-          jjmatchedKind = 11;
+        if ((active0 & 0x1000L) != 0L) {
+          jjmatchedKind = 12;
           jjmatchedPos = 5;
-        } else if ((active0 & 0x4000L) != 0L) {
-          jjmatchedKind = 14;
+        } else if ((active0 & 0x8000L) != 0L) {
+          jjmatchedKind = 15;
           jjmatchedPos = 5;
-        } else if ((active0 & 0x100000L) != 0L) {
-          jjmatchedKind = 20;
+        } else if ((active0 & 0x200000L) != 0L) {
+          jjmatchedKind = 21;
           jjmatchedPos = 5;
-        } else if ((active0 & 0x200000000000L) != 0L) {
-          jjmatchedKind = 45;
+        } else if ((active0 & 0x400000000000L) != 0L) {
+          jjmatchedKind = 46;
           jjmatchedPos = 5;
-        } else if ((active2 & 0x4L) != 0L) {
-          jjmatchedKind = 130;
+        } else if ((active2 & 0x8L) != 0L) {
+          jjmatchedKind = 131;
           jjmatchedPos = 5;
         }
         return jjMoveStringLiteralDfa6_0(
-            active0, 0L, active1, 0x400200200020010L, active2, 0x100L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x800400400040020L, active2, 0x200L, active3, 0L, active4, 0L);
       case 117:
         return jjMoveStringLiteralDfa6_0(
             active0,
-            0x400000000000L,
+            0x800000000000L,
             active1,
-            0x400000000L,
+            0x800000000L,
             active2,
             0L,
             active3,
             0L,
             active4,
-            0x1000000L);
+            0x2000000L);
       case 120:
-        if ((active0 & 0x20000L) != 0L) {
-          jjmatchedKind = 17;
+        if ((active0 & 0x40000L) != 0L) {
+          jjmatchedKind = 18;
           jjmatchedPos = 5;
         }
         break;
       case 121:
-        if ((active2 & 0x400000000L) != 0L) {
-          jjmatchedKind = 162;
+        if ((active2 & 0x800000000L) != 0L) {
+          jjmatchedKind = 163;
           jjmatchedPos = 5;
         }
         break;
@@ -2898,310 +2910,319 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
     switch (curChar) {
       case 65:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x80000000L, active2, 0x10000L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x100000000L, active2, 0x20000L, active3, 0L, active4, 0L);
       case 66:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x10000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x20000L, active2, 0L, active3, 0L, active4, 0L);
       case 67:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x810000000L, active2, 0x44008L, active3, 0L, active4, 0x4L);
+            active0, 0L, active1, 0x1020000000L, active2, 0x88010L, active3, 0L, active4, 0x8L);
       case 68:
-        if ((active0 & 0x4000000000L) != 0L) {
-          jjmatchedKind = 38;
+        if ((active0 & 0x8000000000L) != 0L) {
+          jjmatchedKind = 39;
           jjmatchedPos = 6;
-        } else if ((active1 & 0x800000000000L) != 0L) {
-          jjmatchedKind = 111;
+        } else if ((active1 & 0x1000000000000L) != 0L) {
+          jjmatchedKind = 112;
           jjmatchedPos = 6;
         }
         break;
       case 69:
-        if ((active0 & 0x2000000000000000L) != 0L) {
-          jjmatchedKind = 61;
+        if ((active0 & 0x4000000000000000L) != 0L) {
+          jjmatchedKind = 62;
           jjmatchedPos = 6;
-        } else if ((active0 & 0x8000000000000000L) != 0L) {
-          jjmatchedKind = 63;
-          jjmatchedPos = 6;
-        } else if ((active1 & 0x40000L) != 0L) {
-          jjmatchedKind = 82;
+        } else if ((active1 & 0x1L) != 0L) {
+          jjmatchedKind = 64;
           jjmatchedPos = 6;
         } else if ((active1 & 0x80000L) != 0L) {
           jjmatchedKind = 83;
           jjmatchedPos = 6;
-        } else if ((active1 & 0x200000000000L) != 0L) {
-          jjmatchedKind = 109;
+        } else if ((active1 & 0x100000L) != 0L) {
+          jjmatchedKind = 84;
           jjmatchedPos = 6;
-        } else if ((active1 & 0x20000000000000L) != 0L) {
-          jjmatchedKind = 117;
+        } else if ((active1 & 0x400000000000L) != 0L) {
+          jjmatchedKind = 110;
           jjmatchedPos = 6;
-        } else if ((active1 & 0x400000000000000L) != 0L) {
-          jjmatchedKind = 122;
+        } else if ((active1 & 0x40000000000000L) != 0L) {
+          jjmatchedKind = 118;
           jjmatchedPos = 6;
-        } else if ((active2 & 0x400L) != 0L) {
-          jjmatchedKind = 138;
+        } else if ((active1 & 0x800000000000000L) != 0L) {
+          jjmatchedKind = 123;
+          jjmatchedPos = 6;
+        } else if ((active2 & 0x800L) != 0L) {
+          jjmatchedKind = 139;
           jjmatchedPos = 6;
         }
         return jjMoveStringLiteralDfa7_0(
-            active0, 0x400000000L, active1, 0x2L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0x800000000L, active1, 0x4L, active2, 0L, active3, 0L, active4, 0L);
       case 70:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x8L, active2, 0x10000000L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x10L, active2, 0x20000000L, active3, 0L, active4, 0L);
       case 71:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x4L, active2, 0x1L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x8L, active2, 0x2L, active3, 0L, active4, 0L);
       case 72:
-        if ((active2 & 0x1000000L) != 0L) {
-          jjmatchedKind = 152;
+        if ((active2 & 0x2000000L) != 0L) {
+          jjmatchedKind = 153;
           jjmatchedPos = 6;
         }
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x10L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x20L, active2, 0L, active3, 0L, active4, 0L);
       case 73:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x20000L, active2, 0x8000100L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x40000L, active2, 0x10000200L, active3, 0L, active4, 0L);
       case 76:
         return jjMoveStringLiteralDfa7_0(
             active0,
-            0x4000000000000L,
+            0x8000000000000L,
             active1,
-            0x5000L,
+            0xa000L,
             active2,
-            0x4000000L,
+            0x8000000L,
             active3,
             0L,
             active4,
             0L);
       case 77:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x200000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x400000000L, active2, 0L, active3, 0L, active4, 0L);
       case 78:
-        if ((active1 & 0x40000000000000L) != 0L) {
-          jjmatchedKind = 118;
+        if ((active1 & 0x80000000000000L) != 0L) {
+          jjmatchedKind = 119;
           jjmatchedPos = 6;
-        } else if ((active3 & 0x200000000000000L) != 0L) {
-          jjmatchedKind = 249;
+        } else if ((active3 & 0x400000000000000L) != 0L) {
+          jjmatchedKind = 250;
           jjmatchedPos = 6;
         }
         return jjMoveStringLiteralDfa7_0(
             active0,
             0L,
             active1,
-            0x2000000L,
+            0x4000000L,
             active2,
             0L,
             active3,
-            0xfc00000000000000L,
+            0xf800000000000000L,
             active4,
-            0L);
+            0x1L);
       case 79:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x2000000000000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x4000000000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 80:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x4000000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x8000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 82:
-        if ((active4 & 0x8L) != 0L) {
-          jjmatchedKind = 259;
+        if ((active4 & 0x10L) != 0L) {
+          jjmatchedKind = 260;
           jjmatchedPos = 6;
         }
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x2008800000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x4011000000L, active2, 0L, active3, 0L, active4, 0L);
       case 83:
-        if ((active1 & 0x2000L) != 0L) {
-          jjmatchedKind = 77;
+        if ((active1 & 0x4000L) != 0L) {
+          jjmatchedKind = 78;
           jjmatchedPos = 6;
-        } else if ((active1 & 0x4000000L) != 0L) {
-          jjmatchedKind = 90;
+        } else if ((active1 & 0x8000000L) != 0L) {
+          jjmatchedKind = 91;
           jjmatchedPos = 6;
-        } else if ((active4 & 0x1L) != 0L) {
-          jjmatchedKind = 256;
+        } else if ((active4 & 0x2L) != 0L) {
+          jjmatchedKind = 257;
           jjmatchedPos = 6;
         }
         return jjMoveStringLiteralDfa7_0(
-            active0, 0x1000L, active1, 0x2000400000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0x2000L, active1, 0x4000800000000L, active2, 0L, active3, 0L, active4, 0L);
       case 84:
-        if ((active0 & 0x100000000L) != 0L) {
-          jjmatchedKind = 32;
+        if ((active0 & 0x200000000L) != 0L) {
+          jjmatchedKind = 33;
           jjmatchedPos = 6;
-        } else if ((active0 & 0x400000000000L) != 0L) {
-          jjmatchedKind = 46;
+        } else if ((active0 & 0x800000000000L) != 0L) {
+          jjmatchedKind = 47;
           jjmatchedPos = 6;
-        } else if ((active0 & 0x4000000000000000L) != 0L) {
-          jjmatchedKind = 62;
+        } else if ((active0 & 0x8000000000000000L) != 0L) {
+          jjmatchedKind = 63;
           jjmatchedPos = 6;
-        } else if ((active2 & 0x2000L) != 0L) {
-          jjmatchedKind = 141;
+        } else if ((active2 & 0x4000L) != 0L) {
+          jjmatchedKind = 142;
           jjmatchedPos = 6;
         }
         return jjMoveStringLiteralDfa7_0(
             active0,
             0L,
             active1,
-            0xc0000a8000400600L,
+            0x8000150000800c00L,
             active2,
-            0xa00000000L,
+            0x1400000001L,
             active3,
             0L,
             active4,
             0L);
       case 85:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0L, active2, 0x40L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0L, active2, 0x80L, active3, 0L, active4, 0L);
       case 90:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x4000100000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x8000200000000L, active2, 0L, active3, 0L, active4, 0L);
       case 97:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x80000000L, active2, 0x10000L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x100000000L, active2, 0x20000L, active3, 0L, active4, 0L);
       case 98:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x10000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x20000L, active2, 0L, active3, 0L, active4, 0L);
       case 99:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x810000000L, active2, 0x44008L, active3, 0L, active4, 0x100004L);
+            active0,
+            0L,
+            active1,
+            0x1020000000L,
+            active2,
+            0x88010L,
+            active3,
+            0L,
+            active4,
+            0x200008L);
       case 100:
-        if ((active0 & 0x4000000000L) != 0L) {
-          jjmatchedKind = 38;
+        if ((active0 & 0x8000000000L) != 0L) {
+          jjmatchedKind = 39;
           jjmatchedPos = 6;
-        } else if ((active1 & 0x800000000000L) != 0L) {
-          jjmatchedKind = 111;
+        } else if ((active1 & 0x1000000000000L) != 0L) {
+          jjmatchedKind = 112;
           jjmatchedPos = 6;
         }
         break;
       case 101:
-        if ((active0 & 0x2000000000000000L) != 0L) {
-          jjmatchedKind = 61;
+        if ((active0 & 0x4000000000000000L) != 0L) {
+          jjmatchedKind = 62;
           jjmatchedPos = 6;
-        } else if ((active0 & 0x8000000000000000L) != 0L) {
-          jjmatchedKind = 63;
-          jjmatchedPos = 6;
-        } else if ((active1 & 0x40000L) != 0L) {
-          jjmatchedKind = 82;
+        } else if ((active1 & 0x1L) != 0L) {
+          jjmatchedKind = 64;
           jjmatchedPos = 6;
         } else if ((active1 & 0x80000L) != 0L) {
           jjmatchedKind = 83;
           jjmatchedPos = 6;
-        } else if ((active1 & 0x200000000000L) != 0L) {
-          jjmatchedKind = 109;
+        } else if ((active1 & 0x100000L) != 0L) {
+          jjmatchedKind = 84;
           jjmatchedPos = 6;
-        } else if ((active1 & 0x20000000000000L) != 0L) {
-          jjmatchedKind = 117;
+        } else if ((active1 & 0x400000000000L) != 0L) {
+          jjmatchedKind = 110;
           jjmatchedPos = 6;
-        } else if ((active1 & 0x400000000000000L) != 0L) {
-          jjmatchedKind = 122;
+        } else if ((active1 & 0x40000000000000L) != 0L) {
+          jjmatchedKind = 118;
           jjmatchedPos = 6;
-        } else if ((active2 & 0x400L) != 0L) {
-          jjmatchedKind = 138;
+        } else if ((active1 & 0x800000000000000L) != 0L) {
+          jjmatchedKind = 123;
+          jjmatchedPos = 6;
+        } else if ((active2 & 0x800L) != 0L) {
+          jjmatchedKind = 139;
           jjmatchedPos = 6;
         }
         return jjMoveStringLiteralDfa7_0(
-            active0, 0x400000000L, active1, 0x2L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0x800000000L, active1, 0x4L, active2, 0L, active3, 0L, active4, 0L);
       case 102:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x8L, active2, 0x10000000L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x10L, active2, 0x20000000L, active3, 0L, active4, 0L);
       case 103:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x4L, active2, 0x1L, active3, 0L, active4, 0x200000L);
+            active0, 0L, active1, 0x8L, active2, 0x2L, active3, 0L, active4, 0x400000L);
       case 104:
-        if ((active2 & 0x1000000L) != 0L) {
-          jjmatchedKind = 152;
+        if ((active2 & 0x2000000L) != 0L) {
+          jjmatchedKind = 153;
           jjmatchedPos = 6;
         }
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x10L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x20L, active2, 0L, active3, 0L, active4, 0L);
       case 105:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x20000L, active2, 0x8000100L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x40000L, active2, 0x10000200L, active3, 0L, active4, 0L);
       case 108:
         return jjMoveStringLiteralDfa7_0(
             active0,
-            0x4000000000000L,
+            0x8000000000000L,
             active1,
-            0x5000L,
+            0xa000L,
             active2,
-            0x4000000L,
+            0x8000000L,
             active3,
             0L,
             active4,
             0L);
       case 109:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x200000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x400000000L, active2, 0L, active3, 0L, active4, 0L);
       case 110:
-        if ((active1 & 0x40000000000000L) != 0L) {
-          jjmatchedKind = 118;
+        if ((active1 & 0x80000000000000L) != 0L) {
+          jjmatchedKind = 119;
           jjmatchedPos = 6;
-        } else if ((active3 & 0x200000000000000L) != 0L) {
-          jjmatchedKind = 249;
+        } else if ((active3 & 0x400000000000000L) != 0L) {
+          jjmatchedKind = 250;
           jjmatchedPos = 6;
         }
         return jjMoveStringLiteralDfa7_0(
             active0,
             0L,
             active1,
-            0x2000000L,
+            0x4000000L,
             active2,
             0L,
             active3,
-            0xfc00000000000000L,
+            0xf800000000000000L,
             active4,
-            0L);
+            0x1L);
       case 111:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x2000000000000000L, active2, 0L, active3, 0L, active4, 0x10000L);
+            active0, 0L, active1, 0x4000000000000000L, active2, 0L, active3, 0L, active4, 0x20000L);
       case 112:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x4000000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x8000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 114:
-        if ((active4 & 0x8L) != 0L) {
-          jjmatchedKind = 259;
+        if ((active4 & 0x10L) != 0L) {
+          jjmatchedKind = 260;
           jjmatchedPos = 6;
         }
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x2008800000L, active2, 0L, active3, 0L, active4, 0x8060000L);
+            active0, 0L, active1, 0x4011000000L, active2, 0L, active3, 0L, active4, 0x100c0000L);
       case 115:
-        if ((active1 & 0x2000L) != 0L) {
-          jjmatchedKind = 77;
+        if ((active1 & 0x4000L) != 0L) {
+          jjmatchedKind = 78;
           jjmatchedPos = 6;
-        } else if ((active1 & 0x4000000L) != 0L) {
-          jjmatchedKind = 90;
+        } else if ((active1 & 0x8000000L) != 0L) {
+          jjmatchedKind = 91;
           jjmatchedPos = 6;
-        } else if ((active4 & 0x1L) != 0L) {
-          jjmatchedKind = 256;
+        } else if ((active4 & 0x2L) != 0L) {
+          jjmatchedKind = 257;
           jjmatchedPos = 6;
         }
         return jjMoveStringLiteralDfa7_0(
-            active0, 0x1000L, active1, 0x2000400000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0x2000L, active1, 0x4000800000000L, active2, 0L, active3, 0L, active4, 0L);
       case 116:
-        if ((active0 & 0x100000000L) != 0L) {
-          jjmatchedKind = 32;
+        if ((active0 & 0x200000000L) != 0L) {
+          jjmatchedKind = 33;
           jjmatchedPos = 6;
-        } else if ((active0 & 0x400000000000L) != 0L) {
-          jjmatchedKind = 46;
+        } else if ((active0 & 0x800000000000L) != 0L) {
+          jjmatchedKind = 47;
           jjmatchedPos = 6;
-        } else if ((active0 & 0x4000000000000000L) != 0L) {
-          jjmatchedKind = 62;
+        } else if ((active0 & 0x8000000000000000L) != 0L) {
+          jjmatchedKind = 63;
           jjmatchedPos = 6;
-        } else if ((active2 & 0x2000L) != 0L) {
-          jjmatchedKind = 141;
+        } else if ((active2 & 0x4000L) != 0L) {
+          jjmatchedKind = 142;
           jjmatchedPos = 6;
         }
         return jjMoveStringLiteralDfa7_0(
             active0,
             0L,
             active1,
-            0xc0000a8000400600L,
+            0x8000150000800c00L,
             active2,
-            0xa00000000L,
+            0x1400000001L,
             active3,
             0L,
             active4,
-            0x1000000L);
+            0x2000000L);
       case 117:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0L, active2, 0x40L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0L, active2, 0x80L, active3, 0L, active4, 0L);
       case 122:
         return jjMoveStringLiteralDfa7_0(
-            active0, 0L, active1, 0x4000100000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x8000200000000L, active2, 0L, active3, 0L, active4, 0L);
       default:
         break;
     }
@@ -3233,289 +3254,289 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
     switch (curChar) {
       case 61:
         return jjMoveStringLiteralDfa8_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x1000000L);
+            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x2000000L);
       case 65:
-        if ((active1 & 0x80000000000L) != 0L) {
-          jjmatchedKind = 107;
+        if ((active1 & 0x100000000000L) != 0L) {
+          jjmatchedKind = 108;
           jjmatchedPos = 7;
         }
         return jjMoveStringLiteralDfa8_0(
             active0,
-            0x4000000000000L,
+            0x8000000000000L,
             active1,
-            0x5000L,
+            0xa000L,
             active2,
-            0x8000000L,
+            0x10000000L,
             active3,
             0L,
             active4,
             0L);
       case 67:
         return jjMoveStringLiteralDfa8_0(
-            active0, 0L, active1, 0x2000000L, active2, 0x800000000L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x4000000L, active2, 0x1000000000L, active3, 0L, active4, 0L);
       case 69:
-        if ((active0 & 0x1000L) != 0L) {
-          jjmatchedKind = 12;
+        if ((active0 & 0x2000L) != 0L) {
+          jjmatchedKind = 13;
           jjmatchedPos = 7;
-        } else if ((active1 & 0x400000L) != 0L) {
-          jjmatchedKind = 86;
+        } else if ((active1 & 0x800000L) != 0L) {
+          jjmatchedKind = 87;
           jjmatchedPos = 7;
-        } else if ((active1 & 0x100000000L) != 0L) {
-          jjmatchedKind = 96;
-          jjmatchedPos = 7;
-        } else if ((active1 & 0x2000000000000L) != 0L) {
-          jjmatchedKind = 113;
+        } else if ((active1 & 0x200000000L) != 0L) {
+          jjmatchedKind = 97;
           jjmatchedPos = 7;
         } else if ((active1 & 0x4000000000000L) != 0L) {
           jjmatchedKind = 114;
           jjmatchedPos = 7;
-        } else if ((active2 & 0x1L) != 0L) {
-          jjmatchedKind = 128;
+        } else if ((active1 & 0x8000000000000L) != 0L) {
+          jjmatchedKind = 115;
           jjmatchedPos = 7;
-        } else if ((active2 & 0x40L) != 0L) {
-          jjmatchedKind = 134;
+        } else if ((active2 & 0x2L) != 0L) {
+          jjmatchedKind = 129;
           jjmatchedPos = 7;
-        } else if ((active2 & 0x4000L) != 0L) {
-          jjmatchedKind = 142;
+        } else if ((active2 & 0x80L) != 0L) {
+          jjmatchedKind = 135;
+          jjmatchedPos = 7;
+        } else if ((active2 & 0x8000L) != 0L) {
+          jjmatchedKind = 143;
           jjmatchedPos = 7;
         }
         return jjMoveStringLiteralDfa8_0(
-            active0, 0L, active1, 0xc000000000000000L, active2, 0L, active3, 0L, active4, 0x4L);
+            active0, 0L, active1, 0x8000000000000000L, active2, 0x1L, active3, 0L, active4, 0x8L);
       case 72:
-        if ((active1 & 0x200L) != 0L) {
-          jjmatchedKind = 73;
-          jjmatchedPos = 7;
-        } else if ((active1 & 0x400L) != 0L) {
+        if ((active1 & 0x400L) != 0L) {
           jjmatchedKind = 74;
+          jjmatchedPos = 7;
+        } else if ((active1 & 0x800L) != 0L) {
+          jjmatchedKind = 75;
           jjmatchedPos = 7;
         }
         break;
       case 73:
         return jjMoveStringLiteralDfa8_0(
-            active0, 0L, active1, 0x8000000008L, active2, 0x14000000L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x10000000010L, active2, 0x28000000L, active3, 0L, active4, 0L);
       case 75:
-        if ((active2 & 0x8L) != 0L) {
-          jjmatchedKind = 131;
+        if ((active2 & 0x10L) != 0L) {
+          jjmatchedKind = 132;
           jjmatchedPos = 7;
         }
         break;
       case 76:
-        if ((active1 & 0x2L) != 0L) {
-          jjmatchedKind = 65;
+        if ((active1 & 0x4L) != 0L) {
+          jjmatchedKind = 66;
           jjmatchedPos = 7;
-        } else if ((active2 & 0x10000L) != 0L) {
-          jjmatchedKind = 144;
+        } else if ((active2 & 0x20000L) != 0L) {
+          jjmatchedKind = 145;
           jjmatchedPos = 7;
         }
         return jjMoveStringLiteralDfa8_0(
-            active0, 0L, active1, 0x800010000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x1000020000L, active2, 0L, active3, 0L, active4, 0L);
       case 77:
         return jjMoveStringLiteralDfa8_0(
-            active0, 0L, active1, 0x80000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x100000000L, active2, 0L, active3, 0L, active4, 0L);
       case 78:
-        if ((active1 & 0x2000000000000000L) != 0L) {
-          jjmatchedKind = 125;
+        if ((active1 & 0x4000000000000000L) != 0L) {
+          jjmatchedKind = 126;
           jjmatchedPos = 7;
         }
         return jjMoveStringLiteralDfa8_0(
-            active0, 0x400000000L, active1, 0L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0x800000000L, active1, 0L, active2, 0L, active3, 0L, active4, 0L);
       case 79:
         return jjMoveStringLiteralDfa8_0(
-            active0, 0L, active1, 0x200020000L, active2, 0x100L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x400040000L, active2, 0x200L, active3, 0L, active4, 0L);
       case 80:
         return jjMoveStringLiteralDfa8_0(
-            active0, 0L, active1, 0x800000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x1000000L, active2, 0L, active3, 0L, active4, 0L);
       case 83:
-        if ((active1 & 0x8000000L) != 0L) {
-          jjmatchedKind = 91;
+        if ((active1 & 0x10000000L) != 0L) {
+          jjmatchedKind = 92;
           jjmatchedPos = 7;
-        } else if ((active3 & 0x400000000000000L) != 0L) {
-          jjmatchedKind = 250;
+        } else if ((active3 & 0x800000000000000L) != 0L) {
+          jjmatchedKind = 251;
           jjmatchedPos = 7;
         }
         return jjMoveStringLiteralDfa8_0(
             active0,
             0L,
             active1,
-            0x2000000000L,
+            0x4000000000L,
             active2,
             0L,
             active3,
-            0xf800000000000000L,
+            0xf000000000000000L,
             active4,
-            0L);
+            0x1L);
       case 84:
-        if ((active1 & 0x10000000L) != 0L) {
-          jjmatchedKind = 92;
+        if ((active1 & 0x20000000L) != 0L) {
+          jjmatchedKind = 93;
           jjmatchedPos = 7;
-        } else if ((active2 & 0x40000L) != 0L) {
-          jjmatchedKind = 146;
+        } else if ((active2 & 0x80000L) != 0L) {
+          jjmatchedKind = 147;
           jjmatchedPos = 7;
         }
         return jjMoveStringLiteralDfa8_0(
-            active0, 0L, active1, 0x4400000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x8800000000L, active2, 0L, active3, 0L, active4, 0L);
       case 89:
-        if ((active1 & 0x4L) != 0L) {
-          jjmatchedKind = 66;
+        if ((active1 & 0x8L) != 0L) {
+          jjmatchedKind = 67;
           jjmatchedPos = 7;
-        } else if ((active1 & 0x20000000000L) != 0L) {
-          jjmatchedKind = 105;
+        } else if ((active1 & 0x40000000000L) != 0L) {
+          jjmatchedKind = 106;
           jjmatchedPos = 7;
-        } else if ((active2 & 0x200000000L) != 0L) {
-          jjmatchedKind = 161;
+        } else if ((active2 & 0x400000000L) != 0L) {
+          jjmatchedKind = 162;
           jjmatchedPos = 7;
         }
         break;
       case 95:
         return jjMoveStringLiteralDfa8_0(
-            active0, 0L, active1, 0x10L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x20L, active2, 0L, active3, 0L, active4, 0L);
       case 97:
-        if ((active1 & 0x80000000000L) != 0L) {
-          jjmatchedKind = 107;
+        if ((active1 & 0x100000000000L) != 0L) {
+          jjmatchedKind = 108;
           jjmatchedPos = 7;
         }
         return jjMoveStringLiteralDfa8_0(
             active0,
-            0x4000000000000L,
+            0x8000000000000L,
             active1,
-            0x5000L,
+            0xa000L,
             active2,
-            0x8000000L,
+            0x10000000L,
             active3,
             0L,
             active4,
             0L);
       case 99:
         return jjMoveStringLiteralDfa8_0(
-            active0, 0L, active1, 0x2000000L, active2, 0x800000000L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x4000000L, active2, 0x1000000000L, active3, 0L, active4, 0L);
       case 101:
-        if ((active0 & 0x1000L) != 0L) {
-          jjmatchedKind = 12;
+        if ((active0 & 0x2000L) != 0L) {
+          jjmatchedKind = 13;
           jjmatchedPos = 7;
-        } else if ((active1 & 0x400000L) != 0L) {
-          jjmatchedKind = 86;
+        } else if ((active1 & 0x800000L) != 0L) {
+          jjmatchedKind = 87;
           jjmatchedPos = 7;
-        } else if ((active1 & 0x100000000L) != 0L) {
-          jjmatchedKind = 96;
-          jjmatchedPos = 7;
-        } else if ((active1 & 0x2000000000000L) != 0L) {
-          jjmatchedKind = 113;
+        } else if ((active1 & 0x200000000L) != 0L) {
+          jjmatchedKind = 97;
           jjmatchedPos = 7;
         } else if ((active1 & 0x4000000000000L) != 0L) {
           jjmatchedKind = 114;
           jjmatchedPos = 7;
-        } else if ((active2 & 0x1L) != 0L) {
-          jjmatchedKind = 128;
+        } else if ((active1 & 0x8000000000000L) != 0L) {
+          jjmatchedKind = 115;
           jjmatchedPos = 7;
-        } else if ((active2 & 0x40L) != 0L) {
-          jjmatchedKind = 134;
+        } else if ((active2 & 0x2L) != 0L) {
+          jjmatchedKind = 129;
           jjmatchedPos = 7;
-        } else if ((active2 & 0x4000L) != 0L) {
-          jjmatchedKind = 142;
+        } else if ((active2 & 0x80L) != 0L) {
+          jjmatchedKind = 135;
+          jjmatchedPos = 7;
+        } else if ((active2 & 0x8000L) != 0L) {
+          jjmatchedKind = 143;
           jjmatchedPos = 7;
         }
         return jjMoveStringLiteralDfa8_0(
             active0,
             0L,
             active1,
-            0xc000000000000000L,
+            0x8000000000000000L,
             active2,
-            0L,
+            0x1L,
             active3,
             0L,
             active4,
-            0x8200004L);
+            0x10400008L);
       case 104:
-        if ((active1 & 0x200L) != 0L) {
-          jjmatchedKind = 73;
-          jjmatchedPos = 7;
-        } else if ((active1 & 0x400L) != 0L) {
+        if ((active1 & 0x400L) != 0L) {
           jjmatchedKind = 74;
+          jjmatchedPos = 7;
+        } else if ((active1 & 0x800L) != 0L) {
+          jjmatchedKind = 75;
           jjmatchedPos = 7;
         }
         break;
       case 105:
         return jjMoveStringLiteralDfa8_0(
-            active0, 0L, active1, 0x8000000008L, active2, 0x14000000L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x10000000010L, active2, 0x28000000L, active3, 0L, active4, 0L);
       case 107:
-        if ((active2 & 0x8L) != 0L) {
-          jjmatchedKind = 131;
+        if ((active2 & 0x10L) != 0L) {
+          jjmatchedKind = 132;
           jjmatchedPos = 7;
         }
         break;
       case 108:
-        if ((active1 & 0x2L) != 0L) {
-          jjmatchedKind = 65;
+        if ((active1 & 0x4L) != 0L) {
+          jjmatchedKind = 66;
           jjmatchedPos = 7;
-        } else if ((active2 & 0x10000L) != 0L) {
-          jjmatchedKind = 144;
+        } else if ((active2 & 0x20000L) != 0L) {
+          jjmatchedKind = 145;
           jjmatchedPos = 7;
         }
         return jjMoveStringLiteralDfa8_0(
-            active0, 0L, active1, 0x800010000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x1000020000L, active2, 0L, active3, 0L, active4, 0L);
       case 109:
         return jjMoveStringLiteralDfa8_0(
-            active0, 0L, active1, 0x80000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x100000000L, active2, 0L, active3, 0L, active4, 0L);
       case 110:
-        if ((active1 & 0x2000000000000000L) != 0L) {
-          jjmatchedKind = 125;
+        if ((active1 & 0x4000000000000000L) != 0L) {
+          jjmatchedKind = 126;
           jjmatchedPos = 7;
         }
         return jjMoveStringLiteralDfa8_0(
-            active0, 0x400000000L, active1, 0L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0x800000000L, active1, 0L, active2, 0L, active3, 0L, active4, 0L);
       case 111:
         return jjMoveStringLiteralDfa8_0(
-            active0, 0L, active1, 0x200020000L, active2, 0x100L, active3, 0L, active4, 0x20000L);
+            active0, 0L, active1, 0x400040000L, active2, 0x200L, active3, 0L, active4, 0x40000L);
       case 112:
         return jjMoveStringLiteralDfa8_0(
-            active0, 0L, active1, 0x800000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x1000000L, active2, 0L, active3, 0L, active4, 0L);
       case 114:
         return jjMoveStringLiteralDfa8_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x10000L);
+            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x20000L);
       case 115:
-        if ((active1 & 0x8000000L) != 0L) {
-          jjmatchedKind = 91;
+        if ((active1 & 0x10000000L) != 0L) {
+          jjmatchedKind = 92;
           jjmatchedPos = 7;
-        } else if ((active3 & 0x400000000000000L) != 0L) {
-          jjmatchedKind = 250;
+        } else if ((active3 & 0x800000000000000L) != 0L) {
+          jjmatchedKind = 251;
           jjmatchedPos = 7;
-        } else if ((active4 & 0x40000L) != 0L) {
-          jjmatchedKind = 274;
+        } else if ((active4 & 0x80000L) != 0L) {
+          jjmatchedKind = 275;
           jjmatchedPos = 7;
         }
         return jjMoveStringLiteralDfa8_0(
             active0,
             0L,
             active1,
-            0x2000000000L,
+            0x4000000000L,
             active2,
             0L,
             active3,
-            0xf800000000000000L,
+            0xf000000000000000L,
             active4,
-            0L);
+            0x1L);
       case 116:
-        if ((active1 & 0x10000000L) != 0L) {
-          jjmatchedKind = 92;
+        if ((active1 & 0x20000000L) != 0L) {
+          jjmatchedKind = 93;
           jjmatchedPos = 7;
-        } else if ((active2 & 0x40000L) != 0L) {
-          jjmatchedKind = 146;
+        } else if ((active2 & 0x80000L) != 0L) {
+          jjmatchedKind = 147;
           jjmatchedPos = 7;
         }
         return jjMoveStringLiteralDfa8_0(
-            active0, 0L, active1, 0x4400000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x8800000000L, active2, 0L, active3, 0L, active4, 0L);
       case 121:
-        if ((active1 & 0x4L) != 0L) {
-          jjmatchedKind = 66;
+        if ((active1 & 0x8L) != 0L) {
+          jjmatchedKind = 67;
           jjmatchedPos = 7;
-        } else if ((active1 & 0x20000000000L) != 0L) {
-          jjmatchedKind = 105;
+        } else if ((active1 & 0x40000000000L) != 0L) {
+          jjmatchedKind = 106;
           jjmatchedPos = 7;
-        } else if ((active2 & 0x200000000L) != 0L) {
-          jjmatchedKind = 161;
+        } else if ((active2 & 0x400000000L) != 0L) {
+          jjmatchedKind = 162;
           jjmatchedPos = 7;
-        } else if ((active4 & 0x100000L) != 0L) {
-          jjmatchedKind = 276;
+        } else if ((active4 & 0x200000L) != 0L) {
+          jjmatchedKind = 277;
           jjmatchedPos = 7;
         }
         break;
@@ -3555,78 +3576,78 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             active1,
             0L,
             active2,
-            0x4000000L,
+            0x8000000L,
             active3,
-            0x1800000000000000L,
+            0x3000000000000000L,
             active4,
             0L);
       case 68:
         return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x200000000L, active2, 0L, active3, 0L, active4, 0L);
+            active0, 0L, active1, 0x400000000L, active2, 0L, active3, 0L, active4, 0L);
       case 69:
-        if ((active1 & 0x10000L) != 0L) {
-          jjmatchedKind = 80;
-          jjmatchedPos = 8;
-        } else if ((active1 & 0x80000000L) != 0L) {
-          jjmatchedKind = 95;
-          jjmatchedPos = 8;
-        }
-        return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x2402000000L, active2, 0x10000000L, active3, 0L, active4, 0L);
-      case 70:
-        return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x10L, active2, 0L, active3, 0L, active4, 0L);
-      case 72:
-        return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x800000L, active2, 0L, active3, 0L, active4, 0L);
-      case 73:
-        return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x4000000000L, active2, 0L, active3, 0L, active4, 0L);
-      case 75:
-        return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0x2000000000000000L, active4, 0L);
-      case 76:
-        return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0L, active2, 0x800000000L, active3, 0L, active4, 0L);
-      case 78:
-        if ((active0 & 0x4000000000000L) != 0L) {
-          jjmatchedKind = 50;
-          jjmatchedPos = 8;
-        } else if ((active1 & 0x20000L) != 0L) {
+        if ((active1 & 0x20000L) != 0L) {
           jjmatchedKind = 81;
           jjmatchedPos = 8;
-        } else if ((active2 & 0x100L) != 0L) {
-          jjmatchedKind = 136;
+        } else if ((active1 & 0x100000000L) != 0L) {
+          jjmatchedKind = 96;
           jjmatchedPos = 8;
         }
         return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x8000000000000000L, active2, 0L, active3, 0L, active4, 0L);
-      case 79:
+            active0, 0L, active1, 0x4804000000L, active2, 0x20000000L, active3, 0L, active4, 0L);
+      case 70:
         return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x8000000000L, active2, 0L, active3, 0L, active4, 0x4L);
-      case 82:
+            active0, 0L, active1, 0x20L, active2, 0L, active3, 0L, active4, 0L);
+      case 72:
         return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x4000000000000008L, active2, 0L, active3, 0L, active4, 0L);
-      case 83:
-        if ((active2 & 0x8000000L) != 0L) {
-          jjmatchedKind = 155;
-          jjmatchedPos = 8;
-        }
+            active0, 0L, active1, 0x1000000L, active2, 0L, active3, 0L, active4, 0L);
+      case 73:
         return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x5000L, active2, 0L, active3, 0L, active4, 0L);
-      case 84:
-        if ((active0 & 0x400000000L) != 0L) {
-          jjmatchedKind = 34;
-          jjmatchedPos = 8;
-        }
-        return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0x8000000000000000L, active4, 0L);
-      case 85:
-        return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x800000000L, active2, 0L, active3, 0L, active4, 0L);
-      case 86:
+            active0, 0L, active1, 0x8000000000L, active2, 0L, active3, 0L, active4, 0L);
+      case 75:
         return jjMoveStringLiteralDfa9_0(
             active0, 0L, active1, 0L, active2, 0L, active3, 0x4000000000000000L, active4, 0L);
+      case 76:
+        return jjMoveStringLiteralDfa9_0(
+            active0, 0L, active1, 0L, active2, 0x1000000000L, active3, 0L, active4, 0L);
+      case 78:
+        if ((active0 & 0x8000000000000L) != 0L) {
+          jjmatchedKind = 51;
+          jjmatchedPos = 8;
+        } else if ((active1 & 0x40000L) != 0L) {
+          jjmatchedKind = 82;
+          jjmatchedPos = 8;
+        } else if ((active2 & 0x200L) != 0L) {
+          jjmatchedKind = 137;
+          jjmatchedPos = 8;
+        }
+        return jjMoveStringLiteralDfa9_0(
+            active0, 0L, active1, 0L, active2, 0x1L, active3, 0L, active4, 0L);
+      case 79:
+        return jjMoveStringLiteralDfa9_0(
+            active0, 0L, active1, 0x10000000000L, active2, 0L, active3, 0L, active4, 0x8L);
+      case 82:
+        return jjMoveStringLiteralDfa9_0(
+            active0, 0L, active1, 0x8000000000000010L, active2, 0L, active3, 0L, active4, 0L);
+      case 83:
+        if ((active2 & 0x10000000L) != 0L) {
+          jjmatchedKind = 156;
+          jjmatchedPos = 8;
+        }
+        return jjMoveStringLiteralDfa9_0(
+            active0, 0L, active1, 0xa000L, active2, 0L, active3, 0L, active4, 0L);
+      case 84:
+        if ((active0 & 0x800000000L) != 0L) {
+          jjmatchedKind = 35;
+          jjmatchedPos = 8;
+        }
+        return jjMoveStringLiteralDfa9_0(
+            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x1L);
+      case 85:
+        return jjMoveStringLiteralDfa9_0(
+            active0, 0L, active1, 0x1000000000L, active2, 0L, active3, 0L, active4, 0L);
+      case 86:
+        return jjMoveStringLiteralDfa9_0(
+            active0, 0L, active1, 0L, active2, 0L, active3, 0x8000000000000000L, active4, 0L);
       case 97:
         return jjMoveStringLiteralDfa9_0(
             active0,
@@ -3634,96 +3655,87 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             active1,
             0L,
             active2,
-            0x4000000L,
+            0x8000000L,
             active3,
-            0x1800000000000000L,
+            0x3000000000000000L,
             active4,
             0L);
       case 98:
         return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x20000L);
+            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x40000L);
       case 100:
         return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x200000000L, active2, 0L, active3, 0L, active4, 0x10000L);
+            active0, 0L, active1, 0x400000000L, active2, 0L, active3, 0L, active4, 0x20000L);
       case 101:
-        if ((active1 & 0x10000L) != 0L) {
-          jjmatchedKind = 80;
-          jjmatchedPos = 8;
-        } else if ((active1 & 0x80000000L) != 0L) {
-          jjmatchedKind = 95;
-          jjmatchedPos = 8;
-        }
-        return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x2402000000L, active2, 0x10000000L, active3, 0L, active4, 0L);
-      case 102:
-        return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x10L, active2, 0L, active3, 0L, active4, 0L);
-      case 104:
-        return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x800000L, active2, 0L, active3, 0L, active4, 0L);
-      case 105:
-        return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x4000000000L, active2, 0L, active3, 0L, active4, 0L);
-      case 107:
-        return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0x2000000000000000L, active4, 0L);
-      case 108:
-        return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0L, active2, 0x800000000L, active3, 0L, active4, 0L);
-      case 110:
-        if ((active0 & 0x4000000000000L) != 0L) {
-          jjmatchedKind = 50;
-          jjmatchedPos = 8;
-        } else if ((active1 & 0x20000L) != 0L) {
+        if ((active1 & 0x20000L) != 0L) {
           jjmatchedKind = 81;
           jjmatchedPos = 8;
-        } else if ((active2 & 0x100L) != 0L) {
-          jjmatchedKind = 136;
+        } else if ((active1 & 0x100000000L) != 0L) {
+          jjmatchedKind = 96;
           jjmatchedPos = 8;
         }
         return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x8000000000000000L, active2, 0L, active3, 0L, active4, 0L);
-      case 111:
+            active0, 0L, active1, 0x4804000000L, active2, 0x20000000L, active3, 0L, active4, 0L);
+      case 102:
         return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x8000000000L, active2, 0L, active3, 0L, active4, 0x4L);
-      case 112:
+            active0, 0L, active1, 0x20L, active2, 0L, active3, 0L, active4, 0L);
+      case 104:
         return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x8000000L);
-      case 114:
+            active0, 0L, active1, 0x1000000L, active2, 0L, active3, 0L, active4, 0L);
+      case 105:
         return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x4000000000000008L, active2, 0L, active3, 0L, active4, 0L);
-      case 115:
-        if ((active2 & 0x8000000L) != 0L) {
-          jjmatchedKind = 155;
-          jjmatchedPos = 8;
-        } else if ((active4 & 0x200000L) != 0L) {
-          jjmatchedKind = 277;
-          jjmatchedPos = 8;
-        }
-        return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x5000L, active2, 0L, active3, 0L, active4, 0L);
-      case 116:
-        if ((active0 & 0x400000000L) != 0L) {
-          jjmatchedKind = 34;
-          jjmatchedPos = 8;
-        }
-        return jjMoveStringLiteralDfa9_0(
-            active0,
-            0L,
-            active1,
-            0L,
-            active2,
-            0L,
-            active3,
-            0x8000000000000000L,
-            active4,
-            0x1000000L);
-      case 117:
-        return jjMoveStringLiteralDfa9_0(
-            active0, 0L, active1, 0x800000000L, active2, 0L, active3, 0L, active4, 0L);
-      case 118:
+            active0, 0L, active1, 0x8000000000L, active2, 0L, active3, 0L, active4, 0L);
+      case 107:
         return jjMoveStringLiteralDfa9_0(
             active0, 0L, active1, 0L, active2, 0L, active3, 0x4000000000000000L, active4, 0L);
+      case 108:
+        return jjMoveStringLiteralDfa9_0(
+            active0, 0L, active1, 0L, active2, 0x1000000000L, active3, 0L, active4, 0L);
+      case 110:
+        if ((active0 & 0x8000000000000L) != 0L) {
+          jjmatchedKind = 51;
+          jjmatchedPos = 8;
+        } else if ((active1 & 0x40000L) != 0L) {
+          jjmatchedKind = 82;
+          jjmatchedPos = 8;
+        } else if ((active2 & 0x200L) != 0L) {
+          jjmatchedKind = 137;
+          jjmatchedPos = 8;
+        }
+        return jjMoveStringLiteralDfa9_0(
+            active0, 0L, active1, 0L, active2, 0x1L, active3, 0L, active4, 0L);
+      case 111:
+        return jjMoveStringLiteralDfa9_0(
+            active0, 0L, active1, 0x10000000000L, active2, 0L, active3, 0L, active4, 0x8L);
+      case 112:
+        return jjMoveStringLiteralDfa9_0(
+            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x10000000L);
+      case 114:
+        return jjMoveStringLiteralDfa9_0(
+            active0, 0L, active1, 0x8000000000000010L, active2, 0L, active3, 0L, active4, 0L);
+      case 115:
+        if ((active2 & 0x10000000L) != 0L) {
+          jjmatchedKind = 156;
+          jjmatchedPos = 8;
+        } else if ((active4 & 0x400000L) != 0L) {
+          jjmatchedKind = 278;
+          jjmatchedPos = 8;
+        }
+        return jjMoveStringLiteralDfa9_0(
+            active0, 0L, active1, 0xa000L, active2, 0L, active3, 0L, active4, 0L);
+      case 116:
+        if ((active0 & 0x800000000L) != 0L) {
+          jjmatchedKind = 35;
+          jjmatchedPos = 8;
+        }
+        return jjMoveStringLiteralDfa9_0(
+            active0, 0L, active1, 0L, active2, 0L, active3, 0L, active4, 0x2000001L);
+      case 117:
+        return jjMoveStringLiteralDfa9_0(
+            active0, 0L, active1, 0x1000000000L, active2, 0L, active3, 0L, active4, 0L);
+      case 118:
+        return jjMoveStringLiteralDfa9_0(
+            active0, 0L, active1, 0L, active2, 0L, active3, 0x8000000000000000L, active4, 0L);
       default:
         break;
     }
@@ -3755,144 +3767,151 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
     switch (curChar) {
       case 65:
         return jjMoveStringLiteralDfa10_0(
-            active1, 0L, active2, 0L, active3, 0x4000000000000000L, active4, 0L);
+            active1, 0L, active2, 0L, active3, 0x8000000000000000L, active4, 0L);
       case 68:
-        if ((active2 & 0x10000000L) != 0L) {
-          jjmatchedKind = 156;
+        if ((active2 & 0x20000000L) != 0L) {
+          jjmatchedKind = 157;
           jjmatchedPos = 9;
         }
         break;
       case 69:
-        if ((active1 & 0x200000000L) != 0L) {
-          jjmatchedKind = 97;
+        if ((active1 & 0x400000000L) != 0L) {
+          jjmatchedKind = 98;
           jjmatchedPos = 9;
         }
         return jjMoveStringLiteralDfa10_0(
-            active1, 0L, active2, 0L, active3, 0xa000000000000000L, active4, 0L);
+            active1, 0L, active2, 0L, active3, 0x4000000000000000L, active4, 0x1L);
       case 70:
-        if ((active4 & 0x4L) != 0L) {
-          jjmatchedKind = 258;
+        if ((active4 & 0x8L) != 0L) {
+          jjmatchedKind = 259;
           jjmatchedPos = 9;
         }
         break;
       case 73:
         return jjMoveStringLiteralDfa10_0(
-            active1, 0x800010L, active2, 0L, active3, 0L, active4, 0L);
+            active1, 0x1000020L, active2, 0L, active3, 0L, active4, 0L);
       case 76:
         return jjMoveStringLiteralDfa10_0(
-            active1, 0x2000000000L, active2, 0L, active3, 0x800000000000000L, active4, 0L);
+            active1, 0x4000000000L, active2, 0L, active3, 0x1000000000000000L, active4, 0L);
       case 78:
-        if ((active1 & 0x8000000000L) != 0L) {
-          jjmatchedKind = 103;
+        if ((active1 & 0x10000000000L) != 0L) {
+          jjmatchedKind = 104;
           jjmatchedPos = 9;
         }
         return jjMoveStringLiteralDfa10_0(
-            active1, 0L, active2, 0L, active3, 0x1000000000000000L, active4, 0L);
+            active1, 0L, active2, 0L, active3, 0x2000000000000000L, active4, 0L);
       case 79:
         return jjMoveStringLiteralDfa10_0(
-            active1, 0x4000000000L, active2, 0L, active3, 0L, active4, 0L);
+            active1, 0x8000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 82:
-        if ((active1 & 0x400000000L) != 0L) {
-          jjmatchedKind = 98;
+        if ((active1 & 0x800000000L) != 0L) {
+          jjmatchedKind = 99;
           jjmatchedPos = 9;
         }
         break;
       case 83:
-        if ((active1 & 0x1000L) != 0L) {
-          jjmatchedKind = 76;
+        if ((active1 & 0x2000L) != 0L) {
+          jjmatchedKind = 77;
           jjmatchedPos = 9;
-        } else if ((active1 & 0x2000000L) != 0L) {
-          jjmatchedKind = 89;
+        } else if ((active1 & 0x4000000L) != 0L) {
+          jjmatchedKind = 90;
           jjmatchedPos = 9;
-        } else if ((active1 & 0x4000000000000000L) != 0L) {
-          jjmatchedKind = 126;
+        } else if ((active1 & 0x8000000000000000L) != 0L) {
+          jjmatchedKind = 127;
           jjmatchedPos = 9;
-        } else if ((active2 & 0x4000000L) != 0L) {
-          jjmatchedKind = 154;
+        } else if ((active2 & 0x8000000L) != 0L) {
+          jjmatchedKind = 155;
           jjmatchedPos = 9;
         }
         return jjMoveStringLiteralDfa10_0(
-            active1, 0x800004008L, active2, 0L, active3, 0L, active4, 0L);
+            active1, 0x1000008010L, active2, 0L, active3, 0L, active4, 0L);
       case 84:
-        if ((active1 & 0x8000000000000000L) != 0L) {
-          jjmatchedKind = 127;
+        if ((active2 & 0x1L) != 0L) {
+          jjmatchedKind = 128;
           jjmatchedPos = 9;
         }
         break;
       case 85:
         return jjMoveStringLiteralDfa10_0(
-            active1, 0L, active2, 0x800000000L, active3, 0L, active4, 0L);
+            active1, 0L, active2, 0x1000000000L, active3, 0L, active4, 0L);
       case 97:
         return jjMoveStringLiteralDfa10_0(
-            active1, 0L, active2, 0L, active3, 0x4000000000000000L, active4, 0L);
+            active1, 0L, active2, 0L, active3, 0x8000000000000000L, active4, 0L);
       case 100:
-        if ((active2 & 0x10000000L) != 0L) {
-          jjmatchedKind = 156;
+        if ((active2 & 0x20000000L) != 0L) {
+          jjmatchedKind = 157;
           jjmatchedPos = 9;
         }
         break;
       case 101:
-        if ((active1 & 0x200000000L) != 0L) {
-          jjmatchedKind = 97;
+        if ((active1 & 0x400000000L) != 0L) {
+          jjmatchedKind = 98;
           jjmatchedPos = 9;
         }
         return jjMoveStringLiteralDfa10_0(
-            active1, 0L, active2, 0L, active3, 0xa000000000000000L, active4, 0x1000000L);
+            active1, 0L, active2, 0L, active3, 0x4000000000000000L, active4, 0x2000001L);
       case 102:
-        if ((active4 & 0x4L) != 0L) {
-          jjmatchedKind = 258;
+        if ((active4 & 0x8L) != 0L) {
+          jjmatchedKind = 259;
           jjmatchedPos = 9;
         }
         break;
       case 105:
         return jjMoveStringLiteralDfa10_0(
-            active1, 0x800010L, active2, 0L, active3, 0L, active4, 0x20000L);
+            active1, 0x1000020L, active2, 0L, active3, 0L, active4, 0x40000L);
       case 108:
         return jjMoveStringLiteralDfa10_0(
-            active1, 0x2000000000L, active2, 0L, active3, 0x800000000000000L, active4, 0x8000000L);
+            active1,
+            0x4000000000L,
+            active2,
+            0L,
+            active3,
+            0x1000000000000000L,
+            active4,
+            0x10000000L);
       case 109:
-        return jjMoveStringLiteralDfa10_0(active1, 0L, active2, 0L, active3, 0L, active4, 0x10000L);
+        return jjMoveStringLiteralDfa10_0(active1, 0L, active2, 0L, active3, 0L, active4, 0x20000L);
       case 110:
-        if ((active1 & 0x8000000000L) != 0L) {
-          jjmatchedKind = 103;
+        if ((active1 & 0x10000000000L) != 0L) {
+          jjmatchedKind = 104;
           jjmatchedPos = 9;
         }
         return jjMoveStringLiteralDfa10_0(
-            active1, 0L, active2, 0L, active3, 0x1000000000000000L, active4, 0L);
+            active1, 0L, active2, 0L, active3, 0x2000000000000000L, active4, 0L);
       case 111:
         return jjMoveStringLiteralDfa10_0(
-            active1, 0x4000000000L, active2, 0L, active3, 0L, active4, 0L);
+            active1, 0x8000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 114:
-        if ((active1 & 0x400000000L) != 0L) {
-          jjmatchedKind = 98;
+        if ((active1 & 0x800000000L) != 0L) {
+          jjmatchedKind = 99;
           jjmatchedPos = 9;
         }
         break;
       case 115:
-        if ((active1 & 0x1000L) != 0L) {
-          jjmatchedKind = 76;
+        if ((active1 & 0x2000L) != 0L) {
+          jjmatchedKind = 77;
           jjmatchedPos = 9;
-        } else if ((active1 & 0x2000000L) != 0L) {
-          jjmatchedKind = 89;
+        } else if ((active1 & 0x4000000L) != 0L) {
+          jjmatchedKind = 90;
           jjmatchedPos = 9;
-        } else if ((active1 & 0x4000000000000000L) != 0L) {
-          jjmatchedKind = 126;
+        } else if ((active1 & 0x8000000000000000L) != 0L) {
+          jjmatchedKind = 127;
           jjmatchedPos = 9;
-        } else if ((active2 & 0x4000000L) != 0L) {
-          jjmatchedKind = 154;
+        } else if ((active2 & 0x8000000L) != 0L) {
+          jjmatchedKind = 155;
           jjmatchedPos = 9;
         }
         return jjMoveStringLiteralDfa10_0(
-            active1, 0x800004008L, active2, 0L, active3, 0L, active4, 0L);
+            active1, 0x1000008010L, active2, 0L, active3, 0L, active4, 0L);
       case 116:
-        if ((active1 & 0x8000000000000000L) != 0L) {
-          jjmatchedKind = 127;
+        if ((active2 & 0x1L) != 0L) {
+          jjmatchedKind = 128;
           jjmatchedPos = 9;
         }
         break;
       case 117:
         return jjMoveStringLiteralDfa10_0(
-            active1, 0L, active2, 0x800000000L, active3, 0L, active4, 0L);
+            active1, 0L, active2, 0x1000000000L, active3, 0L, active4, 0L);
       default:
         break;
     }
@@ -3917,100 +3936,99 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
     }
     switch (curChar) {
       case 67:
-        if ((active1 & 0x800000L) != 0L) {
-          jjmatchedKind = 87;
+        if ((active1 & 0x1000000L) != 0L) {
+          jjmatchedKind = 88;
           jjmatchedPos = 10;
         }
         break;
       case 69:
         return jjMoveStringLiteralDfa11_0(
-            active1, 0x2000004000L, active2, 0L, active3, 0L, active4, 0L);
+            active1, 0x4000008000L, active2, 0L, active3, 0L, active4, 0L);
       case 76:
-        if ((active3 & 0x800000000000000L) != 0L) {
-          jjmatchedKind = 251;
+        if ((active3 & 0x1000000000000000L) != 0L) {
+          jjmatchedKind = 252;
           jjmatchedPos = 10;
         }
         return jjMoveStringLiteralDfa11_0(
-            active1, 0L, active2, 0L, active3, 0x4000000000000000L, active4, 0L);
+            active1, 0L, active2, 0L, active3, 0x8000000000000000L, active4, 0L);
       case 78:
-        if ((active1 & 0x4000000000L) != 0L) {
-          jjmatchedKind = 102;
+        if ((active1 & 0x8000000000L) != 0L) {
+          jjmatchedKind = 103;
           jjmatchedPos = 10;
         }
         break;
       case 82:
-        return jjMoveStringLiteralDfa11_0(active1, 0x10L, active2, 0L, active3, 0L, active4, 0L);
+        return jjMoveStringLiteralDfa11_0(active1, 0x20L, active2, 0L, active3, 0L, active4, 0L);
       case 83:
         return jjMoveStringLiteralDfa11_0(
-            active1, 0L, active2, 0x800000000L, active3, 0L, active4, 0L);
+            active1, 0L, active2, 0x1000000000L, active3, 0L, active4, 0L);
       case 84:
-        if ((active1 & 0x8L) != 0L) {
-          jjmatchedKind = 67;
+        if ((active1 & 0x10L) != 0L) {
+          jjmatchedKind = 68;
           jjmatchedPos = 10;
         }
         return jjMoveStringLiteralDfa11_0(
-            active1, 0x800000000L, active2, 0L, active3, 0L, active4, 0L);
+            active1, 0x1000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 88:
-        return jjMoveStringLiteralDfa11_0(
-            active1, 0L, active2, 0L, active3, 0x8000000000000000L, active4, 0L);
+        return jjMoveStringLiteralDfa11_0(active1, 0L, active2, 0L, active3, 0L, active4, 0x1L);
       case 89:
-        if ((active3 & 0x1000000000000000L) != 0L) {
-          jjmatchedKind = 252;
-          jjmatchedPos = 10;
-        } else if ((active3 & 0x2000000000000000L) != 0L) {
+        if ((active3 & 0x2000000000000000L) != 0L) {
           jjmatchedKind = 253;
+          jjmatchedPos = 10;
+        } else if ((active3 & 0x4000000000000000L) != 0L) {
+          jjmatchedKind = 254;
           jjmatchedPos = 10;
         }
         break;
       case 97:
         return jjMoveStringLiteralDfa11_0(
-            active1, 0L, active2, 0L, active3, 0L, active4, 0x8010000L);
+            active1, 0L, active2, 0L, active3, 0L, active4, 0x10020000L);
       case 99:
-        if ((active1 & 0x800000L) != 0L) {
-          jjmatchedKind = 87;
+        if ((active1 & 0x1000000L) != 0L) {
+          jjmatchedKind = 88;
           jjmatchedPos = 10;
         }
         break;
       case 101:
         return jjMoveStringLiteralDfa11_0(
-            active1, 0x2000004000L, active2, 0L, active3, 0L, active4, 0L);
+            active1, 0x4000008000L, active2, 0L, active3, 0L, active4, 0L);
       case 108:
-        if ((active3 & 0x800000000000000L) != 0L) {
-          jjmatchedKind = 251;
+        if ((active3 & 0x1000000000000000L) != 0L) {
+          jjmatchedKind = 252;
           jjmatchedPos = 10;
         }
         return jjMoveStringLiteralDfa11_0(
-            active1, 0L, active2, 0L, active3, 0x4000000000000000L, active4, 0L);
+            active1, 0L, active2, 0L, active3, 0x8000000000000000L, active4, 0L);
       case 110:
-        if ((active1 & 0x4000000000L) != 0L) {
-          jjmatchedKind = 102;
+        if ((active1 & 0x8000000000L) != 0L) {
+          jjmatchedKind = 103;
           jjmatchedPos = 10;
-        } else if ((active4 & 0x20000L) != 0L) {
-          jjmatchedKind = 273;
+        } else if ((active4 & 0x40000L) != 0L) {
+          jjmatchedKind = 274;
           jjmatchedPos = 10;
         }
         break;
       case 114:
-        return jjMoveStringLiteralDfa11_0(active1, 0x10L, active2, 0L, active3, 0L, active4, 0L);
+        return jjMoveStringLiteralDfa11_0(active1, 0x20L, active2, 0L, active3, 0L, active4, 0L);
       case 115:
         return jjMoveStringLiteralDfa11_0(
-            active1, 0L, active2, 0x800000000L, active3, 0L, active4, 0L);
+            active1, 0L, active2, 0x1000000000L, active3, 0L, active4, 0L);
       case 116:
-        if ((active1 & 0x8L) != 0L) {
-          jjmatchedKind = 67;
+        if ((active1 & 0x10L) != 0L) {
+          jjmatchedKind = 68;
           jjmatchedPos = 10;
         }
         return jjMoveStringLiteralDfa11_0(
-            active1, 0x800000000L, active2, 0L, active3, 0L, active4, 0L);
+            active1, 0x1000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 120:
         return jjMoveStringLiteralDfa11_0(
-            active1, 0L, active2, 0L, active3, 0x8000000000000000L, active4, 0x1000000L);
+            active1, 0L, active2, 0L, active3, 0L, active4, 0x2000001L);
       case 121:
-        if ((active3 & 0x1000000000000000L) != 0L) {
-          jjmatchedKind = 252;
-          jjmatchedPos = 10;
-        } else if ((active3 & 0x2000000000000000L) != 0L) {
+        if ((active3 & 0x2000000000000000L) != 0L) {
           jjmatchedKind = 253;
+          jjmatchedPos = 10;
+        } else if ((active3 & 0x4000000000000000L) != 0L) {
+          jjmatchedKind = 254;
           jjmatchedPos = 10;
         }
         break;
@@ -4039,53 +4057,53 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
     switch (curChar) {
       case 67:
         return jjMoveStringLiteralDfa12_0(
-            active1, 0x2000000000L, active2, 0L, active3, 0L, active4, 0L);
+            active1, 0x4000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 69:
         return jjMoveStringLiteralDfa12_0(
-            active1, 0x800000000L, active2, 0L, active3, 0L, active4, 0L);
+            active1, 0x1000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 83:
-        if ((active1 & 0x4000L) != 0L) {
-          jjmatchedKind = 78;
+        if ((active1 & 0x8000L) != 0L) {
+          jjmatchedKind = 79;
           jjmatchedPos = 11;
         }
-        return jjMoveStringLiteralDfa12_0(active1, 0x10L, active2, 0L, active3, 0L, active4, 0L);
+        return jjMoveStringLiteralDfa12_0(active1, 0x20L, active2, 0L, active3, 0L, active4, 0L);
       case 84:
-        if ((active3 & 0x8000000000000000L) != 0L) {
-          jjmatchedKind = 255;
+        if ((active4 & 0x1L) != 0L) {
+          jjmatchedKind = 256;
           jjmatchedPos = 11;
         }
         return jjMoveStringLiteralDfa12_0(
-            active1, 0L, active2, 0x800000000L, active3, 0L, active4, 0L);
+            active1, 0L, active2, 0x1000000000L, active3, 0L, active4, 0L);
       case 85:
         return jjMoveStringLiteralDfa12_0(
-            active1, 0L, active2, 0L, active3, 0x4000000000000000L, active4, 0L);
+            active1, 0L, active2, 0L, active3, 0x8000000000000000L, active4, 0L);
       case 99:
         return jjMoveStringLiteralDfa12_0(
-            active1, 0x2000000000L, active2, 0L, active3, 0L, active4, 0x8000000L);
+            active1, 0x4000000000L, active2, 0L, active3, 0L, active4, 0x10000000L);
       case 101:
         return jjMoveStringLiteralDfa12_0(
-            active1, 0x800000000L, active2, 0L, active3, 0L, active4, 0L);
+            active1, 0x1000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 112:
-        return jjMoveStringLiteralDfa12_0(active1, 0L, active2, 0L, active3, 0L, active4, 0x10000L);
+        return jjMoveStringLiteralDfa12_0(active1, 0L, active2, 0L, active3, 0L, active4, 0x20000L);
       case 115:
-        if ((active1 & 0x4000L) != 0L) {
-          jjmatchedKind = 78;
+        if ((active1 & 0x8000L) != 0L) {
+          jjmatchedKind = 79;
           jjmatchedPos = 11;
         }
-        return jjMoveStringLiteralDfa12_0(active1, 0x10L, active2, 0L, active3, 0L, active4, 0L);
+        return jjMoveStringLiteralDfa12_0(active1, 0x20L, active2, 0L, active3, 0L, active4, 0L);
       case 116:
-        if ((active3 & 0x8000000000000000L) != 0L) {
-          jjmatchedKind = 255;
+        if ((active4 & 0x1L) != 0L) {
+          jjmatchedKind = 256;
           jjmatchedPos = 11;
-        } else if ((active4 & 0x1000000L) != 0L) {
-          jjmatchedKind = 280;
+        } else if ((active4 & 0x2000000L) != 0L) {
+          jjmatchedKind = 281;
           jjmatchedPos = 11;
         }
         return jjMoveStringLiteralDfa12_0(
-            active1, 0L, active2, 0x800000000L, active3, 0L, active4, 0L);
+            active1, 0L, active2, 0x1000000000L, active3, 0L, active4, 0L);
       case 117:
         return jjMoveStringLiteralDfa12_0(
-            active1, 0L, active2, 0L, active3, 0x4000000000000000L, active4, 0L);
+            active1, 0L, active2, 0L, active3, 0x8000000000000000L, active4, 0L);
       default:
         break;
     }
@@ -4110,50 +4128,50 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
     }
     switch (curChar) {
       case 64:
-        return jjMoveStringLiteralDfa13_0(active1, 0L, active2, 0L, active3, 0L, active4, 0x10000L);
+        return jjMoveStringLiteralDfa13_0(active1, 0L, active2, 0L, active3, 0L, active4, 0x20000L);
       case 69:
-        if ((active3 & 0x4000000000000000L) != 0L) {
-          jjmatchedKind = 254;
+        if ((active3 & 0x8000000000000000L) != 0L) {
+          jjmatchedKind = 255;
           jjmatchedPos = 12;
         }
         return jjMoveStringLiteralDfa13_0(
-            active1, 0L, active2, 0x800000000L, active3, 0L, active4, 0L);
+            active1, 0L, active2, 0x1000000000L, active3, 0L, active4, 0L);
       case 82:
-        if ((active1 & 0x800000000L) != 0L) {
-          jjmatchedKind = 99;
+        if ((active1 & 0x1000000000L) != 0L) {
+          jjmatchedKind = 100;
           jjmatchedPos = 12;
         }
         break;
       case 84:
-        if ((active1 & 0x10L) != 0L) {
-          jjmatchedKind = 68;
+        if ((active1 & 0x20L) != 0L) {
+          jjmatchedKind = 69;
           jjmatchedPos = 12;
         }
         return jjMoveStringLiteralDfa13_0(
-            active1, 0x2000000000L, active2, 0L, active3, 0L, active4, 0L);
+            active1, 0x4000000000L, active2, 0L, active3, 0L, active4, 0L);
       case 101:
-        if ((active3 & 0x4000000000000000L) != 0L) {
-          jjmatchedKind = 254;
+        if ((active3 & 0x8000000000000000L) != 0L) {
+          jjmatchedKind = 255;
           jjmatchedPos = 12;
-        } else if ((active4 & 0x8000000L) != 0L) {
-          jjmatchedKind = 283;
+        } else if ((active4 & 0x10000000L) != 0L) {
+          jjmatchedKind = 284;
           jjmatchedPos = 12;
         }
         return jjMoveStringLiteralDfa13_0(
-            active1, 0L, active2, 0x800000000L, active3, 0L, active4, 0L);
+            active1, 0L, active2, 0x1000000000L, active3, 0L, active4, 0L);
       case 114:
-        if ((active1 & 0x800000000L) != 0L) {
-          jjmatchedKind = 99;
+        if ((active1 & 0x1000000000L) != 0L) {
+          jjmatchedKind = 100;
           jjmatchedPos = 12;
         }
         break;
       case 116:
-        if ((active1 & 0x10L) != 0L) {
-          jjmatchedKind = 68;
+        if ((active1 & 0x20L) != 0L) {
+          jjmatchedKind = 69;
           jjmatchedPos = 12;
         }
         return jjMoveStringLiteralDfa13_0(
-            active1, 0x2000000000L, active2, 0L, active3, 0L, active4, 0L);
+            active1, 0x4000000000L, active2, 0L, active3, 0L, active4, 0L);
       default:
         break;
     }
@@ -4178,20 +4196,20 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
     }
     switch (curChar) {
       case 73:
-        return jjMoveStringLiteralDfa14_0(active1, 0x2000000000L, active2, 0L, active4, 0L);
+        return jjMoveStringLiteralDfa14_0(active1, 0x4000000000L, active2, 0L, active4, 0L);
       case 82:
-        if ((active2 & 0x800000000L) != 0L) {
-          jjmatchedKind = 163;
+        if ((active2 & 0x1000000000L) != 0L) {
+          jjmatchedKind = 164;
           jjmatchedPos = 13;
         }
         break;
       case 95:
-        return jjMoveStringLiteralDfa14_0(active1, 0L, active2, 0L, active4, 0x10000L);
+        return jjMoveStringLiteralDfa14_0(active1, 0L, active2, 0L, active4, 0x20000L);
       case 105:
-        return jjMoveStringLiteralDfa14_0(active1, 0x2000000000L, active2, 0L, active4, 0L);
+        return jjMoveStringLiteralDfa14_0(active1, 0x4000000000L, active2, 0L, active4, 0L);
       case 114:
-        if ((active2 & 0x800000000L) != 0L) {
-          jjmatchedKind = 163;
+        if ((active2 & 0x1000000000L) != 0L) {
+          jjmatchedKind = 164;
           jjmatchedPos = 13;
         }
         break;
@@ -4212,11 +4230,11 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
     }
     switch (curChar) {
       case 79:
-        return jjMoveStringLiteralDfa15_0(active1, 0x2000000000L, active4, 0L);
+        return jjMoveStringLiteralDfa15_0(active1, 0x4000000000L, active4, 0L);
       case 95:
-        return jjMoveStringLiteralDfa15_0(active1, 0L, active4, 0x10000L);
+        return jjMoveStringLiteralDfa15_0(active1, 0L, active4, 0x20000L);
       case 111:
-        return jjMoveStringLiteralDfa15_0(active1, 0x2000000000L, active4, 0L);
+        return jjMoveStringLiteralDfa15_0(active1, 0x4000000000L, active4, 0L);
       default:
         break;
     }
@@ -4232,20 +4250,20 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
     }
     switch (curChar) {
       case 78:
-        if ((active1 & 0x2000000000L) != 0L) {
-          jjmatchedKind = 101;
+        if ((active1 & 0x4000000000L) != 0L) {
+          jjmatchedKind = 102;
           jjmatchedPos = 15;
         }
         break;
       case 95:
-        if ((active4 & 0x10000L) != 0L) {
-          jjmatchedKind = 272;
+        if ((active4 & 0x20000L) != 0L) {
+          jjmatchedKind = 273;
           jjmatchedPos = 15;
         }
         break;
       case 110:
-        if ((active1 & 0x2000000000L) != 0L) {
-          jjmatchedKind = 101;
+        if ((active1 & 0x4000000000L) != 0L) {
+          jjmatchedKind = 102;
           jjmatchedPos = 15;
         }
         break;
@@ -4290,7 +4308,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               } else if (curChar == 39) {
                 jjCheckNAddStates(11, 15);
               } else if (curChar == 36) {
-                if (kind > 260) kind = 260;
+                if (kind > 261) kind = 261;
                 {
                   jjCheckNAdd(20);
                 }
@@ -4300,12 +4318,12 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
                 jjCheckNAdd(5);
               } else if (curChar == 47) jjstateSet[jjnewStateCnt++] = 2;
               if ((0x3fe000000000000L & l) != 0L) {
-                if (kind > 179) kind = 179;
+                if (kind > 180) kind = 180;
                 {
                   jjCheckNAddStates(19, 26);
                 }
               } else if (curChar == 48) {
-                if (kind > 179) kind = 179;
+                if (kind > 180) kind = 180;
                 {
                   jjCheckNAddStates(27, 39);
                 }
@@ -4315,7 +4333,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               if (curChar == 42) jjstateSet[jjnewStateCnt++] = 1;
               break;
             case 1:
-              if ((0xffff7fffffffffffL & l) != 0L && kind > 6) kind = 6;
+              if ((0xffff7fffffffffffL & l) != 0L && kind > 7) kind = 7;
               break;
             case 2:
               if (curChar == 42) jjstateSet[jjnewStateCnt++] = 0;
@@ -4327,7 +4345,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 5:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 183) kind = 183;
+              if (kind > 184) kind = 184;
               {
                 jjCheckNAddStates(40, 42);
               }
@@ -4339,7 +4357,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 8:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 183) kind = 183;
+              if (kind > 184) kind = 184;
               {
                 jjCheckNAddTwoStates(8, 9);
               }
@@ -4360,7 +4378,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               }
               break;
             case 14:
-              if (curChar == 34 && kind > 189) kind = 189;
+              if (curChar == 34 && kind > 190) kind = 190;
               break;
             case 15:
               if ((0xff000000000000L & l) != 0L) {
@@ -4382,14 +4400,14 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 19:
               if (curChar != 36) break;
-              if (kind > 260) kind = 260;
+              if (kind > 261) kind = 261;
               {
                 jjCheckNAdd(20);
               }
               break;
             case 20:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 260) kind = 260;
+              if (kind > 261) kind = 261;
               {
                 jjCheckNAdd(20);
               }
@@ -4404,14 +4422,14 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 28:
               if (curChar != 36) break;
-              if (kind > 268) kind = 268;
+              if (kind > 269) kind = 269;
               {
                 jjCheckNAdd(29);
               }
               break;
             case 29:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 268) kind = 268;
+              if (kind > 269) kind = 269;
               {
                 jjCheckNAdd(29);
               }
@@ -4448,7 +4466,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 46:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 183) kind = 183;
+              if (kind > 184) kind = 184;
               {
                 jjCheckNAddTwoStates(46, 9);
               }
@@ -4460,14 +4478,14 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 48:
               if (curChar != 46) break;
-              if (kind > 183) kind = 183;
+              if (kind > 184) kind = 184;
               {
                 jjCheckNAddStates(53, 55);
               }
               break;
             case 49:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 183) kind = 183;
+              if (kind > 184) kind = 184;
               {
                 jjCheckNAddStates(53, 55);
               }
@@ -4479,21 +4497,21 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 52:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 183) kind = 183;
+              if (kind > 184) kind = 184;
               {
                 jjCheckNAddTwoStates(52, 9);
               }
               break;
             case 95:
               if ((0x3fe000000000000L & l) == 0L) break;
-              if (kind > 179) kind = 179;
+              if (kind > 180) kind = 180;
               {
                 jjCheckNAddStates(19, 26);
               }
               break;
             case 96:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 179) kind = 179;
+              if (kind > 180) kind = 180;
               {
                 jjCheckNAddTwoStates(96, 97);
               }
@@ -4515,35 +4533,35 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 102:
               if ((0x3fe000000000000L & l) == 0L) break;
-              if (kind > 190) kind = 190;
+              if (kind > 191) kind = 191;
               {
                 jjCheckNAddTwoStates(103, 104);
               }
               break;
             case 103:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 190) kind = 190;
+              if (kind > 191) kind = 191;
               {
                 jjCheckNAddTwoStates(103, 104);
               }
               break;
             case 105:
               if (curChar != 48) break;
-              if (kind > 190) kind = 190;
+              if (kind > 191) kind = 191;
               {
                 jjCheckNAddStates(62, 64);
               }
               break;
             case 107:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 190) kind = 190;
+              if (kind > 191) kind = 191;
               {
                 jjCheckNAddTwoStates(107, 104);
               }
               break;
             case 108:
               if ((0xff000000000000L & l) == 0L) break;
-              if (kind > 190) kind = 190;
+              if (kind > 191) kind = 191;
               {
                 jjCheckNAddTwoStates(108, 104);
               }
@@ -4568,35 +4586,35 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 114:
               if ((0x3fe000000000000L & l) == 0L) break;
-              if (kind > 191) kind = 191;
+              if (kind > 192) kind = 192;
               {
                 jjCheckNAddTwoStates(115, 116);
               }
               break;
             case 115:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 191) kind = 191;
+              if (kind > 192) kind = 192;
               {
                 jjCheckNAddTwoStates(115, 116);
               }
               break;
             case 117:
               if (curChar != 48) break;
-              if (kind > 191) kind = 191;
+              if (kind > 192) kind = 192;
               {
                 jjCheckNAddStates(71, 73);
               }
               break;
             case 119:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 191) kind = 191;
+              if (kind > 192) kind = 192;
               {
                 jjCheckNAddTwoStates(119, 116);
               }
               break;
             case 120:
               if ((0xff000000000000L & l) == 0L) break;
-              if (kind > 191) kind = 191;
+              if (kind > 192) kind = 192;
               {
                 jjCheckNAddTwoStates(120, 116);
               }
@@ -4618,7 +4636,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               }
               break;
             case 125:
-              if (curChar == 39 && kind > 188) kind = 188;
+              if (curChar == 39 && kind > 189) kind = 189;
               break;
             case 127:
               if ((0x808400000000L & l) != 0L) {
@@ -4654,7 +4672,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               }
               break;
             case 135:
-              if (curChar == 39 && kind > 189) kind = 189;
+              if (curChar == 39 && kind > 190) kind = 190;
               break;
             case 136:
               if ((0xff000000000000L & l) != 0L) {
@@ -4720,7 +4738,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               }
               break;
             case 153:
-              if (curChar == 58 && kind > 262) kind = 262;
+              if (curChar == 58 && kind > 263) kind = 263;
               break;
             case 157:
               if (curChar == 58) {
@@ -4729,14 +4747,14 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 159:
               if (curChar != 36) break;
-              if (kind > 263) kind = 263;
+              if (kind > 264) kind = 264;
               {
                 jjCheckNAddTwoStates(160, 161);
               }
               break;
             case 160:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 263) kind = 263;
+              if (kind > 264) kind = 264;
               {
                 jjCheckNAddTwoStates(160, 161);
               }
@@ -4746,14 +4764,14 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 162:
               if (curChar != 36) break;
-              if (kind > 263) kind = 263;
+              if (kind > 264) kind = 264;
               {
                 jjCheckNAddTwoStates(161, 163);
               }
               break;
             case 163:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 263) kind = 263;
+              if (kind > 264) kind = 264;
               {
                 jjCheckNAddTwoStates(161, 163);
               }
@@ -4765,14 +4783,14 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 191:
               if (curChar != 36) break;
-              if (kind > 264) kind = 264;
+              if (kind > 265) kind = 265;
               {
                 jjCheckNAddTwoStates(192, 193);
               }
               break;
             case 192:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 264) kind = 264;
+              if (kind > 265) kind = 265;
               {
                 jjCheckNAddTwoStates(192, 193);
               }
@@ -4782,14 +4800,14 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 194:
               if (curChar != 36) break;
-              if (kind > 264) kind = 264;
+              if (kind > 265) kind = 265;
               {
                 jjCheckNAddTwoStates(193, 195);
               }
               break;
             case 195:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 264) kind = 264;
+              if (kind > 265) kind = 265;
               {
                 jjCheckNAddTwoStates(193, 195);
               }
@@ -4801,14 +4819,14 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 226:
               if (curChar != 36) break;
-              if (kind > 265) kind = 265;
+              if (kind > 266) kind = 266;
               {
                 jjCheckNAddTwoStates(227, 228);
               }
               break;
             case 227:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 265) kind = 265;
+              if (kind > 266) kind = 266;
               {
                 jjCheckNAddTwoStates(227, 228);
               }
@@ -4818,14 +4836,14 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 229:
               if (curChar != 36) break;
-              if (kind > 265) kind = 265;
+              if (kind > 266) kind = 266;
               {
                 jjCheckNAddTwoStates(228, 230);
               }
               break;
             case 230:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 265) kind = 265;
+              if (kind > 266) kind = 266;
               {
                 jjCheckNAddTwoStates(228, 230);
               }
@@ -4835,14 +4853,14 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 263:
               if (curChar != 36) break;
-              if (kind > 266) kind = 266;
+              if (kind > 267) kind = 267;
               {
                 jjCheckNAdd(264);
               }
               break;
             case 264:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 266) kind = 266;
+              if (kind > 267) kind = 267;
               {
                 jjCheckNAdd(264);
               }
@@ -4854,56 +4872,56 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 272:
               if ((0x3fe000000000000L & l) == 0L) break;
-              if (kind > 267) kind = 267;
+              if (kind > 268) kind = 268;
               {
                 jjCheckNAddTwoStates(273, 274);
               }
               break;
             case 273:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 267) kind = 267;
+              if (kind > 268) kind = 268;
               {
                 jjCheckNAddTwoStates(273, 274);
               }
               break;
             case 275:
               if (curChar != 48) break;
-              if (kind > 267) kind = 267;
+              if (kind > 268) kind = 268;
               {
                 jjCheckNAddStates(109, 111);
               }
               break;
             case 277:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 267) kind = 267;
+              if (kind > 268) kind = 268;
               {
                 jjCheckNAddTwoStates(277, 274);
               }
               break;
             case 278:
               if ((0xff000000000000L & l) == 0L) break;
-              if (kind > 267) kind = 267;
+              if (kind > 268) kind = 268;
               {
                 jjCheckNAddTwoStates(278, 274);
               }
               break;
             case 284:
               if (curChar != 48) break;
-              if (kind > 179) kind = 179;
+              if (kind > 180) kind = 180;
               {
                 jjCheckNAddStates(27, 39);
               }
               break;
             case 286:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 179) kind = 179;
+              if (kind > 180) kind = 180;
               {
                 jjCheckNAddTwoStates(286, 97);
               }
               break;
             case 287:
               if ((0xff000000000000L & l) == 0L) break;
-              if (kind > 179) kind = 179;
+              if (kind > 180) kind = 180;
               {
                 jjCheckNAddTwoStates(287, 97);
               }
@@ -4930,7 +4948,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 294:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 183) kind = 183;
+              if (kind > 184) kind = 184;
               {
                 jjCheckNAddTwoStates(294, 9);
               }
@@ -4952,7 +4970,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 300:
               if ((0x3ff000000000000L & l) == 0L) break;
-              if (kind > 183) kind = 183;
+              if (kind > 184) kind = 184;
               {
                 jjCheckNAddTwoStates(300, 9);
               }
@@ -4967,7 +4985,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
           switch (jjstateSet[--i]) {
             case 3:
               if ((0x7fffffe87fffffeL & l) != 0L) {
-                if (kind > 260) kind = 260;
+                if (kind > 261) kind = 261;
                 {
                   jjCheckNAdd(20);
                 }
@@ -4983,7 +5001,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               } else if ((0x200000002000L & l) != 0L) jjstateSet[jjnewStateCnt++] = 36;
               break;
             case 1:
-              if (kind > 6) kind = 6;
+              if (kind > 7) kind = 7;
               break;
             case 6:
               if ((0x2000000020L & l) != 0L) {
@@ -4991,7 +5009,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               }
               break;
             case 9:
-              if ((0x5000000050L & l) != 0L && kind > 183) kind = 183;
+              if ((0x5000000050L & l) != 0L && kind > 184) kind = 184;
               break;
             case 11:
               if ((0xffffffffefffffffL & l) != 0L) {
@@ -5011,7 +5029,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             case 19:
             case 20:
               if ((0x7fffffe87fffffeL & l) == 0L) break;
-              if (kind > 260) kind = 260;
+              if (kind > 261) kind = 261;
               {
                 jjCheckNAdd(20);
               }
@@ -5038,12 +5056,12 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               }
               break;
             case 25:
-              if (curChar == 96 && kind > 261) kind = 261;
+              if (curChar == 96 && kind > 262) kind = 262;
               break;
             case 28:
             case 29:
               if ((0x7fffffe87fffffeL & l) == 0L) break;
-              if (kind > 268) kind = 268;
+              if (kind > 269) kind = 269;
               {
                 jjCheckNAdd(29);
               }
@@ -5093,7 +5111,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               }
               break;
             case 54:
-              if ((0x1000000010L & l) != 0L && kind > 166) kind = 166;
+              if ((0x1000000010L & l) != 0L && kind > 167) kind = 167;
               break;
             case 55:
             case 79:
@@ -5105,7 +5123,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               if ((0x4000000040000L & l) != 0L) jjstateSet[jjnewStateCnt++] = 55;
               break;
             case 57:
-              if ((0x8000000080000L & l) != 0L && kind > 166) kind = 166;
+              if ((0x8000000080000L & l) != 0L && kind > 167) kind = 167;
               break;
             case 58:
               if ((0x8000000080000L & l) != 0L) {
@@ -5122,7 +5140,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               if ((0x800000008L & l) != 0L) jjstateSet[jjnewStateCnt++] = 60;
               break;
             case 62:
-              if ((0x400000004000L & l) != 0L && kind > 166) kind = 166;
+              if ((0x400000004000L & l) != 0L && kind > 167) kind = 167;
               break;
             case 63:
               if ((0x800000008000L & l) != 0L) jjstateSet[jjnewStateCnt++] = 62;
@@ -5143,7 +5161,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               if ((0x40000000400000L & l) != 0L) jjstateSet[jjnewStateCnt++] = 67;
               break;
             case 69:
-              if ((0x2000000020L & l) != 0L && kind > 166) kind = 166;
+              if ((0x2000000020L & l) != 0L && kind > 167) kind = 167;
               break;
             case 70:
               if ((0x400000004000000L & l) != 0L) {
@@ -5168,7 +5186,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               if ((0x10000000100000L & l) != 0L) jjstateSet[jjnewStateCnt++] = 74;
               break;
             case 76:
-              if ((0x80000000800000L & l) != 0L && kind > 166) kind = 166;
+              if ((0x80000000800000L & l) != 0L && kind > 167) kind = 167;
               break;
             case 77:
               if ((0x200000002L & l) != 0L) jjstateSet[jjnewStateCnt++] = 76;
@@ -5226,7 +5244,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               if ((0x4000000040L & l) != 0L) jjstateSet[jjnewStateCnt++] = 93;
               break;
             case 97:
-              if ((0x100000001000L & l) != 0L && kind > 179) kind = 179;
+              if ((0x100000001000L & l) != 0L && kind > 180) kind = 180;
               break;
             case 99:
               if ((0x100000001000L & l) != 0L) {
@@ -5234,7 +5252,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               }
               break;
             case 104:
-              if ((0x100000001000L & l) != 0L && kind > 190) kind = 190;
+              if ((0x100000001000L & l) != 0L && kind > 191) kind = 191;
               break;
             case 106:
               if ((0x100000001000000L & l) != 0L) {
@@ -5243,7 +5261,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 107:
               if ((0x7e0000007eL & l) == 0L) break;
-              if (kind > 190) kind = 190;
+              if (kind > 191) kind = 191;
               {
                 jjCheckNAddTwoStates(107, 104);
               }
@@ -5254,7 +5272,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               }
               break;
             case 116:
-              if ((0x100000001000L & l) != 0L && kind > 191) kind = 191;
+              if ((0x100000001000L & l) != 0L && kind > 192) kind = 192;
               break;
             case 118:
               if ((0x100000001000000L & l) != 0L) {
@@ -5263,7 +5281,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 119:
               if ((0x7e0000007eL & l) == 0L) break;
-              if (kind > 191) kind = 191;
+              if (kind > 192) kind = 192;
               {
                 jjCheckNAddTwoStates(119, 116);
               }
@@ -5341,7 +5359,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             case 159:
             case 160:
               if ((0x7fffffe87fffffeL & l) == 0L) break;
-              if (kind > 263) kind = 263;
+              if (kind > 264) kind = 264;
               {
                 jjCheckNAddTwoStates(160, 161);
               }
@@ -5349,7 +5367,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             case 162:
             case 163:
               if ((0x7fffffe87fffffeL & l) == 0L) break;
-              if (kind > 263) kind = 263;
+              if (kind > 264) kind = 264;
               {
                 jjCheckNAddTwoStates(161, 163);
               }
@@ -5435,7 +5453,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             case 191:
             case 192:
               if ((0x7fffffe87fffffeL & l) == 0L) break;
-              if (kind > 264) kind = 264;
+              if (kind > 265) kind = 265;
               {
                 jjCheckNAddTwoStates(192, 193);
               }
@@ -5443,7 +5461,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             case 194:
             case 195:
               if ((0x7fffffe87fffffeL & l) == 0L) break;
-              if (kind > 264) kind = 264;
+              if (kind > 265) kind = 265;
               {
                 jjCheckNAddTwoStates(193, 195);
               }
@@ -5538,7 +5556,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             case 226:
             case 227:
               if ((0x7fffffe87fffffeL & l) == 0L) break;
-              if (kind > 265) kind = 265;
+              if (kind > 266) kind = 266;
               {
                 jjCheckNAddTwoStates(227, 228);
               }
@@ -5546,7 +5564,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             case 229:
             case 230:
               if ((0x7fffffe87fffffeL & l) == 0L) break;
-              if (kind > 265) kind = 265;
+              if (kind > 266) kind = 266;
               {
                 jjCheckNAddTwoStates(228, 230);
               }
@@ -5649,7 +5667,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             case 263:
             case 264:
               if ((0x7fffffe87fffffeL & l) == 0L) break;
-              if (kind > 266) kind = 266;
+              if (kind > 267) kind = 267;
               {
                 jjCheckNAdd(264);
               }
@@ -5673,7 +5691,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               if ((0x4000000040000L & l) != 0L) jjstateSet[jjnewStateCnt++] = 271;
               break;
             case 274:
-              if ((0x100000001000L & l) != 0L && kind > 267) kind = 267;
+              if ((0x100000001000L & l) != 0L && kind > 268) kind = 268;
               break;
             case 276:
               if ((0x100000001000000L & l) != 0L) {
@@ -5682,7 +5700,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 277:
               if ((0x7e0000007eL & l) == 0L) break;
-              if (kind > 267) kind = 267;
+              if (kind > 268) kind = 268;
               {
                 jjCheckNAddTwoStates(277, 274);
               }
@@ -5709,7 +5727,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
               break;
             case 286:
               if ((0x7e0000007eL & l) == 0L) break;
-              if (kind > 179) kind = 179;
+              if (kind > 180) kind = 180;
               {
                 jjCheckNAddTwoStates(286, 97);
               }
@@ -5762,7 +5780,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
         do {
           switch (jjstateSet[--i]) {
             case 1:
-              if (jjCanMove_0(hiByte, i1, i2, l1, l2) && kind > 6) kind = 6;
+              if (jjCanMove_0(hiByte, i1, i2, l1, l2) && kind > 7) kind = 7;
               break;
             case 11:
               if (jjCanMove_0(hiByte, i1, i2, l1, l2)) {
@@ -5824,13 +5842,38 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
   private int jjMoveStringLiteralDfa0_2() {
     switch (curChar) {
       case 42:
-        return jjMoveStringLiteralDfa1_2(0x200L);
+        return jjMoveStringLiteralDfa1_2(0x400L);
       default:
         return 1;
     }
   }
 
   private int jjMoveStringLiteralDfa1_2(long active0) {
+    try {
+      curChar = input_stream.readChar();
+    } catch (java.io.IOException e) {
+      return 1;
+    }
+    switch (curChar) {
+      case 47:
+        if ((active0 & 0x400L) != 0L) return jjStopAtPos(1, 10);
+        break;
+      default:
+        return 2;
+    }
+    return 2;
+  }
+
+  private int jjMoveStringLiteralDfa0_1() {
+    switch (curChar) {
+      case 42:
+        return jjMoveStringLiteralDfa1_1(0x200L);
+      default:
+        return 1;
+    }
+  }
+
+  private int jjMoveStringLiteralDfa1_1(long active0) {
     try {
       curChar = input_stream.readChar();
     } catch (java.io.IOException e) {
@@ -5846,34 +5889,10 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
     return 2;
   }
 
-  private int jjMoveStringLiteralDfa0_1() {
-    switch (curChar) {
-      case 42:
-        return jjMoveStringLiteralDfa1_1(0x100L);
-      default:
-        return 1;
-    }
-  }
-
-  private int jjMoveStringLiteralDfa1_1(long active0) {
-    try {
-      curChar = input_stream.readChar();
-    } catch (java.io.IOException e) {
-      return 1;
-    }
-    switch (curChar) {
-      case 47:
-        if ((active0 & 0x100L) != 0L) return jjStopAtPos(1, 8);
-        break;
-      default:
-        return 2;
-    }
-    return 2;
-  }
-
   /** Token literal values. */
   public static final String[] jjstrLiteralImages = {
     "",
+    null,
     null,
     null,
     null,
@@ -6245,16 +6264,16 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
             jjmatchedKind = 0x7fffffff;
             jjmatchedPos = 0;
             curPos = jjMoveStringLiteralDfa0_1();
-            if (jjmatchedPos == 0 && jjmatchedKind > 10) {
-              jjmatchedKind = 10;
+            if (jjmatchedPos == 0 && jjmatchedKind > 11) {
+              jjmatchedKind = 11;
             }
             break;
           case 2:
             jjmatchedKind = 0x7fffffff;
             jjmatchedPos = 0;
             curPos = jjMoveStringLiteralDfa0_2();
-            if (jjmatchedPos == 0 && jjmatchedKind > 10) {
-              jjmatchedKind = 10;
+            if (jjmatchedPos == 0 && jjmatchedKind > 11) {
+              jjmatchedKind = 11;
             }
             break;
         }
@@ -6329,7 +6348,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
   void MoreLexicalActions() {
     jjimageLen += (lengthOfMatch = jjmatchedPos + 1);
     switch (jjmatchedKind) {
-      case 6:
+      case 7:
         image.append(input_stream.GetSuffix(jjimageLen));
         jjimageLen = 0;
         input_stream.backup(1);
@@ -6420,7 +6439,7 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
 
   /** Lex State array. */
   public static final int[] jjnewLexState = {
-    -1, -1, -1, -1, -1, -1, 1, 2, 0, 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+    -1, -1, -1, -1, -1, -1, -1, 1, 2, 0, 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
     -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
         -1,
     -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
@@ -6441,20 +6460,20 @@ public class OrientSqlTokenManager implements OrientSqlConstants {
         -1,
     -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
         -1,
-    -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+    -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
   };
 
   static final long[] jjtoToken = {
-    0xfffffffffffff801L, 0xffffffffffffffffL, 0xf08e01ffffffffffL, 0xffffffffffffffffL, 0x1fff9fffL,
+    0xfffffffffffff001L, 0xffffffffffffffffL, 0xe11c03ffffffffffL, 0xffffffffffffffffL, 0x3fff3fffL,
   };
   static final long[] jjtoSkip = {
-    0x33eL, 0x0L, 0x0L, 0x0L, 0x0L,
+    0x67eL, 0x0L, 0x0L, 0x0L, 0x0L,
   };
   static final long[] jjtoSpecial = {
-    0x300L, 0x0L, 0x0L, 0x0L, 0x0L,
+    0x600L, 0x0L, 0x0L, 0x0L, 0x0L,
   };
   static final long[] jjtoMore = {
-    0x4c0L, 0x0L, 0x0L, 0x0L, 0x0L,
+    0x980L, 0x0L, 0x0L, 0x0L, 0x0L,
   };
   protected CharStream input_stream;
 

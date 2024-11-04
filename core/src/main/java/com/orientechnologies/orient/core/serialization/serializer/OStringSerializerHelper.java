@@ -1235,8 +1235,10 @@ public abstract class OStringSerializerHelper {
           buffer.append('\r');
         } else if (c == '\\') {
           buffer.append('\\');
-        } else if (c == '\f') {
+        } else if (c == 'f') {
           buffer.append('\f');
+        } else if (c == 'b') {
+          buffer.append('\b');
         } else {
           buffer.append(c);
         }
