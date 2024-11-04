@@ -5130,11 +5130,12 @@ public abstract class OAbstractPaginatedStorage
     switch (attribute) {
       case NAME:
         Objects.requireNonNull(stringValue);
+        String clusterName = stringValue.toLowerCase();
 
         final String oldName = cluster.getName();
-        cluster.setClusterName(stringValue);
+        cluster.setClusterName(clusterName);
         clusterMap.remove(oldName.toLowerCase());
-        clusterMap.put(stringValue.toLowerCase(), cluster);
+        clusterMap.put(clusterName, cluster);
         break;
       case CONFLICTSTRATEGY:
         cluster.setRecordConflictStrategy(stringValue);
