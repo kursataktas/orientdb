@@ -33,7 +33,6 @@ import com.orientechnologies.orient.core.sql.OCommandSQL;
 import com.orientechnologies.orient.core.sql.OCommandSQLParsingException;
 import com.orientechnologies.orient.core.sql.executor.OResult;
 import com.orientechnologies.orient.core.sql.executor.OResultSet;
-import com.orientechnologies.orient.core.sql.query.OSQLSynchQuery;
 import com.orientechnologies.orient.core.storage.cluster.OOfflineClusterException;
 import java.io.IOException;
 import java.util.HashSet;
@@ -781,39 +780,31 @@ public class SchemaTest extends DocumentDBBaseTest {
     schema.dropClass(className);
   }
 
-  private void swapClusters(ODatabaseDocumentInternal databaseDocumentTx, int i) {
-    databaseDocumentTx
+  private void swapClusters(ODatabaseDocumentInternal session, int i) {
+    session
         .command("CREATE CLASS TestRenameClusterNew extends TestRenameClusterOriginal clusters 2")
         .close();
 
-    databaseDocumentTx
-        .command("INSERT INTO TestRenameClusterNew (iteration) VALUES(" + i + ")")
-        .close();
+    session.command("INSERT INTO TestRenameClusterNew (iteration) VALUES(" + i + ")").close();
 
-    databaseDocumentTx
+    session
         .command("ALTER CLASS TestRenameClusterOriginal removecluster TestRenameClusterOriginal")
         .close();
-    databaseDocumentTx
-        .command("ALTER CLASS TestRenameClusterNew removecluster TestRenameClusterNew")
-        .close();
-    databaseDocumentTx.command("DROP CLASS TestRenameClusterNew").close();
-    databaseDocumentTx
+    session.command("ALTER CLASS TestRenameClusterNew removecluster TestRenameClusterNew").close();
+    session.command("DROP CLASS TestRenameClusterNew").close();
+    session
         .command("ALTER CLASS TestRenameClusterOriginal addcluster TestRenameClusterNew")
         .close();
-    databaseDocumentTx.command("DROP CLUSTER TestRenameClusterOriginal").close();
-    databaseDocumentTx
-        .command(
-            new OCommandSQL("ALTER CLUSTER TestRenameClusterNew name TestRenameClusterOriginal"))
-        .execute();
+    session.command("DROP CLUSTER TestRenameClusterOriginal").close();
+    session.command("ALTER CLUSTER TestRenameClusterNew name TestRenameClusterOriginal").close();
 
-    databaseDocumentTx.getLocalCache().clear();
+    session.getLocalCache().clear();
 
-    List<ODocument> result =
-        databaseDocumentTx.query(
-            new OSQLSynchQuery<ODocument>("select * from TestRenameClusterOriginal"));
+    List<OResult> result =
+        session.query("select * from TestRenameClusterOriginal").stream().toList();
     Assert.assertEquals(result.size(), 1);
 
-    ODocument document = result.get(0);
-    Assert.assertEquals(document.<Object>field("iteration"), i);
+    OResult document = result.get(0);
+    Assert.assertEquals(document.<Object>getProperty("iteration"), i);
   }
 }

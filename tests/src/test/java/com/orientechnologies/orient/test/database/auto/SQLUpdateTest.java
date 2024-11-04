@@ -24,7 +24,6 @@ import com.orientechnologies.orient.core.metadata.schema.OSchema;
 import com.orientechnologies.orient.core.metadata.schema.OType;
 import com.orientechnologies.orient.core.record.OElement;
 import com.orientechnologies.orient.core.record.impl.ODocument;
-import com.orientechnologies.orient.core.sql.OCommandSQL;
 import com.orientechnologies.orient.core.sql.executor.OResult;
 import com.orientechnologies.orient.core.sql.executor.OResultSet;
 import java.util.ArrayList;
@@ -511,10 +510,9 @@ public class SQLUpdateTest extends DocumentDBBaseTest {
 
     database
         .command(
-            new OCommandSQL(
-                "UPDATE FormatEscapingTest SET test = 'aaa \\b bbb' WHERE @rid = "
-                    + document.getIdentity()))
-        .execute();
+            "UPDATE FormatEscapingTest SET test = 'aaa \\b bbb' WHERE @rid = "
+                + document.getIdentity())
+        .close();
 
     database.reload(document);
     Assert.assertEquals(document.field("test"), "aaa \b bbb");
@@ -530,10 +528,9 @@ public class SQLUpdateTest extends DocumentDBBaseTest {
 
     database
         .command(
-            new OCommandSQL(
-                "UPDATE FormatEscapingTest SET test = 'aaa \\f bbb' WHERE @rid = "
-                    + document.getIdentity()))
-        .execute();
+            "UPDATE FormatEscapingTest SET test = 'aaa \\f bbb' WHERE @rid = "
+                + document.getIdentity())
+        .close();
 
     database.reload(document);
     Assert.assertEquals(document.field("test"), "aaa \f bbb");

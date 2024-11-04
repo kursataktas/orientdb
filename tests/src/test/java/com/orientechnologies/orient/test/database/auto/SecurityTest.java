@@ -72,7 +72,7 @@ public class SecurityTest extends DocumentDBBaseTest {
     reopendb("writer", "writer");
 
     try {
-      new ODocument().save("internal");
+      database.save(new ODocument(), "internal");
       Assert.assertTrue(false);
     } catch (OSecurityAccessException e) {
       Assert.assertTrue(true);
