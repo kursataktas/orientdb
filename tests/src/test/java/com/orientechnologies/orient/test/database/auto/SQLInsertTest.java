@@ -26,7 +26,6 @@ import com.orientechnologies.orient.core.metadata.schema.OType;
 import com.orientechnologies.orient.core.record.OElement;
 import com.orientechnologies.orient.core.record.ORecord;
 import com.orientechnologies.orient.core.record.impl.ODocument;
-import com.orientechnologies.orient.core.sql.OCommandSQL;
 import com.orientechnologies.orient.core.sql.executor.OResult;
 import com.orientechnologies.orient.core.sql.executor.OResultSet;
 import java.math.BigDecimal;
@@ -605,17 +604,17 @@ public class SQLInsertTest extends DocumentDBBaseTest {
         OType.EMBEDDEDMAP,
         database.getMetadata().getSchema().getOrCreateClass("TestConvertLinkedClass"));
 
-    ODocument doc =
+    OElement doc =
         database
             .command(
-                new OCommandSQL(
-                    "INSERT INTO TestConvert SET name = 'embeddedMapWithLinkedClass',"
-                        + " embeddedMapWithLinkedClass = {test:{'line1':'123 Fake Street'}}"))
-            .execute();
+                "INSERT INTO TestConvert SET name = 'embeddedMapWithLinkedClass',"
+                    + " embeddedMapWithLinkedClass = {test:{'line1':'123 Fake Street'}}")
+            .next()
+            .toElement();
 
-    Assert.assertTrue(doc.field("embeddedMapWithLinkedClass") instanceof Map);
+    Assert.assertTrue(doc.getProperty("embeddedMapWithLinkedClass") instanceof Map);
 
-    Map addr = doc.field("embeddedMapWithLinkedClass");
+    Map addr = doc.getProperty("embeddedMapWithLinkedClass");
     for (Object o : addr.values()) {
       Assert.assertTrue(o instanceof ODocument);
       Assert.assertEquals(((ODocument) o).getClassName(), "TestConvertLinkedClass");

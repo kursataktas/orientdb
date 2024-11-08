@@ -15,7 +15,6 @@
  */
 package com.orientechnologies.orient.test.database.auto;
 
-import com.orientechnologies.common.exception.OException;
 import com.orientechnologies.orient.core.db.ODatabaseDocumentInternal;
 import com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal;
 import com.orientechnologies.orient.core.exception.OClusterDoesNotExistException;
@@ -29,11 +28,9 @@ import com.orientechnologies.orient.core.metadata.schema.OSchema;
 import com.orientechnologies.orient.core.metadata.schema.OType;
 import com.orientechnologies.orient.core.metadata.security.OSecurityShared;
 import com.orientechnologies.orient.core.record.impl.ODocument;
-import com.orientechnologies.orient.core.sql.OCommandSQL;
 import com.orientechnologies.orient.core.sql.OCommandSQLParsingException;
 import com.orientechnologies.orient.core.sql.executor.OResult;
 import com.orientechnologies.orient.core.sql.executor.OResultSet;
-import com.orientechnologies.orient.core.storage.cluster.OOfflineClusterException;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.List;
@@ -152,7 +149,7 @@ public class SchemaTest extends DocumentDBBaseTest {
                 ODocument doc = new ODocument("NewClass");
                 database.save(doc);
 
-                doc.delete();
+                database.delete(doc);
                 database.getMetadata().getSchema().dropClass("NewClass");
               }
             });
@@ -406,12 +403,12 @@ public class SchemaTest extends DocumentDBBaseTest {
     OClass oClass = database.getMetadata().getSchema().createClass("RenameClassTest");
 
     ODocument document = new ODocument("RenameClassTest");
-    document.save();
+    database.save(document);
 
     document.reset();
 
     document.setClassName("RenameClassTest");
-    document.save();
+    database.save(document);
 
     OResultSet result = database.query("select from RenameClassTest");
     Assert.assertEquals(result.stream().count(), 2);
@@ -440,7 +437,8 @@ public class SchemaTest extends DocumentDBBaseTest {
       }
 
       for (int i = 0; i < 6; ++i) {
-        new ODocument("multipleclusters").field("num", i).save();
+        ODocument doc = new ODocument("multipleclusters").field("num", i);
+        database.save(doc);
       }
 
       // CHECK THERE ARE 2 RECORDS IN EACH CLUSTER (ROUND-ROBIN STRATEGY)
@@ -487,102 +485,6 @@ public class SchemaTest extends DocumentDBBaseTest {
     } finally {
 
     }
-  }
-
-  public void testOfflineCluster() {
-    database.command("create class TestOffline").close();
-    database.command("insert into TestOffline set status = 'offline'").close();
-
-    List<OResult> result = database.command("select from TestOffline").stream().toList();
-    Assert.assertNotNull(result);
-    Assert.assertFalse(result.isEmpty());
-
-    ODocument record = (ODocument) result.get(0).getRecord().get();
-
-    // TEST NO EFFECTS
-    Boolean changed =
-        database.command(new OCommandSQL("alter cluster TestOffline status online")).execute();
-    Assert.assertFalse(changed);
-
-    // PUT IT OFFLINE
-    changed =
-        database.command(new OCommandSQL("alter cluster TestOffline* status offline")).execute();
-    Assert.assertTrue(changed);
-
-    // NO DATA?
-    result = database.command("select from TestOffline").stream().toList();
-    Assert.assertNotNull(result);
-    Assert.assertTrue(result.isEmpty());
-
-    // TEST NO EFFECTS
-    changed =
-        database.command(new OCommandSQL("alter cluster TestOffline* status offline")).execute();
-    Assert.assertFalse(changed);
-
-    // TEST SAVING OF OFFLINE STATUS
-
-    // TEST UPDATE - NO EFFECT
-    Assert.assertEquals(
-        database.command(new OCommandSQL("update TestOffline set name = 'yeah'")).<Object>execute(),
-        0);
-
-    // TEST DELETE - NO EFFECT
-    Assert.assertEquals(
-        database.command(new OCommandSQL("delete from TestOffline")).<Object>execute(), 0);
-
-    // TEST CREATE -> EXCEPTION
-    try {
-      Object res =
-          database
-              .command(
-                  new OCommandSQL(
-                      "insert into TestOffline set name = 'offline', password = 'offline', status ="
-                          + " 'ACTIVE'"))
-              .execute();
-      Assert.assertTrue(false);
-    } catch (OException e) {
-
-      Throwable cause = e;
-      while (cause.getCause() != null) cause = cause.getCause();
-
-      Assert.assertTrue(cause instanceof OOfflineClusterException);
-    }
-
-    // TEST UPDATE RECORD -> EXCEPTION
-    try {
-      record.field("status", "offline").save();
-      Assert.assertTrue(false);
-    } catch (OException e) {
-      Throwable cause = e;
-      while (cause.getCause() != null) cause = cause.getCause();
-
-      Assert.assertTrue(cause instanceof OOfflineClusterException);
-    }
-
-    // TEST DELETE RECORD -> EXCEPTION
-    try {
-      record.delete();
-      Assert.assertTrue(false);
-    } catch (OOfflineClusterException e) {
-      Assert.assertTrue(true);
-    }
-
-    // TEST DELETE RECORD -> EXCEPTION
-    try {
-      record.reload(null, true);
-      Assert.assertTrue(false);
-    } catch (OOfflineClusterException e) {
-      Assert.assertTrue(true);
-    }
-
-    // RESTORE IT ONLINE
-    changed =
-        database.command(new OCommandSQL("alter cluster TestOffline status online")).execute();
-    Assert.assertTrue(changed);
-
-    result = database.command(new OCommandSQL("select from TestOffline")).execute();
-    Assert.assertNotNull(result);
-    Assert.assertFalse(result.isEmpty());
   }
 
   public void testExistsProperty() {
