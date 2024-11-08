@@ -23,9 +23,6 @@ import com.orientechnologies.common.listener.OProgressListener;
 import com.orientechnologies.orient.core.command.OCommandContext.TIMEOUT_STRATEGY;
 import com.orientechnologies.orient.core.config.OGlobalConfiguration;
 import com.orientechnologies.orient.core.db.record.OIdentifiable;
-import com.orientechnologies.orient.core.replication.OAsyncReplicationError;
-import com.orientechnologies.orient.core.replication.OAsyncReplicationOk;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -37,8 +34,7 @@ import java.util.Set;
  * @author Luca Garulli (l.garulli--(at)--orientdb.com)
  */
 @SuppressWarnings("serial")
-public abstract class OCommandRequestAbstract
-    implements OCommandRequestInternal, ODistributedCommand {
+public abstract class OCommandRequestAbstract implements OCommandRequestInternal {
   protected OCommandResultListener resultListener;
   protected OProgressListener progressListener;
   protected int limit = -1;
@@ -49,8 +45,6 @@ public abstract class OCommandRequestAbstract
   protected boolean useCache = false;
   protected boolean cacheableResult = false;
   protected OCommandContext context;
-  protected OAsyncReplicationOk onAsyncReplicationOk;
-  protected OAsyncReplicationError onAsyncReplicationError;
 
   private final Set<String> nodesToExclude = new HashSet<String>();
   private boolean recordResultSet = true;
@@ -99,38 +93,6 @@ public abstract class OCommandRequestAbstract
       }
     }
     return params;
-  }
-
-  /** Defines a callback to call in case of the asynchronous replication succeed. */
-  @Override
-  public OCommandRequestAbstract onAsyncReplicationOk(final OAsyncReplicationOk iCallback) {
-    onAsyncReplicationOk = iCallback;
-    return this;
-  }
-
-  /** Defines a callback to call in case of error during the asynchronous replication. */
-  @Override
-  public OCommandRequestAbstract onAsyncReplicationError(final OAsyncReplicationError iCallback) {
-    if (iCallback != null) {
-      onAsyncReplicationError =
-          new OAsyncReplicationError() {
-            private int retry = 0;
-
-            @Override
-            public ACTION onAsyncReplicationError(Throwable iException, final int iRetry) {
-              switch (iCallback.onAsyncReplicationError(iException, ++retry)) {
-                case RETRY:
-                  execute();
-                  break;
-
-                case IGNORE:
-              }
-
-              return ACTION.IGNORE;
-            }
-          };
-    } else onAsyncReplicationError = null;
-    return this;
   }
 
   public OProgressListener getProgressListener() {
@@ -205,25 +167,12 @@ public abstract class OCommandRequestAbstract
     return timeoutStrategy;
   }
 
-  @Override
-  public Set<String> nodesToExclude() {
-    return Collections.unmodifiableSet(nodesToExclude);
-  }
-
   public void addExcludedNode(String node) {
     nodesToExclude.add(node);
   }
 
   public void removeExcludedNode(String node) {
     nodesToExclude.remove(node);
-  }
-
-  public OAsyncReplicationOk getOnAsyncReplicationOk() {
-    return onAsyncReplicationOk;
-  }
-
-  public OAsyncReplicationError getOnAsyncReplicationError() {
-    return onAsyncReplicationError;
   }
 
   @Override
