@@ -20,8 +20,6 @@
 package com.orientechnologies.orient.core.sql;
 
 import com.orientechnologies.orient.core.command.OCommandRequestTextAbstract;
-import com.orientechnologies.orient.core.replication.OAsyncReplicationError;
-import com.orientechnologies.orient.core.replication.OAsyncReplicationOk;
 
 /**
  * SQL command request implementation. It just stores the request and delegated the execution to the
@@ -44,17 +42,5 @@ public class OCommandSQL extends OCommandRequestTextAbstract {
   @Override
   public String toString() {
     return "sql." + text; // OIOUtils.getStringMaxLength(text, 50, "...");
-  }
-
-  /** Defines a callback to call in case of the asynchronous replication succeed. */
-  @Override
-  public OCommandSQL onAsyncReplicationOk(final OAsyncReplicationOk iCallback) {
-    return (OCommandSQL) super.onAsyncReplicationOk(iCallback);
-  }
-
-  /** Defines a callback to call in case of error during the asynchronous replication. */
-  @Override
-  public OCommandSQL onAsyncReplicationError(final OAsyncReplicationError iCallback) {
-    return (OCommandSQL) super.onAsyncReplicationError(iCallback);
   }
 }

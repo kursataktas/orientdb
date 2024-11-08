@@ -22,8 +22,6 @@ package com.orientechnologies.orient.core.db;
 import com.orientechnologies.common.thread.OSoftThread;
 import com.orientechnologies.orient.core.OOrientListenerAbstract;
 import com.orientechnologies.orient.core.Orient;
-import com.orientechnologies.orient.core.replication.OAsyncReplicationError;
-import com.orientechnologies.orient.core.replication.OAsyncReplicationOk;
 
 /**
  * Thread Local to store execution setting.
@@ -31,10 +29,7 @@ import com.orientechnologies.orient.core.replication.OAsyncReplicationOk;
  * @author Luca Garulli (l.garulli--(at)--orientdb.com)
  */
 public class OExecutionThreadLocal extends ThreadLocal<OExecutionThreadLocal.OExecutionThreadData> {
-  public class OExecutionThreadData {
-    public volatile OAsyncReplicationOk onAsyncReplicationOk;
-    public volatile OAsyncReplicationError onAsyncReplicationError;
-  }
+  public class OExecutionThreadData {}
 
   @Override
   protected OExecutionThreadData initialValue() {
