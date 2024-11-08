@@ -3021,23 +3021,35 @@ public class ODocument extends ORecordAbstract
             }
           }
 
-          if (linkedType == null) continue;
+          OClass linedClass = prop.getLinkedClass();
+          if (linkedType == null && linedClass == null) continue;
 
           if (type == OType.EMBEDDEDLIST) {
             OTrackedList<Object> list = new OTrackedList<>(this);
             Collection<Object> values = (Collection<Object>) value;
             for (Object object : values) {
-              list.add(OType.convert(object, linkedType.getDefaultJavaType()));
+              Object newValue;
+              if (linkedType != null && linkedType != OType.EMBEDDED) {
+                newValue = OType.convert(object, linkedType.getDefaultJavaType());
+              } else {
+                newValue = convertToDocType(linedClass, object, prop.getName());
+              }
+              list.add(newValue);
             }
             entry.value = list;
             replaceListenerOnAutoconvert(entry, value);
           } else if (type == OType.EMBEDDEDMAP) {
+
             Map<Object, Object> map = new OTrackedMap<>(this);
             Map<Object, Object> values = (Map<Object, Object>) value;
             for (Entry<Object, Object> object : values.entrySet()) {
-              map.put(
-                  object.getKey(),
-                  OType.convert(object.getValue(), linkedType.getDefaultJavaType()));
+              Object newValue;
+              if (linkedType != null && linkedType != OType.EMBEDDED) {
+                newValue = OType.convert(object.getValue(), linkedType.getDefaultJavaType());
+              } else {
+                newValue = convertToDocType(linedClass, object.getValue(), prop.getName());
+              }
+              map.put(object.getKey(), newValue);
             }
             entry.value = map;
             replaceListenerOnAutoconvert(entry, value);
@@ -3045,7 +3057,13 @@ public class ODocument extends ORecordAbstract
             Set<Object> set = new OTrackedSet<>(this);
             Collection<Object> values = (Collection<Object>) value;
             for (Object object : values) {
-              set.add(OType.convert(object, linkedType.getDefaultJavaType()));
+              Object newValue;
+              if (linkedType != null && linkedType != OType.EMBEDDED) {
+                newValue = OType.convert(object, linkedType.getDefaultJavaType());
+              } else {
+                newValue = convertToDocType(linedClass, object, prop.getName());
+              }
+              set.add(newValue);
             }
             entry.value = set;
             replaceListenerOnAutoconvert(entry, value);
@@ -3097,6 +3115,37 @@ public class ODocument extends ORecordAbstract
           new OValidationException(
               "impossible to convert value of field \"" + prop.getName() + "\""),
           e);
+    }
+  }
+
+  private Object convertToDocType(OClass linkedClass, Object value, String propName) {
+    try {
+      if (linkedClass != null && value != null) {
+        if (value instanceof ODocument) {
+          OClass docClass = ((ODocument) value).getImmutableSchemaClass();
+          if (docClass == null) {
+            ((ODocument) value).setClass(linkedClass);
+          } else if (!docClass.isSubClassOf(linkedClass)) {
+            throw new OValidationException(
+                "impossible to convert value of field \""
+                    + propName
+                    + "\", incompatible with "
+                    + linkedClass);
+          }
+        } else if (value instanceof Map) {
+          ODocument newValue = new ODocument(linkedClass);
+          newValue.fromMap((Map) value);
+          newValue.addOwner(this);
+          return newValue;
+        } else if (!(value instanceof ODocument)) {
+          throw new OValidationException(
+              "impossible to convert value of field \"" + propName + "\"");
+        }
+      }
+      return value;
+    } catch (Exception e) {
+      throw OException.wrapException(
+          new OValidationException("impossible to convert value of field \"" + propName + "\""), e);
     }
   }
 
