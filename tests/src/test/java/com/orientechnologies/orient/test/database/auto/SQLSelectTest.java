@@ -955,26 +955,24 @@ public class SQLSelectTest extends AbstractSelectTest {
 
   @Test
   public void includeFields() {
-    final OSQLSynchQuery<ODocument> query =
-        new OSQLSynchQuery<ODocument>("select expand( roles.include('name') ) from OUser");
+    final String query = "select expand( roles.include('name') ) from OUser";
 
-    List<ODocument> resultset = database.query(query);
+    List<OResult> resultset = database.query(query).stream().toList();
 
-    for (ODocument d : resultset) {
-      Assert.assertTrue(d.fields() <= 1);
-      if (d.fields() == 1) Assert.assertTrue(d.containsField("name"));
+    for (OResult d : resultset) {
+      Assert.assertTrue(d.getPropertyNames().size() <= 1);
+      if (d.getPropertyNames().size() == 1) Assert.assertTrue(d.hasProperty("name"));
     }
   }
 
   @Test
   public void excludeFields() {
-    final OSQLSynchQuery<ODocument> query =
-        new OSQLSynchQuery<ODocument>("select expand( roles.exclude('rules') ) from OUser");
+    final String query = "select expand( roles.exclude('rules') ) from OUser";
 
-    List<ODocument> resultset = database.query(query);
+    List<OResult> resultset = database.query(query).stream().toList();
 
-    for (ODocument d : resultset) {
-      Assert.assertFalse(d.containsField("rules"));
+    for (OResult d : resultset) {
+      Assert.assertFalse(d.hasProperty("rules"));
     }
   }
 

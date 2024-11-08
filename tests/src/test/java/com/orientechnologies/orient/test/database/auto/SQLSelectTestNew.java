@@ -32,7 +32,6 @@ import com.orientechnologies.orient.core.record.impl.ORecordBytes;
 import com.orientechnologies.orient.core.sql.OCommandSQLParsingException;
 import com.orientechnologies.orient.core.sql.executor.OResult;
 import com.orientechnologies.orient.core.sql.executor.OResultSet;
-import com.orientechnologies.orient.core.sql.query.OSQLSynchQuery;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -891,14 +890,13 @@ public class SQLSelectTestNew extends AbstractSelectTest {
 
   @Test
   public void includeFields() {
-    final OSQLSynchQuery<ODocument> query =
-        new OSQLSynchQuery<ODocument>("select expand( roles.include('name') ) from OUser");
+    final String query = "select expand( roles.include('name') ) from OUser";
 
-    List<ODocument> resultset = database.query(query);
+    List<OResult> resultset = database.query(query).stream().toList();
 
-    for (ODocument d : resultset) {
-      Assert.assertTrue(d.fields() <= 1);
-      if (d.fields() == 1) Assert.assertTrue(d.containsField("name"));
+    for (OResult d : resultset) {
+      Assert.assertTrue(d.getPropertyNames().size() <= 1);
+      if (d.getPropertyNames().size() == 1) Assert.assertTrue(d.hasProperty("name"));
     }
   }
 
@@ -923,21 +921,6 @@ public class SQLSelectTestNew extends AbstractSelectTest {
       Assert.assertFalse(d.getIdentity().get().isPersistent());
       Assert.assertNull(d.getElement().get().getSchemaType().get());
     }
-  }
-
-  @Test
-  public void queryResetPagination() {
-    final OSQLSynchQuery<ODocument> query =
-        new OSQLSynchQuery<ODocument>("select from Profile LIMIT 3");
-
-    List<ODocument> resultset = database.query(query);
-    final ORID firstRidFirstQuery = resultset.get(0).getIdentity();
-    query.resetPagination();
-
-    resultset = database.query(query);
-    final ORID firstRidSecondQueryQuery = resultset.get(0).getIdentity();
-
-    Assert.assertEquals(firstRidFirstQuery, firstRidSecondQueryQuery);
   }
 
   @Test

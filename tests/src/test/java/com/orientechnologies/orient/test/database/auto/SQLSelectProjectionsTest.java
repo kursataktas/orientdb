@@ -270,21 +270,23 @@ public class SQLSelectProjectionsTest extends DocumentDBBaseTest {
   }
 
   public void queryProjectionContextArray() {
-    List<ODocument> result =
+    List<OResult> result =
         database
-            .command(
-                new OSQLSynchQuery<ODocument>(
-                    "select $a[0] as a0, $a as a from V let $a = outE() where outE().size() > 0"))
-            .execute();
+            .command("select $a[0] as a0, $a as a from V let $a = outE() where outE().size() > 0")
+            .stream()
+            .toList();
     Assert.assertFalse(result.isEmpty());
 
-    for (ODocument d : result) {
-      Assert.assertTrue(d.containsField("a"));
-      Assert.assertTrue(d.containsField("a0"));
+    for (OResult d : result) {
+      Assert.assertTrue(d.hasProperty("a"));
+      Assert.assertTrue(d.hasProperty("a0"));
 
-      final ODocument a0doc = d.field("a0");
+      // TODO:WEIRD rid just rid, collection of loaded records
+      final ODocument a0doc = database.load((ORID) d.getProperty("a0"));
       final ODocument firstADoc =
-          (ODocument) d.<Iterable<OIdentifiable>>field("a").iterator().next();
+          database.load(
+              ((OIdentifiable) d.<Iterable<OIdentifiable>>getProperty("a").iterator().next())
+                  .getIdentity());
 
       Assert.assertTrue(
           ODocumentHelper.hasSameContentOf(a0doc, database, firstADoc, database, null));

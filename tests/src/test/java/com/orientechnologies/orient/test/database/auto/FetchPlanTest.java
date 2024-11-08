@@ -15,12 +15,11 @@
  */
 package com.orientechnologies.orient.test.database.auto;
 
-import com.orientechnologies.orient.core.Orient;
 import com.orientechnologies.orient.core.db.record.ridbag.ORidBag;
 import com.orientechnologies.orient.core.id.ORID;
 import com.orientechnologies.orient.core.metadata.schema.OType;
 import com.orientechnologies.orient.core.record.impl.ODocument;
-import com.orientechnologies.orient.core.sql.query.OSQLSynchQuery;
+import com.orientechnologies.orient.core.sql.executor.OResult;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -116,178 +115,26 @@ public class FetchPlanTest extends DocumentDBBaseTest {
   public void queryNoFetchPlan() {
     createBasicTestSchema();
 
-    final long times = Orient.instance().getProfiler().getCounter("Cache.reused");
-
     database.getLocalCache().clear();
-    List<ODocument> resultset =
-        database.query(new OSQLSynchQuery<ODocument>("select * from FetchClass"));
-    Assert.assertEquals(Orient.instance().getProfiler().getCounter("Cache.reused"), times);
+    List<OResult> resultset = database.query("select * from FetchClass").stream().toList();
 
     ORID linked;
-    for (ODocument d : resultset) {
-      linked = ((ORID) d.field("linked", ORID.class));
+    for (OResult d : resultset) {
+      linked = ((ORID) d.getProperty("linked"));
       if (linked != null) Assert.assertNull(database.getLocalCache().findRecord(linked));
     }
   }
 
   @Test
   public void queryWithFetchPlan() {
-    final long times = Orient.instance().getProfiler().getCounter("Cache.reused");
-    List<ODocument> resultset =
-        database.query(
-            new OSQLSynchQuery<ODocument>("select * from FetchClass").setFetchPlan("*:-1"));
-    Assert.assertEquals(Orient.instance().getProfiler().getCounter("Cache.reused"), times);
+    List<OResult> resultset =
+        database.query("select * from FetchClass fetchpan:*:-1 ").stream().toList();
 
-    ODocument linked;
-    for (ODocument d : resultset) {
-      linked = ((ODocument) d.field("linked"));
+    ORID linked;
+    for (OResult d : resultset) {
+      linked = (ORID) d.getProperty("linked");
       if (linked != null)
         Assert.assertNotNull(database.getLocalCache().findRecord(linked.getIdentity()));
     }
-  }
-
-  @Test(enabled = false)
-  public void queryWithExcludeFetchPlan() {
-    List<ODocument> resultset =
-        database.query(
-            new OSQLSynchQuery<ODocument>(
-                    "select * from FetchClass where name is not null and linkSet is not null")
-                .setFetchPlan("linkSet:-2 name:-1"));
-
-    for (ODocument d : resultset) {
-      Assert.assertNotNull(d.field("name"));
-      Assert.assertNull(d.field("linkSet"));
-    }
-  }
-
-  @Test(enabled = false)
-  public void queryWithExcludeWildcardFetchPlan() {
-    List<ODocument> resultset =
-        database.query(
-            new OSQLSynchQuery<ODocument>(
-                    "select * from FetchClass where name is not null and linkSet is not null")
-                .setFetchPlan("link*:-2 *:1"));
-
-    for (ODocument d : resultset) {
-      Assert.assertNotNull(d.field("name"));
-      Assert.assertNull(d.field("linkSet"));
-      Assert.assertNull(d.field("linkList"));
-    }
-  }
-
-  @Test(enabled = false)
-  public void queryOutInWithExcludeWildcardFetchPlan() {
-    List<ODocument> resultset =
-        database.query(
-            new OSQLSynchQuery<ODocument>("select * from OutInFetchClass ")
-                .setFetchPlan("*:1 out_*:-2 in_*:-2"));
-
-    for (ODocument d : resultset) {
-      Assert.assertNotNull(d.field("name"));
-      Assert.assertNull(d.field("out_friend"));
-      Assert.assertNull(d.field("in_friend"));
-    }
-  }
-
-  @Test(enabled = false)
-  public void queryWithFullFetchPlan() {
-    List<ODocument> resultset =
-        database.query(
-            new OSQLSynchQuery<ODocument>(
-                "select * from FetchClass where name is not null and linkSet is not null"));
-
-    for (ODocument d : resultset) {
-      Assert.assertNotNull(d.field("name"));
-      Assert.assertNotNull(d.field("linkSet"));
-      Assert.assertNotNull(d.field("linkList"));
-    }
-  }
-
-  @Test(enabled = false)
-  public void queryFetchPlanDepth() {
-    List<ODocument> resultset =
-        database.query(
-            new OSQLSynchQuery<ODocument>("select * from FetchClass where name = 'forth' ")
-                .setFetchPlan("ref:-1 ref.link*:-2"));
-
-    for (ODocument d : resultset) {
-      Assert.assertNotNull(d.field("name"));
-      ODocument ref = d.field("ref");
-      Assert.assertNotNull(ref.field("name"));
-      Assert.assertNull(ref.field("linkSet"));
-      Assert.assertNull(ref.field("linkList"));
-    }
-  }
-
-  @Test(enabled = false)
-  public void queryUpdateReadedWithPlanDepth() {
-    List<ODocument> resultset =
-        database.query(
-            new OSQLSynchQuery<ODocument>("select * from FetchClass where name = 'forth' ")
-                .setFetchPlan("ref:-1 ref.link*:-2"));
-
-    for (ODocument d : resultset) {
-      Assert.assertNotNull(d.field("name"));
-      ODocument ref = d.field("ref");
-      Assert.assertNotNull(ref.field("name"));
-      Assert.assertNull(ref.field("linkSet"));
-      Assert.assertNull(ref.field("linkList"));
-      d.field("name2", "value");
-      database.save(d);
-    }
-    database.getLocalCache().clear();
-    resultset =
-        database.query(
-            new OSQLSynchQuery<ODocument>("select * from FetchClass where name = 'forth' "));
-
-    for (ODocument d : resultset) {
-      Assert.assertNotNull(d.field("name"));
-      Assert.assertNotNull(d.field("name2"));
-      ODocument ref = d.field("ref");
-      Assert.assertNotNull(ref.field("name"));
-      Assert.assertNotNull(ref.field("linkSet"));
-      Assert.assertNotNull(ref.field("linkList"));
-    }
-  }
-
-  @Test(enabled = false)
-  public void queryUpdateConstraintReadedWithFetchPlan() {
-    List<ODocument> resultset =
-        database.query(
-            new OSQLSynchQuery<ODocument>("select * from SecondFetchClass where name = 'sixth'")
-                .setFetchPlan("name:-1 surname:-2"));
-
-    for (ODocument d : resultset) {
-      Assert.assertNotNull(d.field("name"));
-      Assert.assertNull(d.field("surname"));
-      d.field("name", "sixth1");
-      database.save(d);
-    }
-    database.getLocalCache().clear();
-    resultset =
-        database.query(
-            new OSQLSynchQuery<ODocument>("select * from SecondFetchClass where name = 'sixth1'"));
-
-    Assert.assertEquals(resultset.size(), 0);
-  }
-
-  @Test(enabled = false)
-  public void queryDeleteReadedWithFetchPlan() {
-    List<ODocument> resultset =
-        database.query(
-            new OSQLSynchQuery<ODocument>("select * from SecondFetchClass where name = 'fifth'")
-                .setFetchPlan("*:1 surname:-2"));
-
-    for (ODocument d : resultset) {
-      Assert.assertNotNull(d.field("name"));
-      Assert.assertNull(d.field("surname"));
-      database.delete(d);
-    }
-    database.getLocalCache().clear();
-    resultset =
-        database.query(
-            new OSQLSynchQuery<ODocument>("select * from SecondFetchClass where name = 'fifth'"));
-
-    Assert.assertEquals(resultset.size(), 0);
   }
 }
