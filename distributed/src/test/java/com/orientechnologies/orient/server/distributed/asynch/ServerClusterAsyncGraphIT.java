@@ -20,7 +20,6 @@
 
 package com.orientechnologies.orient.server.distributed.asynch;
 
-import com.orientechnologies.common.concur.ONeedRetryException;
 import com.orientechnologies.orient.core.db.ODatabaseType;
 import com.orientechnologies.orient.core.db.OrientDB;
 import com.orientechnologies.orient.core.db.document.ODatabaseDocument;
@@ -28,7 +27,6 @@ import com.orientechnologies.orient.core.record.ODirection;
 import com.orientechnologies.orient.core.record.OEdge;
 import com.orientechnologies.orient.core.record.OElement;
 import com.orientechnologies.orient.core.record.OVertex;
-import com.orientechnologies.orient.core.replication.OAsyncReplicationError;
 import com.orientechnologies.orient.core.sql.OCommandSQL;
 import com.orientechnologies.orient.server.distributed.AbstractServerClusterTest;
 import com.orientechnologies.orient.setup.ServerRun;
@@ -101,17 +99,7 @@ public class ServerClusterAsyncGraphIT extends AbstractServerClusterTest {
       orientdb.createIfNotExists(getDatabaseName(), ODatabaseType.PLOCAL);
       ODatabaseDocument g = orientdb.open(getDatabaseName(), "admin", "admin");
       try {
-        g.command(
-                new OCommandSQL("create edge Own from (select from User) to (select from Post)")
-                    .onAsyncReplicationError(
-                        new OAsyncReplicationError() {
-                          @Override
-                          public ACTION onAsyncReplicationError(Throwable iException, int iRetry) {
-                            return iException instanceof ONeedRetryException && iRetry <= 3
-                                ? ACTION.RETRY
-                                : ACTION.IGNORE;
-                          }
-                        }))
+        g.command(new OCommandSQL("create edge Own from (select from User) to (select from Post)"))
             .execute();
 
       } finally {
