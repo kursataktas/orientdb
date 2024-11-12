@@ -23,7 +23,7 @@ import com.orientechnologies.orient.core.metadata.schema.OClass;
 import com.orientechnologies.orient.core.metadata.schema.OSchema;
 import com.orientechnologies.orient.core.metadata.schema.OType;
 import com.orientechnologies.orient.core.record.impl.ODocument;
-import com.orientechnologies.orient.core.sql.query.OSQLSynchQuery;
+import com.orientechnologies.orient.core.sql.executor.OResult;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.Assert;
@@ -65,7 +65,7 @@ public class LuceneTransactionGeoQueryTest extends BaseLuceneTest {
             + " 21.996535232496047,-160.1099395751953 21.94304553343818,-160.169677734375"
             + " 21.89399562866819,-160.21087646484375 21.844928843026818,-160.21018981933594"
             + " 21.787556698550834)' ";
-    List<ODocument> docs = db.query(new OSQLSynchQuery<ODocument>(query));
+    List<OResult> docs = db.query(query).stream().toList();
     Assert.assertEquals(1, docs.size());
     Assert.assertEquals(3, idx.getInternal().size());
     db.rollback();
@@ -75,7 +75,7 @@ public class LuceneTransactionGeoQueryTest extends BaseLuceneTest {
             + " 21.996535232496047,-160.1099395751953 21.94304553343818,-160.169677734375"
             + " 21.89399562866819,-160.21087646484375 21.844928843026818,-160.21018981933594"
             + " 21.787556698550834)' ";
-    docs = db.query(new OSQLSynchQuery<ODocument>(query));
+    docs = db.query(query).stream().toList();
     Assert.assertEquals(0, docs.size());
     Assert.assertEquals(0, idx.getInternal().size());
   }
@@ -109,7 +109,7 @@ public class LuceneTransactionGeoQueryTest extends BaseLuceneTest {
             + " 21.996535232496047,-160.1099395751953 21.94304553343818,-160.169677734375"
             + " 21.89399562866819,-160.21087646484375 21.844928843026818,-160.21018981933594"
             + " 21.787556698550834)' ";
-    List<ODocument> docs = db.query(new OSQLSynchQuery<ODocument>(query));
+    List<OResult> docs = db.query(query).stream().toList();
     Assert.assertEquals(0, docs.size());
     Assert.assertEquals(1, idx.getInternal().size());
 
@@ -122,7 +122,7 @@ public class LuceneTransactionGeoQueryTest extends BaseLuceneTest {
             + " 21.996535232496047,-160.1099395751953 21.94304553343818,-160.169677734375"
             + " 21.89399562866819,-160.21087646484375 21.844928843026818,-160.21018981933594"
             + " 21.787556698550834)' ";
-    docs = db.query(new OSQLSynchQuery<ODocument>(query));
+    docs = db.query(query).stream().toList();
     Assert.assertEquals(1, docs.size());
     Assert.assertEquals(1, idx.getInternal().size());
 
@@ -133,7 +133,7 @@ public class LuceneTransactionGeoQueryTest extends BaseLuceneTest {
             + " 21.996535232496047,-160.1099395751953 21.94304553343818,-160.169677734375"
             + " 21.89399562866819,-160.21087646484375 21.844928843026818,-160.21018981933594"
             + " 21.787556698550834)' ";
-    docs = db.query(new OSQLSynchQuery<ODocument>(query));
+    docs = db.query(query).stream().toList();
     Assert.assertEquals(1, docs.size());
     Assert.assertEquals(1, idx.getInternal().size());
   }

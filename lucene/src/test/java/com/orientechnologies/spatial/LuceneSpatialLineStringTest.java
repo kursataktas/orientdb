@@ -21,7 +21,7 @@ import com.orientechnologies.orient.core.metadata.schema.OClass;
 import com.orientechnologies.orient.core.metadata.schema.OSchema;
 import com.orientechnologies.orient.core.metadata.schema.OType;
 import com.orientechnologies.orient.core.record.impl.ODocument;
-import com.orientechnologies.orient.core.sql.query.OSQLSynchQuery;
+import com.orientechnologies.orient.core.sql.executor.OResult;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -103,17 +103,17 @@ public class LuceneSpatialLineStringTest extends BaseSpatialLuceneTest {
     String query =
         "select * from Place where location && { 'shape' : { 'type' : 'OLineString' , 'coordinates'"
             + " : [[1,2],[4,6]]} } ";
-    List<ODocument> docs = db.query(new OSQLSynchQuery<ODocument>(query));
+    List<OResult> docs = db.query(query).stream().toList();
 
     Assert.assertEquals(docs.size(), 1);
 
     query = "select * from Place where location && 'LINESTRING(1 2, 4 6)' ";
-    docs = db.query(new OSQLSynchQuery<ODocument>(query));
+    docs = db.query(query).stream().toList();
 
     Assert.assertEquals(docs.size(), 1);
 
     query = "select * from Place where location && ST_GeomFromText('LINESTRING(1 2, 4 6)') ";
-    docs = db.query(new OSQLSynchQuery<ODocument>(query));
+    docs = db.query(query).stream().toList();
 
     Assert.assertEquals(docs.size(), 1);
 
@@ -122,7 +122,7 @@ public class LuceneSpatialLineStringTest extends BaseSpatialLuceneTest {
             + " 61.40723633876356,-149.2657470703125 61.40723633876356,-149.2657470703125"
             + " 61.05562700886678,-150.205078125 61.05562700886678,-150.205078125"
             + " 61.40723633876356))' ";
-    docs = db.query(new OSQLSynchQuery<ODocument>(query));
+    docs = db.query(query).stream().toList();
 
     Assert.assertEquals(docs.size(), 1);
   }

@@ -21,7 +21,7 @@ import com.orientechnologies.orient.core.metadata.schema.OClass;
 import com.orientechnologies.orient.core.metadata.schema.OSchema;
 import com.orientechnologies.orient.core.metadata.schema.OType;
 import com.orientechnologies.orient.core.record.impl.ODocument;
-import com.orientechnologies.orient.core.sql.query.OSQLSynchQuery;
+import com.orientechnologies.orient.core.sql.executor.OResult;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
@@ -57,12 +57,12 @@ public class LuceneSpatialPolygonTest extends BaseSpatialLuceneTest {
   protected void queryPolygon() {
 
     String query = "select * from Place where location && 'POINT(13.383333 52.516667)'";
-    List<ODocument> docs = db.query(new OSQLSynchQuery<ODocument>(query));
+    List<OResult> docs = db.query(query).stream().toList();
 
     Assert.assertEquals(docs.size(), 1);
 
     query = "select * from Place where location && 'POINT(12.5 41.9)'";
-    docs = db.query(new OSQLSynchQuery<ODocument>(query));
+    docs = db.query(query).stream().toList();
 
     Assert.assertEquals(docs.size(), 0);
   }

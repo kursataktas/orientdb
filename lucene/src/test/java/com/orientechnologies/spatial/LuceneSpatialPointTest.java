@@ -113,7 +113,7 @@ public class LuceneSpatialPointTest extends BaseSpatialLuceneTest {
             + " 21.996535232496047,-160.1099395751953 21.94304553343818,-160.169677734375"
             + " 21.89399562866819,-160.21087646484375 21.844928843026818,-160.21018981933594"
             + " 21.787556698550834)' ";
-    List<?> old = db.query(new OSQLSynchQuery<ODocument>(query));
+    List<?> old = db.query(query).stream().toList();
 
     Assert.assertEquals(1, old.size());
   }
