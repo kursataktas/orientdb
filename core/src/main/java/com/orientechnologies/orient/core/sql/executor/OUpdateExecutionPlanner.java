@@ -12,6 +12,7 @@ import com.orientechnologies.orient.core.sql.parser.OUpdateOperations;
 import com.orientechnologies.orient.core.sql.parser.OUpdateStatement;
 import com.orientechnologies.orient.core.sql.parser.OWhereClause;
 import com.orientechnologies.orient.core.storage.OStorage;
+import com.orientechnologies.orient.core.storage.OStorage.LOCKING_STRATEGY;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -78,8 +79,8 @@ public class OUpdateExecutionPlanner {
     handleLimit(result, ctx, this.limit, enableProfiling);
     handleReturnBefore(result, ctx, this.returnBefore, enableProfiling);
     handleOperations(result, ctx, this.operations, enableProfiling);
-    handleLock(result, ctx, this.lockRecord);
     handleSave(result, ctx, enableProfiling);
+    handleUnlock(result, ctx, this.lockRecord);
     handleResultForReturnBefore(result, ctx, this.returnBefore, returnProjection, enableProfiling);
     handleResultForReturnAfter(result, ctx, this.returnAfter, returnProjection, enableProfiling);
     handleResultForReturnCount(result, ctx, this.returnCount, enableProfiling);
@@ -162,8 +163,12 @@ public class OUpdateExecutionPlanner {
     }
   }
 
-  private void handleLock(
-      OUpdateExecutionPlan result, OCommandContext ctx, OStorage.LOCKING_STRATEGY lockRecord) {}
+  private void handleUnlock(
+      OUpdateExecutionPlan result, OCommandContext ctx, LOCKING_STRATEGY lockRecord2) {
+    if (lockRecord != null) {
+      result.chain(new UnlockRecordStep(lockRecord, ctx, false));
+    }
+  }
 
   private void handleLimit(
       OUpdateExecutionPlan plan, OCommandContext ctx, OLimit limit, boolean profilingEnabled) {
@@ -230,6 +235,7 @@ public class OUpdateExecutionPlanner {
     if (timeout != null) {
       sourceStatement.setTimeout(this.timeout.copy());
     }
+    sourceStatement.setLockRecord(lockRecord);
     OSelectExecutionPlanner planner = new OSelectExecutionPlanner(sourceStatement);
     result.chain(
         new SubQueryStep(

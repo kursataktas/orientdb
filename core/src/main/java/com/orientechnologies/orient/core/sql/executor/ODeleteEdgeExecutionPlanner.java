@@ -154,7 +154,7 @@ public class ODeleteEdgeExecutionPlanner {
       OWhereClause whereClause,
       boolean profilingEnabled) {
     if (whereClause != null) {
-      result.chain(new FilterStep(whereClause, ctx, -1, profilingEnabled));
+      result.chain(new FilterStep(whereClause, ctx, -1, profilingEnabled, false));
     }
   }
 

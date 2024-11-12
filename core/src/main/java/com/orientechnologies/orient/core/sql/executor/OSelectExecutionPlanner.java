@@ -159,12 +159,11 @@ public class OSelectExecutionPlanner {
 
     handleLet(result, info, ctx, enableProfiling);
 
+    handleLockRecord(result, info, ctx, enableProfiling);
     handleWhere(result, info, ctx, enableProfiling);
 
     // TODO optimization: in most cases the projections can be calculated on remote nodes
     buildDistributedExecutionPlan(result, info, ctx, enableProfiling);
-
-    handleLockRecord(result, info, ctx, enableProfiling);
 
     handleProjectionsBlock(result, info, ctx, enableProfiling);
 
@@ -189,7 +188,13 @@ public class OSelectExecutionPlanner {
       OCommandContext ctx,
       boolean enableProfiling) {
     if (info.lockRecord != null) {
-      result.chain(new LockRecordStep(info.lockRecord, ctx, enableProfiling));
+      if (info.distributedPlanCreated) {
+        result.chain(new LockRecordStep(info.lockRecord, ctx, enableProfiling));
+      } else {
+        for (OSelectExecutionPlan shardedPlan : info.distributedFetchExecutionPlans.values()) {
+          shardedPlan.chain(new LockRecordStep(info.lockRecord, ctx, enableProfiling));
+        }
+      }
     }
   }
 
@@ -1683,7 +1688,8 @@ public class OSelectExecutionPlanner {
                   where,
                   ctx,
                   this.info.timeout != null ? this.info.timeout.getVal().longValue() : -1,
-                  profilingEnabled));
+                  profilingEnabled,
+                  this.info.isExclusiveLock()));
         }
         break;
       case VALUES:
@@ -1890,7 +1896,8 @@ public class OSelectExecutionPlanner {
                 info.whereClause,
                 ctx,
                 this.info.timeout != null ? this.info.timeout.getVal().longValue() : -1,
-                profilingEnabled));
+                profilingEnabled,
+                this.info.isExclusiveLock()));
       } else {
         for (OSelectExecutionPlan shardedPlan : info.distributedFetchExecutionPlans.values()) {
           shardedPlan.chain(
@@ -1898,7 +1905,8 @@ public class OSelectExecutionPlanner {
                   info.whereClause.copy(),
                   ctx,
                   this.info.timeout != null ? this.info.timeout.getVal().longValue() : -1,
-                  profilingEnabled));
+                  profilingEnabled,
+                  this.info.isExclusiveLock()));
         }
       }
     }
@@ -2086,7 +2094,8 @@ public class OSelectExecutionPlanner {
                     createWhereFrom(block),
                     ctx,
                     this.info.timeout != null ? this.info.timeout.getVal().longValue() : -1,
-                    profilingEnabled));
+                    profilingEnabled,
+                    this.info.isExclusiveLock()));
           }
           resultSubPlans.add(subPlan);
         } else {
@@ -2111,7 +2120,8 @@ public class OSelectExecutionPlanner {
                     createWhereFrom(block),
                     ctx,
                     this.info.timeout != null ? this.info.timeout.getVal().longValue() : -1,
-                    profilingEnabled));
+                    profilingEnabled,
+                    this.info.isExclusiveLock()));
           }
           resultSubPlans.add(subPlan);
         }
@@ -2172,7 +2182,8 @@ public class OSelectExecutionPlanner {
                     createWhereFrom(block),
                     ctx,
                     this.info.timeout != null ? this.info.timeout.getVal().longValue() : -1,
-                    profilingEnabled));
+                    profilingEnabled,
+                    this.info.isExclusiveLock()));
           }
         } else {
           OSelectExecutionPlan subPlan = new OSelectExecutionPlan();
@@ -2183,7 +2194,8 @@ public class OSelectExecutionPlanner {
                     createWhereFrom(block),
                     ctx,
                     this.info.timeout != null ? this.info.timeout.getVal().longValue() : -1,
-                    profilingEnabled));
+                    profilingEnabled,
+                    this.info.isExclusiveLock()));
           }
           resultSubPlans.add(subPlan);
         }
@@ -2534,7 +2546,8 @@ public class OSelectExecutionPlanner {
                 createWhereFrom(desc.getRemainingCondition()),
                 ctx,
                 this.info.timeout != null ? this.info.timeout.getVal().longValue() : -1,
-                profilingEnabled));
+                profilingEnabled,
+                this.info.isExclusiveLock()));
       }
     } else {
       result = new ArrayList<>();
@@ -2606,7 +2619,8 @@ public class OSelectExecutionPlanner {
                 createWhereFrom(desc.getRemainingCondition()),
                 ctx,
                 this.info.timeout != null ? this.info.timeout.getVal().longValue() : -1,
-                profilingEnabled));
+                profilingEnabled,
+                this.info.isExclusiveLock()));
       }
       subPlans.add(subPlan);
     }

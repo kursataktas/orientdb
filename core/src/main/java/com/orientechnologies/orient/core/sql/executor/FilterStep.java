@@ -12,12 +12,18 @@ import com.orientechnologies.orient.core.sql.parser.OWhereClause;
 public class FilterStep extends AbstractExecutionStep {
   private final long timeoutMillis;
   private OWhereClause whereClause;
+  private final boolean locked;
 
   public FilterStep(
-      OWhereClause whereClause, OCommandContext ctx, long timeoutMillis, boolean profilingEnabled) {
+      OWhereClause whereClause,
+      OCommandContext ctx,
+      long timeoutMillis,
+      boolean profilingEnabled,
+      boolean locked) {
     super(ctx, profilingEnabled);
     this.whereClause = whereClause;
     this.timeoutMillis = timeoutMillis;
+    this.locked = locked;
   }
 
   @Override
@@ -37,6 +43,9 @@ public class FilterStep extends AbstractExecutionStep {
   private OResult filterMap(OResult result, OCommandContext ctx) {
     if (whereClause.matchesFilters(result, ctx)) {
       return result;
+    }
+    if (locked && result.getIdentity().isPresent()) {
+      ctx.getDatabase().unlock(result.getIdentity().get());
     }
     return null;
   }
@@ -83,6 +92,6 @@ public class FilterStep extends AbstractExecutionStep {
 
   @Override
   public OExecutionStep copy(OCommandContext ctx) {
-    return new FilterStep(this.whereClause.copy(), ctx, timeoutMillis, profilingEnabled);
+    return new FilterStep(this.whereClause.copy(), ctx, timeoutMillis, profilingEnabled, locked);
   }
 }

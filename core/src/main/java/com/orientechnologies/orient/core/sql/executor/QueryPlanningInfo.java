@@ -83,4 +83,8 @@ public class QueryPlanningInfo {
     result.lockRecord = this.lockRecord;
     return result;
   }
+
+  public boolean isExclusiveLock() {
+    return OStorage.LOCKING_STRATEGY.EXCLUSIVE_LOCK.equals(lockRecord);
+  }
 }

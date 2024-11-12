@@ -2,15 +2,14 @@ package com.orientechnologies.orient.core.sql.executor;
 
 import com.orientechnologies.common.concur.OTimeoutException;
 import com.orientechnologies.orient.core.command.OCommandContext;
-import com.orientechnologies.orient.core.record.OElement;
 import com.orientechnologies.orient.core.sql.executor.resultset.OExecutionStream;
 import com.orientechnologies.orient.core.storage.OStorage;
 import com.orientechnologies.orient.core.storage.OStorage.LOCKING_STRATEGY;
 
-public class LockRecordStep extends AbstractExecutionStep {
+public class UnlockRecordStep extends AbstractExecutionStep {
   private final OStorage.LOCKING_STRATEGY lockStrategy;
 
-  public LockRecordStep(
+  public UnlockRecordStep(
       OStorage.LOCKING_STRATEGY lockStrategy, OCommandContext ctx, boolean enableProfiling) {
     super(ctx, enableProfiling);
     this.lockStrategy = lockStrategy;
@@ -23,10 +22,8 @@ public class LockRecordStep extends AbstractExecutionStep {
   }
 
   private OResult mapResult(OResult result, OCommandContext ctx) {
-    if (LOCKING_STRATEGY.EXCLUSIVE_LOCK.equals(lockStrategy) && result.getElement().isPresent()) {
-      OElement element = result.getElement().get();
-      ctx.getDatabase().lock(element.getIdentity());
-      ctx.getDatabase().reload(element);
+    if (LOCKING_STRATEGY.EXCLUSIVE_LOCK.equals(lockStrategy)) {
+      result.getElement().ifPresent(x -> ctx.getDatabase().unlock(x.getIdentity()));
     }
     return result;
   }
@@ -36,7 +33,7 @@ public class LockRecordStep extends AbstractExecutionStep {
     String spaces = OExecutionStepInternal.getIndent(depth, indent);
     StringBuilder result = new StringBuilder();
     result.append(spaces);
-    result.append("+ LOCK RECORD");
+    result.append("+ UNLOCK RECORD");
     result.append("\n");
     result.append(spaces);
     result.append("  lock strategy: " + lockStrategy);
