@@ -288,4 +288,12 @@ public abstract class OQueryOperator {
   public boolean isSupportingBinaryEvaluate() {
     return false;
   }
+
+  public String getKeyword() {
+    return keyword;
+  }
+
+  public boolean evaluate(Object iLeft, Object iRight) {
+    throw new UnsupportedOperationException();
+  }
 }

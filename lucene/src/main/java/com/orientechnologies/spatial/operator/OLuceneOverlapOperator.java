@@ -81,4 +81,22 @@ public class OLuceneOverlapOperator extends OLuceneSpatialOperator {
 
     return SpatialOperation.BBoxIntersects.evaluate(shape, shape1.getBoundingBox());
   }
+
+  @Override
+  public boolean evaluate(Object iLeft, Object iRight) {
+    Shape shape = factory.fromObject(iLeft);
+
+    // TODO { 'shape' : { 'type' : 'LineString' , 'coordinates' : [[1,2],[4,6]]} }
+    // TODO is not translated in map but in array[ { 'type' : 'LineString' , 'coordinates' :
+    // [[1,2],[4,6]]} ]
+    Object filter;
+    if (iRight instanceof Collection) {
+      filter = ((Collection) iRight).iterator().next();
+    } else {
+      filter = iRight;
+    }
+    Shape shape1 = factory.fromObject(filter);
+
+    return SpatialOperation.BBoxIntersects.evaluate(shape, shape1.getBoundingBox());
+  }
 }
