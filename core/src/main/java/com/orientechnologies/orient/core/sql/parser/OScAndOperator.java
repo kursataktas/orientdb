@@ -2,8 +2,11 @@
 /* JavaCCOptions:MULTI=true,NODE_USES_PARSER=false,VISITOR=true,TRACK_TOKENS=true,NODE_PREFIX=O,NODE_EXTENDS=,NODE_FACTORY=,SUPPORT_CLASS_VISIBILITY_PUBLIC=true */
 package com.orientechnologies.orient.core.sql.parser;
 
+import com.orientechnologies.orient.core.sql.OSQLEngine;
 import com.orientechnologies.orient.core.sql.executor.metadata.OIndexFinder.Operation;
 import com.orientechnologies.orient.core.sql.operator.OQueryOperator;
+import com.orientechnologies.orient.core.sql.operator.OQueryOperatorFactory;
+import java.util.Iterator;
 import java.util.Map;
 
 public class OScAndOperator extends SimpleNode implements OBinaryCompareOperator {
@@ -12,10 +15,24 @@ public class OScAndOperator extends SimpleNode implements OBinaryCompareOperator
 
   public OScAndOperator(int id) {
     super(id);
+    initOperator();
   }
 
   public OScAndOperator(OrientSql p, int id) {
     super(p, id);
+    initOperator();
+  }
+
+  protected void initOperator() {
+    Iterator<OQueryOperatorFactory> factories = OSQLEngine.getOperatorFactories();
+    while (factories.hasNext()) {
+      OQueryOperatorFactory factory = factories.next();
+      for (OQueryOperator op : factory.getOperators()) {
+        if ("&&".equals(op.getKeyword())) {
+          lowLevelOperator = op;
+        }
+      }
+    }
   }
 
   @Override
@@ -23,7 +40,7 @@ public class OScAndOperator extends SimpleNode implements OBinaryCompareOperator
     if (lowLevelOperator == null) {
       throw new UnsupportedOperationException();
     }
-    return false;
+    return lowLevelOperator.evaluate(iLeft, iRight);
   }
 
   @Override
