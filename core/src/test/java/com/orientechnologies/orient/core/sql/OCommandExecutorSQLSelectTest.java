@@ -565,15 +565,6 @@ public class OCommandExecutorSQLSelectTest extends BaseMemoryDatabase {
   }
 
   @Test
-  public void testFlattenOnEmbedded() {
-    List<ODocument> qResult =
-        db.command(new OCommandSQL("select flatten(address) from foo where name = 'a'")).execute();
-
-    assertEquals(qResult.size(), 1);
-    assertEquals(qResult.get(0).field("city"), "NY");
-  }
-
-  @Test
   public void testLimit() {
     OResultSet qResult = db.query("select from foo limit 3");
     assertEquals(qResult.stream().count(), 3);

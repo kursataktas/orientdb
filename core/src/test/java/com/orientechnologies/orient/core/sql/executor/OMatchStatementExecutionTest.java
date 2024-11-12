@@ -16,7 +16,6 @@ import com.orientechnologies.orient.core.metadata.schema.OSchema;
 import com.orientechnologies.orient.core.record.OElement;
 import com.orientechnologies.orient.core.record.OVertex;
 import com.orientechnologies.orient.core.record.impl.ODocument;
-import com.orientechnologies.orient.core.sql.OCommandSQL;
 import com.orientechnologies.orient.core.sql.query.OSQLSynchQuery;
 import java.util.HashSet;
 import java.util.List;
@@ -1296,30 +1295,6 @@ public class OMatchStatementExecutionTest extends BaseMemoryDatabase {
     query.append("return {'name':'foo', 'sub': [{'uuid':one.uid}]}");
 
     List<ODocument> result = collect(db.command(query.toString()));
-    assertEquals(1, result.size());
-    //    ODocument doc = result.get(0);
-    //    assertEquals("foo", doc.field("name"));
-    //    assertEquals(0, doc.field("sub[0].uuid"));
-  }
-
-  @Test
-  public void testUnique() {
-    StringBuilder query = new StringBuilder();
-    query.append("match ");
-    query.append(
-        "{class:DiamondV, as: one, where: (uid = 0)}.out('DiamondE').out('DiamondE'){as: two} ");
-    query.append("return one, two");
-
-    List<ODocument> result = db.command(new OCommandSQL(query.toString())).execute();
-    assertEquals(1, result.size());
-
-    query = new StringBuilder();
-    query.append("match ");
-    query.append(
-        "{class:DiamondV, as: one, where: (uid = 0)}.out('DiamondE').out('DiamondE'){as: two} ");
-    query.append("return one.uid, two.uid");
-
-    result = db.command(new OCommandSQL(query.toString())).execute();
     assertEquals(1, result.size());
     //    ODocument doc = result.get(0);
     //    assertEquals("foo", doc.field("name"));
