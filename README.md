@@ -2,6 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![REUSE status](https://api.reuse.software/badge/github.com/orientechnologies/orientdb)](https://api.reuse.software/info/github.com/orientechnologies/orientdb)
+[![Gurubase](https://img.shields.io/badge/Gurubase-Ask%20OrientDB%20Guru-006BFF)](https://gurubase.io/g/orientdb)
 
 ------
 
